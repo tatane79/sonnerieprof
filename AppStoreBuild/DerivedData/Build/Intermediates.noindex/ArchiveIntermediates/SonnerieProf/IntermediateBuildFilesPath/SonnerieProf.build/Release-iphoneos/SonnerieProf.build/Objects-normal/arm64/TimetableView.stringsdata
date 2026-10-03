@@ -1,0 +1,40 @@
+{
+  "source": "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/SonnerieProf/Views/TimetableView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Q1",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 28
+        }
+      },
+      {
+        "comment": "",
+        "key": "Q2",
+        "location": {
+          "startingColumn": 38,
+          "startingLine": 35
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ – %@",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 599
+        }
+      },
+      {
+        "comment": "",
+        "key": "–",
+        "location": {
+          "startingColumn": 22,
+          "startingLine": 731
+        }
+      }
+    ]
+  },
+  "version": 1
+}

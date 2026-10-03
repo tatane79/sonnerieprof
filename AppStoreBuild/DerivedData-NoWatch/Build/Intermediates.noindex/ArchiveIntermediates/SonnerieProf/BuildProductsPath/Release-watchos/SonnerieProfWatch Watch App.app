@@ -1,0 +1,1 @@
+../../IntermediateBuildFilesPath/UninstalledProducts/watchos/SonnerieProfWatch Watch App.app

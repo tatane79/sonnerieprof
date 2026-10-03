@@ -1,0 +1,12 @@
+{
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/SonnerieProfWidgets/SonnerieProfWidgetsBundle.swift" : {
+    "abi-baseline-json" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets.abi.json",
+    "const-values" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets-primary.swiftconstvalues",
+    "dependencies" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets-primary.d",
+    "diagnostics" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets-primary.dia",
+    "objc-header" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets-Swift.h",
+    "swiftdoc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets.swiftdoc",
+    "swiftmodule" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets.swiftmodule",
+    "swiftsourceinfo" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets.swiftsourceinfo"
+  }
+}

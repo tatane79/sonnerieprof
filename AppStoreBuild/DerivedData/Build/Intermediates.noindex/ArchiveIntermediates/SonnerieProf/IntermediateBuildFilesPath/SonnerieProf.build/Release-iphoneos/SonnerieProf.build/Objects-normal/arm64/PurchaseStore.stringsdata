@@ -1,0 +1,170 @@
+{
+  "source": "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/SonnerieProf/Services/PurchaseStore.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "tip.navigation_title",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 8
+        },
+        "value": "Soutenir Sonnerie Prof"
+      },
+      {
+        "comment": "",
+        "key": "tip.title",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 9
+        },
+        "value": "Un petit coup de pouce ?"
+      },
+      {
+        "comment": "",
+        "key": "tip.body",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 10
+        },
+        "value": "Toutes les fonctions de Sonnerie Prof sont gratuites. Si l’app vous aide au quotidien, vous pouvez soutenir son développement avec un pourboire facultatif."
+      },
+      {
+        "comment": "",
+        "key": "tip.no_unlock",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 11
+        },
+        "value": "Le pourboire est entièrement facultatif et ne débloque aucune fonction."
+      },
+      {
+        "comment": "",
+        "key": "tip.products_unavailable",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 12
+        },
+        "value": "Les pourboires sont momentanément indisponibles."
+      },
+      {
+        "comment": "",
+        "key": "tip.products_load_error",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 13
+        },
+        "value": "Impossible de charger les propositions de pourboire."
+      },
+      {
+        "comment": "",
+        "key": "tip.purchase_pending",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 14
+        },
+        "value": "Le paiement attend une autorisation."
+      },
+      {
+        "comment": "",
+        "key": "tip.purchase_error",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 15
+        },
+        "value": "Le paiement n’a pas pu être effectué."
+      },
+      {
+        "comment": "",
+        "key": "tip.thank_you_title",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 16
+        },
+        "value": "Merci beaucoup !"
+      },
+      {
+        "comment": "",
+        "key": "tip.thank_you_message",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 17
+        },
+        "value": "Merci de soutenir le développement de Sonnerie Prof."
+      },
+      {
+        "comment": "",
+        "key": "tip.product.small",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 18
+        },
+        "value": "Petit merci"
+      },
+      {
+        "comment": "",
+        "key": "tip.product.medium",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 19
+        },
+        "value": "Un café"
+      },
+      {
+        "comment": "",
+        "key": "tip.product.large",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 20
+        },
+        "value": "Grand merci"
+      },
+      {
+        "comment": "",
+        "key": "tip.voluntary",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 21
+        },
+        "value": "Pourboire facultatif"
+      },
+      {
+        "comment": "",
+        "key": "tip.debug_show",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 22
+        },
+        "value": "Afficher la proposition de pourboire"
+      },
+      {
+        "comment": "",
+        "key": "tip.support_button",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 23
+        },
+        "value": "Soutenir Sonnerie Prof"
+      },
+      {
+        "comment": "",
+        "key": "tip.support_about",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 24
+        },
+        "value": "Sonnerie Prof est gratuite et toutes ses fonctions sont disponibles sans paiement. Si vous le souhaitez, vous pouvez soutenir son développement avec un pourboire facultatif."
+      },
+      {
+        "comment": "",
+        "key": "tip.support_section",
+        "location": {
+          "startingColumn": 31,
+          "startingLine": 25
+        },
+        "value": "Soutenir l’application"
+      }
+    ]
+  },
+  "version": 1
+}

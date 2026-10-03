@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%@ – %@</key>
+	<string>%1$@ – %2$@</string>
+	<key>+15 min</key>
+	<string>+15 min</string>
+	<key>+55 min</key>
+	<string>+55 min</string>
+	<key>1 min avant la prochaine sonnerie</key>
+	<string>1 min antes do próximo sinal</string>
+	<key>12 h (AM/PM)</key>
+	<string>12 h (AM/PM)</string>
+	<key>24 h</key>
+	<string>24 h</string>
+	<key>5 min avant la prochaine sonnerie</key>
+	<string>5 min antes do próximo sinal</string>
+	<key>Affiche le temps restant avant la prochaine sonnerie.</key>
+	<string>Mostra o tempo restante até o próximo sinal.</string>
+	<key>Afficher en plein écran</key>
+	<string>Mostrar em tela cheia</string>
+	<key>Ajouter un site</key>
+	<string>Adicionar um local</string>
+	<key>Ajoutez les horaires de ce site dans Réglages.</key>
+	<string>Adicione os horários de sinal deste local nos Ajustes.</string>
+	<key>Ajoutez vos séances dans l’emploi du temps.</key>
+	<string>Adicione suas aulas ao horário.</string>
+	<key>Ajoutez votre établissement et ses horaires de sonnerie.</key>
+	<string>Adicione sua escola e os horários de sinal.</string>
+	<key>Annuler</key>
+	<string>Cancelar</string>
+	<key>Appliquer le lundi à toute la semaine</key>
+	<string>Aplicar a segunda-feira à semana inteira</string>
+	<key>Appliquer les horaires du lundi ?</key>
+	<string>Aplicar os horários de segunda-feira?</string>
+	<key>Aucun compte requis</key>
+	<string>Nenhuma conta necessária</string>
+	<key>Aucun cours en ce moment</key>
+	<string>Nenhuma aula no momento</string>
+	<key>Aucun prochain cours programmé</key>
+	<string>Nenhuma próxima aula agendada</string>
+	<key>Aucun site configuré</key>
+	<string>Nenhum local configurado</string>
+	<key>Aucune publicité ni suivi</key>
+	<string>Sem anúncios ou rastreamento</string>
+	<key>Aucune sonnerie</key>
+	<string>Nenhum sinal</string>
+	<key>Aucune sonnerie configurée</key>
+	<string>Nenhum horário de sinal configurado</string>
+	<key>Auteur</key>
+	<string>Autor</string>
+	<key>Autre horaire…</key>
+	<string>Outro horário…</string>
+	<key>Bienvenue dans Sonnerie Prof</key>
+	<string>Boas-vindas ao Sonnerie Prof</string>
+	<key>Compilation</key>
+	<string>Compilação</string>
+	<key>Confidentialité</key>
+	<string>Privacidade</string>
+	<key>Configurer plus tard</key>
+	<string>Configurar mais tarde</string>
+	<key>Configurez un premier établissement. Aucun compte n'est requis et vos données restent sur l'iPhone.</key>
+	<string>Configure sua primeira escola. Nenhuma conta é necessária e seus dados permanecem no iPhone.</string>
+	<key>Conflit d’emploi du temps</key>
+	<string>Conflito de horário</string>
+	<key>Conserve le site, le jour et le type de semaine, puis prépare le créneau suivant.</key>
+	<string>Mantém o local, o dia e o tipo de semana e prepara o próximo horário.</string>
+	<key>Créer mon site</key>
+	<string>Criar meu local</string>
+	<key>Date et heure simulées</key>
+	<string>Data e hora simuladas</string>
+	<key>Données enregistrées localement</key>
+	<string>Dados salvos localmente</string>
+	<key>Détecter automatiquement</key>
+	<string>Detectar automaticamente</string>
+	<key>Elle permet uniquement de sélectionner automatiquement le bon site lorsque vous utilisez plusieurs établissements.</key>
+	<string>Ela serve apenas para selecionar automaticamente o local correto quando você usa várias escolas.</string>
+	<key>Emploi du temps</key>
+	<string>Horário</string>
+	<key>Ex. Collège Jean-Moulin</key>
+	<string>Ex.: Colégio Pedro II</string>
+	<key>Fermer le plein écran</key>
+	<string>Fechar tela cheia</string>
+	<key>Format de l’heure</key>
+	<string>Formato de hora</string>
+	<key>Glisser à gauche pour supprimer un site.</key>
+	<string>Deslize para a esquerda para excluir um local.</string>
+	<key>Heure simulée</key>
+	<string>Hora simulada</string>
+	<key>Horaires HH:mm</key>
+	<string>Horários HH:mm</string>
+	<key>Horaires terminés</key>
+	<string>Sem mais sinais</string>
+	<key>Jour</key>
+	<string>Dia</string>
+	<key>La localisation est facultative et n’est jamais transmise. Lorsque les mises à jour Always-On à distance sont activées, seules les heures de sonnerie nécessaires et un identifiant technique temporaire sont transmis au service de mise à jour.</key>
+	<string>A localização é opcional e nunca é transmitida. Quando as atualizações remotas do Always-On estão ativadas, apenas os horários de sinal necessários e um identificador técnico temporário são enviados ao serviço de atualização.</string>
+	<key>La localisation est facultative. Elle sert uniquement à sélectionner automatiquement le site le plus proche et n'est ni conservée séparément ni transmise.</key>
+	<string>A localização é opcional. Ela serve apenas para selecionar automaticamente o local mais próximo e não é salva separadamente nem transmitida.</string>
+	<key>Langue de test</key>
+	<string>Idioma de teste</string>
+	<key>Latitude</key>
+	<string>Latitude</string>
+	<key>Les Live Activities sont désactivées dans les réglages iOS.</key>
+	<string>As Atividades ao Vivo estão desativadas nos Ajustes do iOS.</string>
+	<key>Les doublons seront supprimés automatiquement.</key>
+	<string>Os horários duplicados serão removidos automaticamente.</string>
+	<key>Les horaires du mardi au samedi seront remplacés par ceux définis pour le lundi.</key>
+	<string>Os horários de terça-feira a sábado serão substituídos pelos definidos para segunda-feira.</string>
+	<key>Les horaires seront triés automatiquement et normalisés au format HH:mm.</key>
+	<string>Os horários serão ordenados automaticamente e normalizados para o formato HH:mm.</string>
+	<key>Les modifications sont enregistrées automatiquement.</key>
+	<string>As alterações são salvas automaticamente.</string>
+	<key>Les modifications valides sont enregistrées automatiquement.</key>
+	<string>As alterações válidas são salvas automaticamente.</string>
+	<key>Les vibrations sont déclenchées uniquement lorsque Sonnerie Prof est active au premier plan. Aucun son n'est joué.</key>
+	<string>As vibrações são acionadas apenas quando o Sonnerie Prof está ativo em primeiro plano. Nenhum som é reproduzido.</string>
+	<key>Localisation (facultatif)</key>
+	<string>Localização (opcional)</string>
+	<key>Longitude</key>
+	<string>Longitude</string>
+	<key>L’heure simulée avance à vitesse réelle. Elle est utilisée par l’app, le widget et la Live Activity. Ce réglage existe uniquement dans les builds Debug et n’apparaît pas dans la version App Store.</key>
+	<string>A hora simulada avança em tempo real. Ela é usada pelo app, pelo widget e pela Atividade ao Vivo. Este ajuste existe apenas em builds de Debug e não aparece na versão da App Store.</string>
+	<key>Maximum de 4 sites atteint</key>
+	<string>Limite de 4 locais atingido</string>
+	<key>Mise à jour…</key>
+	<string>Atualizando…</string>
+	<key>Mode développeur</key>
+	<string>Modo desenvolvedor</string>
+	<key>Mode test actif</key>
+	<string>Modo de teste ativo</string>
+	<key>Modifiez le jour, les horaires ou le type de semaine avant d’enregistrer.</key>
+	<string>Altere o dia, os horários ou o tipo de semana antes de salvar.</string>
+	<key>Mon établissement</key>
+	<string>Minha escola</string>
+	<key>Même horaires du lundi au vendredi</key>
+	<string>Mesmos horários de segunda a sexta-feira</string>
+	<key>Même horaires le samedi</key>
+	<string>Mesmos horários aos sábados</string>
+	<key>Nom</key>
+	<string>Nome</string>
+	<key>Nom de l'établissement</key>
+	<string>Nome da escola</string>
+	<key>Nombre de vibrations</key>
+	<string>Número de vibrações</string>
+	<key>Nouveau site</key>
+	<string>Novo local</string>
+	<key>Pendant une suspension (vacances, fermeture, congé), aucune sonnerie n'est proposée avant la date de reprise.</key>
+	<string>Durante uma pausa (férias, fechamento ou licença), nenhum sinal é programado antes da data de retomada.</string>
+	<key>Planning</key>
+	<string>Horário</string>
+	<key>Position approximative</key>
+	<string>Localização aproximada</string>
+	<key>Position enregistrée</key>
+	<string>Localização salva</string>
+	<key>Position non configurée</key>
+	<string>Localização não configurada</string>
+	<key>Pour un suivi fiable sur toute la journée, ajoutez aussi le widget « Sonnerie Prof » à l’écran verrouillé. iOS limite une Live Activity active à environ 8 heures.</key>
+	<string>Para acompanhar o dia todo com confiabilidade, adicione também o widget “Sonnerie Prof” à Tela Bloqueada. O iOS limita uma Atividade ao Vivo ativa a cerca de 8 horas.</string>
+	<key>Prochaine sonnerie :</key>
+	<string>Próximo sinal:</string>
+	<key>Q1</key>
+	<string>Q1</string>
+	<key>Q2</key>
+	<string>Q2</string>
+	<key>Rayon (m)</key>
+	<string>Raio (m)</string>
+	<key>Reprendre le</key>
+	<string>Retomar em</string>
+	<key>Revenir à l’heure réelle</key>
+	<string>Voltar à hora real</string>
+	<key>Réglages</key>
+	<string>Ajustes</string>
+	<key>Saisissez les horaires jour par jour ou recopiez ceux du lundi sur le mardi, mercredi, jeudi, vendredi et samedi.</key>
+	<string>Insira os horários de cada dia ou copie os de segunda-feira para terça, quarta, quinta, sexta e sábado.</string>
+	<key>Site</key>
+	<string>Local</string>
+	<key>Site actuel</key>
+	<string>Local atual</string>
+	<key>Sites</key>
+	<string>Locais</string>
+	<key>Sonnerie Prof</key>
+	<string>Sonnerie Prof</string>
+	<key>Sonnerie Prof est conçue pour aider les enseignants à garder un œil sur le temps restant avant la prochaine sonnerie, directement depuis l’app ou l’écran verrouillé</key>
+	<string>O Sonnerie Prof foi criado para ajudar professores a acompanhar o tempo restante até o próximo sinal, diretamente no app ou na Tela Bloqueada.</string>
+	<key>Sonneries</key>
+	<string>Sinais</string>
+	<key>Sonneries du lundi</key>
+	<string>Sinais de segunda-feira</string>
+	<key>Supprimer</key>
+	<string>Excluir</string>
+	<key>Supprimer ce site ?</key>
+	<string>Excluir este local?</string>
+	<key>Suspendre temporairement</key>
+	<string>Pausar temporariamente</string>
+	<key>Temps restant</key>
+	<string>Tempo restante</string>
+	<key>Tester</key>
+	<string>Testar</string>
+	<key>Un horaire par ligne, au format HH:mm.</key>
+	<string>Um horário por linha, no formato HH:mm.</string>
+	<key>Un horaire par ligne. Les boutons ajoutent automatiquement une ligne à partir du dernier horaire saisi.</key>
+	<string>Um horário por linha. Os botões adicionam automaticamente uma linha a partir do último horário inserido.</string>
+	<key>Utiliser ma position</key>
+	<string>Usar minha localização</string>
+	<key>Utiliser ma position actuelle</key>
+	<string>Usar minha localização atual</string>
+	<key>Utiliser une heure simulée</key>
+	<string>Usar hora simulada</string>
+	<key>Version</key>
+	<string>Versão</string>
+	<key>Vibrations</key>
+	<string>Vibrações</string>
+	<key>Vibrer à la sonnerie</key>
+	<string>Vibrar à hora do sinal</string>
+	<key>common.not_available</key>
+	<string>—</string>
+	<key>day.fallback</key>
+	<string>Dia %d</string>
+	<key>editor.duplicate_count.many</key>
+	<string>%d duplicados serão removidos automaticamente ao salvar.</string>
+	<key>editor.duplicate_count.one</key>
+	<string>%d duplicado será removido automaticamente ao salvar.</string>
+	<key>editor.invalid_times</key>
+	<string>Horário(s) inválido(s): %@. Utilize HH:mm, por exemplo 08:10.</string>
+	<key>fullscreen.minutes_remaining</key>
+	<string>%d min</string>
+	<key>jusqu'à la sonnerie</key>
+	<string>até o sinal</string>
+	<key>language.cs</key>
+	<string>Čeština</string>
+	<key>language.da</key>
+	<string>Dansk</string>
+	<key>language.de</key>
+	<string>Deutsch</string>
+	<key>language.en</key>
+	<string>English</string>
+	<key>language.es</key>
+	<string>Español</string>
+	<key>language.fr</key>
+	<string>Français</string>
+	<key>language.it</key>
+	<string>Italiano</string>
+	<key>language.nl</key>
+	<string>Nederlands</string>
+	<key>language.pl</key>
+	<string>Polski</string>
+	<key>language.pt_BR</key>
+	<string>Português (Brasil)</string>
+	<key>language.pt_PT</key>
+	<string>Português (Portugal)</string>
+	<key>language.ro</key>
+	<string>Română</string>
+	<key>language.sv</key>
+	<string>Svenska</string>
+	<key>language.system</key>
+	<string>Sistema</string>
+	<key>live_activity.disabled</key>
+	<string>As Atividades ao Vivo estão desativadas para este app nos Ajustes do iOS.</string>
+	<key>live_activity.next_bell</key>
+	<string>Próximo sinal: %@</string>
+	<key>live_activity.no_upcoming</key>
+	<string>Não há um próximo sinal disponível para este local.</string>
+	<key>location.permission_denied</key>
+	<string>Permita o acesso à localização nos Ajustes para detectar o local automaticamente.</string>
+	<key>location.precise_unavailable</key>
+	<string>A localização precisa não está disponível. Você ainda pode escolher o local manualmente. (%@)</string>
+	<key>location.unknown_status</key>
+	<string>Status de autorização de localização desconhecido.</string>
+	<key>lock.active_next</key>
+	<string>Ativo · próximo sinal %@.</string>
+	<key>lock.active_until</key>
+	<string>Ativo até o próximo sinal às %@.</string>
+	<key>lock.add_site_first</key>
+	<string>Adicione um local primeiro.</string>
+	<key>lock.long_delay</key>
+	<string>A exibição na Tela Bloqueada está ativada. O próximo sinal ainda está distante; o iOS pode remover a Atividade ao Vivo antes disso. O widget da Tela Bloqueada continua recomendado.</string>
+	<key>lock.no_upcoming</key>
+	<string>Não há um próximo sinal disponível.</string>
+	<key>lockscreen.description</key>
+	<string>Mostrar o tempo restante na Tela Bloqueada e, quando disponível, no modo Sempre Ativo.</string>
+	<key>next_bell_at</key>
+	<string>Próximo sinal às %@</string>
+	<key>onboarding.invalid_times</key>
+	<string>Horário(s) inválido(s): %@.</string>
+	<key>quick_add_minutes</key>
+	<string>+%d min</string>
+	<key>schedule.suspended_until</key>
+	<string>Horário pausado até %@</string>
+	<key>seconds.short</key>
+	<string>%d s</string>
+	<key>settings.after_last_bell</key>
+	<string>Após o último sinal</string>
+	<key>settings.after_last_bell.hide_until_one_hour</key>
+	<string>Ocultar até 1 hora antes</string>
+	<key>settings.after_last_bell.show_next</key>
+	<string>Mostrar o próximo sinal</string>
+	<key>site.delete_message</key>
+	<string>O local “%@” e todos os seus horários de sinal serão excluídos permanentemente.</string>
+	<key>site.schedule_count.many</key>
+	<string>%d horários</string>
+	<key>site.schedule_count.one</key>
+	<string>%d horário</string>
+	<key>tip.body</key>
+	<string>Todos os recursos do Sonnerie Prof são gratuitos. Se o app ajuda você no dia a dia, você pode apoiar o desenvolvimento com uma gorjeta opcional.</string>
+	<key>tip.debug_show</key>
+	<string>Mostrar Sugestão de Gorjeta</string>
+	<key>tip.navigation_title</key>
+	<string>Apoie o Sonnerie Prof</string>
+	<key>tip.no_unlock</key>
+	<string>A gorjeta é totalmente opcional e não desbloqueia nenhum recurso.</string>
+	<key>tip.product.large</key>
+	<string>Muito obrigado</string>
+	<key>tip.product.medium</key>
+	<string>Um café</string>
+	<key>tip.product.small</key>
+	<string>Um pequeno agradecimento</string>
+	<key>tip.products_load_error</key>
+	<string>Não foi possível carregar as opções de gorjeta.</string>
+	<key>tip.products_unavailable</key>
+	<string>As gorjetas estão temporariamente indisponíveis.</string>
+	<key>tip.purchase_error</key>
+	<string>Não foi possível concluir o pagamento.</string>
+	<key>tip.purchase_pending</key>
+	<string>O pagamento aguarda autorização.</string>
+	<key>tip.support_about</key>
+	<string>O Sonnerie Prof é gratuito e todos os recursos estão disponíveis sem pagamento. Se quiser, você pode apoiar o desenvolvimento com uma gorjeta opcional.</string>
+	<key>tip.support_button</key>
+	<string>Apoiar o Sonnerie Prof</string>
+	<key>tip.support_section</key>
+	<string>Apoiar o App</string>
+	<key>tip.thank_you_message</key>
+	<string>Agradecemos por apoiar o desenvolvimento do Sonnerie Prof.</string>
+	<key>tip.thank_you_title</key>
+	<string>Muito obrigado!</string>
+	<key>tip.title</key>
+	<string>Que tal uma ajudinha?</string>
+	<key>tip.voluntary</key>
+	<string>Gorjeta Opcional</string>
+	<key>weekday.short.friday</key>
+	<string>S</string>
+	<key>weekday.short.monday</key>
+	<string>S</string>
+	<key>weekday.short.saturday</key>
+	<string>Sá</string>
+	<key>weekday.short.thursday</key>
+	<string>Q</string>
+	<key>weekday.short.tuesday</key>
+	<string>T</string>
+	<key>weekday.short.wednesday</key>
+	<string>Q</string>
+	<key>widget.inline_next</key>
+	<string>🔔 Próximo: %@</string>
+	<key>À propos</key>
+	<string>Sobre</string>
+	<key>Écran verrouillé</key>
+	<string>Tela Bloqueada</string>
+	<key>Écraser les horaires</key>
+	<string>Substituir horários</string>
+	<key>–</key>
+	<string>–</string>
+</dict>
+</plist>

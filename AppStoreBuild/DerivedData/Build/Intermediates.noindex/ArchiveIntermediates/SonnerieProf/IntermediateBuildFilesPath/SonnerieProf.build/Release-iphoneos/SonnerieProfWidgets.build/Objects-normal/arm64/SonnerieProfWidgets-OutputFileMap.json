@@ -1,0 +1,76 @@
+{
+  "" : {
+    "const-values" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets-primary.swiftconstvalues",
+    "dependencies" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets-primary.d",
+    "diagnostics" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets-primary.dia",
+    "emit-module-dependencies" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets-primary-emit-module.dia",
+    "pch" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgets-primary.swiftdeps"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/DerivedSources/GeneratedStringSymbols_InfoPlist.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/GeneratedStringSymbols_InfoPlist.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/GeneratedStringSymbols_InfoPlist.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/GeneratedStringSymbols_InfoPlist.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/DerivedSources/GeneratedStringSymbols_Localizable.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/GeneratedStringSymbols_Localizable.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/GeneratedStringSymbols_Localizable.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/GeneratedStringSymbols_Localizable.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/Shared/AppGroup.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/AppGroup.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/AppGroup.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/AppGroup.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/Shared/BellActivityAttributes.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/BellActivityAttributes.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/BellActivityAttributes.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/BellActivityAttributes.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/Shared/Models.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/Models.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/Models.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/Models.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/Shared/ScheduleEngine.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/ScheduleEngine.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/ScheduleEngine.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/ScheduleEngine.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/Shared/SiteRepository.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SiteRepository.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SiteRepository.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SiteRepository.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/Shared/TimetableEngine.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/TimetableEngine.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/TimetableEngine.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/TimetableEngine.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/Shared/TimetableModels.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/TimetableModels.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/TimetableModels.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/TimetableModels.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/Shared/TimetableRepository.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/TimetableRepository.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/TimetableRepository.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/TimetableRepository.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/SonnerieProfWidgets/NextBellLiveActivity.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/NextBellLiveActivity.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/NextBellLiveActivity.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/NextBellLiveActivity.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/SonnerieProfWidgets/NextBellWidget.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/NextBellWidget.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/NextBellWidget.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/NextBellWidget.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/SonnerieProfWidgets/SonnerieProfWidgetsBundle.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgetsBundle.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgetsBundle.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProfWidgets.build/Objects-normal/arm64/SonnerieProfWidgetsBundle.o"
+  }
+}

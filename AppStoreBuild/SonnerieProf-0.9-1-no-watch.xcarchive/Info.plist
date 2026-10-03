@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ApplicationProperties</key>
+	<dict>
+		<key>ApplicationPath</key>
+		<string>Applications/SonnerieProf.app</string>
+		<key>Architectures</key>
+		<array>
+			<string>arm64</string>
+		</array>
+		<key>CFBundleIdentifier</key>
+		<string>fr.jonathanlafarge.sonnerieprof</string>
+		<key>CFBundleShortVersionString</key>
+		<string>0.9</string>
+		<key>CFBundleVersion</key>
+		<string>1</string>
+		<key>SigningIdentity</key>
+		<string>Apple Development: jonathan.lafarge@gmail.com (65QSV5M463)</string>
+		<key>Team</key>
+		<string>SBATJA33N6</string>
+	</dict>
+	<key>ArchiveVersion</key>
+	<integer>2</integer>
+	<key>CreationDate</key>
+	<date>2026-10-02T13:40:19Z</date>
+	<key>Name</key>
+	<string>SonnerieProf</string>
+	<key>SchemeName</key>
+	<string>SonnerieProf</string>
+</dict>
+</plist>

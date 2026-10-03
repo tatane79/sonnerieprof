@@ -1,0 +1,12 @@
+/* French Info.plist localization */
+"CFBundleDisplayName" = "Sonnerie Prof";
+
+/* Bundle name */
+"CFBundleName" = "SonnerieProf";
+
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Votre position sert uniquement à sélectionner automatiquement le site d'enseignement le plus proche. Elle n'est pas transmise.";
+
+/* (No Comment) */
+"SiteDetection" = "Une position précise aide Sonnerie Prof à choisir le site le plus proche lorsque plusieurs établissements sont configurés. La position n'est pas transmise.";
+

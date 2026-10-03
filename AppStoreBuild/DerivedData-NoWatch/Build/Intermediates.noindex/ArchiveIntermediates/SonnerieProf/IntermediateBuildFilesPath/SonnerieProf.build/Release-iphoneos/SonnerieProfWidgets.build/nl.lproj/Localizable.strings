@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%@ – %@</key>
+	<string>%1$@ – %2$@</string>
+	<key>+15 min</key>
+	<string>+15 min</string>
+	<key>+55 min</key>
+	<string>+55 min</string>
+	<key>1 min avant la prochaine sonnerie</key>
+	<string>1 min voor de volgende bel</string>
+	<key>12 h (AM/PM)</key>
+	<string>12 h (AM/PM)</string>
+	<key>24 h</key>
+	<string>24 h</string>
+	<key>5 min avant la prochaine sonnerie</key>
+	<string>5 min voor de volgende bel</string>
+	<key>Affiche le temps restant avant la prochaine sonnerie.</key>
+	<string>Toont de resterende tijd tot de volgende schoolbel.</string>
+	<key>Afficher en plein écran</key>
+	<string>Toon op volledig scherm</string>
+	<key>Ajouter un site</key>
+	<string>Locatie toevoegen</string>
+	<key>Ajoutez les horaires de ce site dans Réglages.</key>
+	<string>Voeg de beltijden van deze locatie toe in Instellingen.</string>
+	<key>Ajoutez vos séances dans l’emploi du temps.</key>
+	<string>Voeg je lessen toe aan het lesrooster.</string>
+	<key>Ajoutez votre établissement et ses horaires de sonnerie.</key>
+	<string>Voeg je school en de bijbehorende beltijden toe.</string>
+	<key>Annuler</key>
+	<string>Annuleer</string>
+	<key>Appliquer le lundi à toute la semaine</key>
+	<string>Maandag op de hele week toepassen</string>
+	<key>Appliquer les horaires du lundi ?</key>
+	<string>Tijden van maandag toepassen?</string>
+	<key>Aucun compte requis</key>
+	<string>Geen account vereist</string>
+	<key>Aucun cours en ce moment</key>
+	<string>Geen les op dit moment</string>
+	<key>Aucun prochain cours programmé</key>
+	<string>Geen volgende les gepland</string>
+	<key>Aucun site configuré</key>
+	<string>Geen locatie ingesteld</string>
+	<key>Aucune publicité ni suivi</key>
+	<string>Geen advertenties of tracking</string>
+	<key>Aucune sonnerie</key>
+	<string>Geen bel</string>
+	<key>Aucune sonnerie configurée</key>
+	<string>Geen beltijden ingesteld</string>
+	<key>Auteur</key>
+	<string>Auteur</string>
+	<key>Autre horaire…</key>
+	<string>Andere tijd…</string>
+	<key>Bienvenue dans Sonnerie Prof</key>
+	<string>Welkom bij Sonnerie Prof</string>
+	<key>Compilation</key>
+	<string>Build</string>
+	<key>Confidentialité</key>
+	<string>Privacy</string>
+	<key>Configurer plus tard</key>
+	<string>Later instellen</string>
+	<key>Configurez un premier établissement. Aucun compte n'est requis et vos données restent sur l'iPhone.</key>
+	<string>Stel je eerste school in. Er is geen account nodig en je gegevens blijven op je iPhone.</string>
+	<key>Conflit d’emploi du temps</key>
+	<string>Lesroosterconflict</string>
+	<key>Conserve le site, le jour et le type de semaine, puis prépare le créneau suivant.</key>
+	<string>Behoudt de locatie, de dag en het weektype en maakt vervolgens het volgende tijdvak klaar.</string>
+	<key>Créer mon site</key>
+	<string>Mijn locatie aanmaken</string>
+	<key>Date et heure simulées</key>
+	<string>Gesimuleerde datum en tijd</string>
+	<key>Données enregistrées localement</key>
+	<string>Gegevens lokaal opgeslagen</string>
+	<key>Détecter automatiquement</key>
+	<string>Automatisch detecteren</string>
+	<key>Elle permet uniquement de sélectionner automatiquement le bon site lorsque vous utilisez plusieurs établissements.</key>
+	<string>Dit wordt alleen gebruikt om automatisch de juiste locatie te selecteren wanneer je meerdere scholen gebruikt.</string>
+	<key>Emploi du temps</key>
+	<string>Lesrooster</string>
+	<key>Ex. Collège Jean-Moulin</key>
+	<string>Bijv. Stedelijk Lyceum</string>
+	<key>Fermer le plein écran</key>
+	<string>Volledig scherm sluiten</string>
+	<key>Format de l’heure</key>
+	<string>Tijdnotatie</string>
+	<key>Glisser à gauche pour supprimer un site.</key>
+	<string>Veeg naar links om een locatie te verwijderen.</string>
+	<key>Heure simulée</key>
+	<string>Gesimuleerde tijd</string>
+	<key>Horaires HH:mm</key>
+	<string>Tijden HH:mm</string>
+	<key>Horaires terminés</key>
+	<string>Geen verdere beltijden</string>
+	<key>Jour</key>
+	<string>Dag</string>
+	<key>La localisation est facultative et n’est jamais transmise. Lorsque les mises à jour Always-On à distance sont activées, seules les heures de sonnerie nécessaires et un identifiant technique temporaire sont transmis au service de mise à jour.</key>
+	<string>Locatie is optioneel en wordt nooit verzonden. Wanneer externe Always-On-updates zijn ingeschakeld, worden alleen de benodigde beltijden en een tijdelijke technische identificatie naar de updateservice verzonden.</string>
+	<key>La localisation est facultative. Elle sert uniquement à sélectionner automatiquement le site le plus proche et n'est ni conservée séparément ni transmise.</key>
+	<string>Locatie is optioneel. Deze wordt alleen gebruikt om automatisch de dichtstbijzijnde locatie te selecteren en wordt niet apart opgeslagen of verzonden.</string>
+	<key>Langue de test</key>
+	<string>Testtaal</string>
+	<key>Latitude</key>
+	<string>Breedtegraad</string>
+	<key>Les Live Activities sont désactivées dans les réglages iOS.</key>
+	<string>Live Activities zijn uitgeschakeld in de iOS-instellingen.</string>
+	<key>Les doublons seront supprimés automatiquement.</key>
+	<string>Dubbele tijden worden automatisch verwijderd.</string>
+	<key>Les horaires du mardi au samedi seront remplacés par ceux définis pour le lundi.</key>
+	<string>De tijden van dinsdag tot en met zaterdag worden vervangen door die van maandag.</string>
+	<key>Les horaires seront triés automatiquement et normalisés au format HH:mm.</key>
+	<string>Tijden worden automatisch gesorteerd en genormaliseerd naar de notatie HH:mm.</string>
+	<key>Les modifications sont enregistrées automatiquement.</key>
+	<string>Wijzigingen worden automatisch opgeslagen.</string>
+	<key>Les modifications valides sont enregistrées automatiquement.</key>
+	<string>Geldige wijzigingen worden automatisch opgeslagen.</string>
+	<key>Les vibrations sont déclenchées uniquement lorsque Sonnerie Prof est active au premier plan. Aucun son n'est joué.</key>
+	<string>Trillingen worden alleen geactiveerd wanneer Sonnerie Prof actief op de voorgrond staat. Er wordt geen geluid afgespeeld.</string>
+	<key>Localisation (facultatif)</key>
+	<string>Locatie (optioneel)</string>
+	<key>Longitude</key>
+	<string>Lengtegraad</string>
+	<key>L’heure simulée avance à vitesse réelle. Elle est utilisée par l’app, le widget et la Live Activity. Ce réglage existe uniquement dans les builds Debug et n’apparaît pas dans la version App Store.</key>
+	<string>De gesimuleerde tijd loopt op normale snelheid door. Deze wordt gebruikt door de app, widget en Live Activity. Deze instelling bestaat alleen in Debug-builds en verschijnt niet in de App Store-versie.</string>
+	<key>Maximum de 4 sites atteint</key>
+	<string>Maximum van 4 locaties bereikt</string>
+	<key>Mise à jour…</key>
+	<string>Bijwerken…</string>
+	<key>Mode développeur</key>
+	<string>Ontwikkelaarsmodus</string>
+	<key>Mode test actif</key>
+	<string>Testmodus actief</string>
+	<key>Modifiez le jour, les horaires ou le type de semaine avant d’enregistrer.</key>
+	<string>Wijzig de dag, tijden of het weektype voordat je opslaat.</string>
+	<key>Mon établissement</key>
+	<string>Mijn school</string>
+	<key>Même horaires du lundi au vendredi</key>
+	<string>Dezelfde tijden van maandag tot en met vrijdag</string>
+	<key>Même horaires le samedi</key>
+	<string>Dezelfde tijden op zaterdag</string>
+	<key>Nom</key>
+	<string>Naam</string>
+	<key>Nom de l'établissement</key>
+	<string>Naam van de school</string>
+	<key>Nombre de vibrations</key>
+	<string>Aantal trillingen</string>
+	<key>Nouveau site</key>
+	<string>Nieuwe locatie</string>
+	<key>Pendant une suspension (vacances, fermeture, congé), aucune sonnerie n'est proposée avant la date de reprise.</key>
+	<string>Tijdens een pauze (vakantie, sluiting of verlof) worden geen bellen gepland vóór de hervattingsdatum.</string>
+	<key>Planning</key>
+	<string>Rooster</string>
+	<key>Position approximative</key>
+	<string>Geschatte locatie</string>
+	<key>Position enregistrée</key>
+	<string>Locatie opgeslagen</string>
+	<key>Position non configurée</key>
+	<string>Locatie niet ingesteld</string>
+	<key>Pour un suivi fiable sur toute la journée, ajoutez aussi le widget « Sonnerie Prof » à l’écran verrouillé. iOS limite une Live Activity active à environ 8 heures.</key>
+	<string>Voeg voor betrouwbare weergave gedurende de hele dag ook de widget ‘Sonnerie Prof’ toe aan het toegangsscherm. iOS beperkt een actieve Live Activity tot ongeveer 8 uur.</string>
+	<key>Prochaine sonnerie :</key>
+	<string>Volgende bel:</string>
+	<key>Q1</key>
+	<string>Q1</string>
+	<key>Q2</key>
+	<string>Q2</string>
+	<key>Rayon (m)</key>
+	<string>Straal (m)</string>
+	<key>Reprendre le</key>
+	<string>Hervatten op</string>
+	<key>Revenir à l’heure réelle</key>
+	<string>Terug naar de werkelijke tijd</string>
+	<key>Réglages</key>
+	<string>Instellingen</string>
+	<key>Saisissez les horaires jour par jour ou recopiez ceux du lundi sur le mardi, mercredi, jeudi, vendredi et samedi.</key>
+	<string>Voer de tijden per dag in of kopieer de tijden van maandag naar dinsdag, woensdag, donderdag, vrijdag en zaterdag.</string>
+	<key>Site</key>
+	<string>Locatie</string>
+	<key>Site actuel</key>
+	<string>Huidige locatie</string>
+	<key>Sites</key>
+	<string>Locaties</string>
+	<key>Sonnerie Prof</key>
+	<string>Sonnerie Prof</string>
+	<key>Sonnerie Prof est conçue pour aider les enseignants à garder un œil sur le temps restant avant la prochaine sonnerie, directement depuis l’app ou l’écran verrouillé</key>
+	<string>Sonnerie Prof helpt leerkrachten de resterende tijd tot de volgende bel in de gaten te houden, rechtstreeks vanuit de app of op het toegangsscherm.</string>
+	<key>Sonneries</key>
+	<string>Beltijden</string>
+	<key>Sonneries du lundi</key>
+	<string>Beltijden op maandag</string>
+	<key>Supprimer</key>
+	<string>Verwijder</string>
+	<key>Supprimer ce site ?</key>
+	<string>Deze locatie verwijderen?</string>
+	<key>Suspendre temporairement</key>
+	<string>Tijdelijk pauzeren</string>
+	<key>Temps restant</key>
+	<string>Resterende tijd</string>
+	<key>Tester</key>
+	<string>Test</string>
+	<key>Un horaire par ligne, au format HH:mm.</key>
+	<string>Eén tijd per regel, in de notatie HH:mm.</string>
+	<key>Un horaire par ligne. Les boutons ajoutent automatiquement une ligne à partir du dernier horaire saisi.</key>
+	<string>Eén tijd per regel. De knoppen voegen automatisch een regel toe op basis van de laatst ingevoerde tijd.</string>
+	<key>Utiliser ma position</key>
+	<string>Mijn locatie gebruiken</string>
+	<key>Utiliser ma position actuelle</key>
+	<string>Mijn huidige locatie gebruiken</string>
+	<key>Utiliser une heure simulée</key>
+	<string>Gesimuleerde tijd gebruiken</string>
+	<key>Version</key>
+	<string>Versie</string>
+	<key>Vibrations</key>
+	<string>Trillingen</string>
+	<key>Vibrer à la sonnerie</key>
+	<string>Trillen bij de bel</string>
+	<key>common.not_available</key>
+	<string>—</string>
+	<key>day.fallback</key>
+	<string>Dag %d</string>
+	<key>editor.duplicate_count.many</key>
+	<string>%d duplicaten worden bij het bewaren automatisch verwijderd.</string>
+	<key>editor.duplicate_count.one</key>
+	<string>%d duplicaat wordt bij het bewaren automatisch verwijderd.</string>
+	<key>editor.invalid_times</key>
+	<string>Ongeldige tijd(en): %@. Gebruik HH:mm, bijvoorbeeld 08:10.</string>
+	<key>fullscreen.minutes_remaining</key>
+	<string>%d min</string>
+	<key>jusqu'à la sonnerie</key>
+	<string>tot de bel</string>
+	<key>language.cs</key>
+	<string>Čeština</string>
+	<key>language.da</key>
+	<string>Dansk</string>
+	<key>language.de</key>
+	<string>Deutsch</string>
+	<key>language.en</key>
+	<string>English</string>
+	<key>language.es</key>
+	<string>Español</string>
+	<key>language.fr</key>
+	<string>Français</string>
+	<key>language.it</key>
+	<string>Italiano</string>
+	<key>language.nl</key>
+	<string>Nederlands</string>
+	<key>language.pl</key>
+	<string>Polski</string>
+	<key>language.pt_BR</key>
+	<string>Português (Brasil)</string>
+	<key>language.pt_PT</key>
+	<string>Português (Portugal)</string>
+	<key>language.ro</key>
+	<string>Română</string>
+	<key>language.sv</key>
+	<string>Svenska</string>
+	<key>language.system</key>
+	<string>Systeem</string>
+	<key>live_activity.disabled</key>
+	<string>Live Activities zijn voor deze app uitgeschakeld in de iOS-instellingen.</string>
+	<key>live_activity.next_bell</key>
+	<string>Volgende bel: %@</string>
+	<key>live_activity.no_upcoming</key>
+	<string>Er is geen volgende bel beschikbaar voor deze locatie.</string>
+	<key>location.permission_denied</key>
+	<string>Sta locatietoegang toe in Instellingen om de locatie automatisch te detecteren.</string>
+	<key>location.precise_unavailable</key>
+	<string>Nauwkeurige locatie is niet beschikbaar. Je kunt de locatie nog steeds handmatig kiezen. (%@)</string>
+	<key>location.unknown_status</key>
+	<string>Onbekende status voor locatietoestemming.</string>
+	<key>lock.active_next</key>
+	<string>Actief · volgende bel %@.</string>
+	<key>lock.active_until</key>
+	<string>Actief tot de volgende bel om %@.</string>
+	<key>lock.add_site_first</key>
+	<string>Voeg eerst een locatie toe.</string>
+	<key>lock.long_delay</key>
+	<string>Weergave op het toegangsscherm ingeschakeld. De volgende bel is nog ver weg; iOS kan de Live Activity eerder verwijderen. De widget op het toegangsscherm blijft aanbevolen.</string>
+	<key>lock.no_upcoming</key>
+	<string>Er is geen volgende bel beschikbaar.</string>
+	<key>lockscreen.description</key>
+	<string>Toon de resterende tijd op het toegangsscherm en, indien beschikbaar, in de Always-On-modus.</string>
+	<key>next_bell_at</key>
+	<string>Volgende bel om %@</string>
+	<key>onboarding.invalid_times</key>
+	<string>Ongeldige tijd(en): %@.</string>
+	<key>quick_add_minutes</key>
+	<string>+%d min</string>
+	<key>schedule.suspended_until</key>
+	<string>Rooster gepauzeerd tot %@</string>
+	<key>seconds.short</key>
+	<string>%d s</string>
+	<key>settings.after_last_bell</key>
+	<string>Na de laatste bel</string>
+	<key>settings.after_last_bell.hide_until_one_hour</key>
+	<string>Verbergen tot 1 uur ervoor</string>
+	<key>settings.after_last_bell.show_next</key>
+	<string>Volgende bel tonen</string>
+	<key>site.delete_message</key>
+	<string>De locatie ‘%@’ en alle bijbehorende beltijden worden permanent verwijderd.</string>
+	<key>site.schedule_count.many</key>
+	<string>%d tijden</string>
+	<key>site.schedule_count.one</key>
+	<string>%d tijd</string>
+	<key>tip.body</key>
+	<string>Alle functies van Sonnerie Prof zijn gratis. Als de app je dagelijks helpt, kun je de ontwikkeling steunen met een vrijwillige fooi.</string>
+	<key>weekday.short.friday</key>
+	<string>Vr</string>
+	<key>weekday.short.monday</key>
+	<string>Ma</string>
+	<key>weekday.short.saturday</key>
+	<string>Za</string>
+	<key>weekday.short.thursday</key>
+	<string>Do</string>
+	<key>weekday.short.tuesday</key>
+	<string>Di</string>
+	<key>weekday.short.wednesday</key>
+	<string>Wo</string>
+	<key>widget.inline_next</key>
+	<string>🔔 Volgende: %@</string>
+	<key>À propos</key>
+	<string>Info</string>
+	<key>Écran verrouillé</key>
+	<string>Toegangsscherm</string>
+	<key>Écraser les horaires</key>
+	<string>Tijden overschrijven</string>
+	<key>–</key>
+	<string>–</string>
+</dict>
+</plist>

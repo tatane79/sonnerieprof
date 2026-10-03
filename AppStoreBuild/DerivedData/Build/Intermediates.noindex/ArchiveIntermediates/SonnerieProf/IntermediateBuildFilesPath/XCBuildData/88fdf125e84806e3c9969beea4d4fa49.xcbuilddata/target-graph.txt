@@ -1,0 +1,8 @@
+Target dependency graph (4 targets)
+Target 'SonnerieProf' in project 'SonnerieProf'
+➜ Explicit dependency on target 'SonnerieProfWidgets' in project 'SonnerieProf'
+➜ Explicit dependency on target 'SonnerieProfWatch' in project 'SonnerieProf'
+Target 'SonnerieProfWatch' in project 'SonnerieProf'
+➜ Explicit dependency on target 'SonnerieProfWatch Watch App' in project 'SonnerieProf'
+Target 'SonnerieProfWatch Watch App' in project 'SonnerieProf' (no dependencies)
+Target 'SonnerieProfWidgets' in project 'SonnerieProf' (no dependencies)

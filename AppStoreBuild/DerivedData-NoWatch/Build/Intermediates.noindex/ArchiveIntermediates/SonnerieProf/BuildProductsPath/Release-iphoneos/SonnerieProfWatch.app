@@ -1,0 +1,1 @@
+../../IntermediateBuildFilesPath/UninstalledProducts/iphoneos/SonnerieProfWatch.app

@@ -1,0 +1,1135 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 70;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		000000000000000000000015 /* SonnerieProfApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000001 /* SonnerieProfApp.swift */; };
+		000000000000000000000016 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000002 /* ContentView.swift */; };
+		000000000000000000000017 /* SiteStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000005 /* SiteStore.swift */; };
+		000000000000000000000018 /* LocationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000006 /* LocationService.swift */; };
+		000000000000000000000019 /* LiveActivityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000007 /* LiveActivityManager.swift */; };
+		00000000000000000000001A /* SiteEditorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000008 /* SiteEditorView.swift */; };
+		00000000000000000000001B /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000009 /* AppGroup.swift */; };
+		00000000000000000000001C /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000A /* Models.swift */; };
+		00000000000000000000001D /* ScheduleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000B /* ScheduleEngine.swift */; };
+		00000000000000000000001E /* SiteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000C /* SiteRepository.swift */; };
+		00000000000000000000001F /* BellActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000D /* BellActivityAttributes.swift */; };
+		000000000000000000000020 /* SonnerieProfWidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000E /* SonnerieProfWidgetsBundle.swift */; };
+		000000000000000000000021 /* NextBellWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000F /* NextBellWidget.swift */; };
+		000000000000000000000022 /* NextBellLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000010 /* NextBellLiveActivity.swift */; };
+		000000000000000000000023 /* AppGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 000000000000000000000009 /* AppGroup.swift */; };
+		000000000000000000000024 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000A /* Models.swift */; };
+		000000000000000000000025 /* ScheduleEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000B /* ScheduleEngine.swift */; };
+		000000000000000000000026 /* SiteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000C /* SiteRepository.swift */; };
+		000000000000000000000027 /* BellActivityAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00000000000000000000000D /* BellActivityAttributes.swift */; };
+		000000000000000000000028 /* SonnerieProfWidgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 000000000000000000000014 /* SonnerieProfWidgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A00000000000000000000005 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000001 /* PrivacyInfo.xcprivacy */; };
+		A00000000000000000000006 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000002 /* PrivacyInfo.xcprivacy */; };
+		A00000000000000000000007 /* ScheduleEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A00000000000000000000003 /* ScheduleEngineTests.swift */; };
+		A806D4DD30624A8900FFA1B3 /* TimetableEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4DC30624A8900FFA1B3 /* TimetableEngine.swift */; };
+		A806D4DE30624A8900FFA1B3 /* TimetableEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4DC30624A8900FFA1B3 /* TimetableEngine.swift */; };
+		A806D4E030624A8900FFA1B3 /* TimetableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4DF30624A8900FFA1B3 /* TimetableModels.swift */; };
+		A806D4E130624A8900FFA1B3 /* TimetableModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4DF30624A8900FFA1B3 /* TimetableModels.swift */; };
+		A806D4E330624A8900FFA1B3 /* TimetableStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4E230624A8900FFA1B3 /* TimetableStore.swift */; };
+		A806D4E530624A8900FFA1B3 /* TimetableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4E430624A8900FFA1B3 /* TimetableRepository.swift */; };
+		A806D4E630624A8900FFA1B3 /* TimetableRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4E430624A8900FFA1B3 /* TimetableRepository.swift */; };
+		A806D4E830624AEB00FFA1B3 /* TimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4E730624AEB00FFA1B3 /* TimetableView.swift */; };
+		A806D4EA30624B4E00FFA1B3 /* TimetableEngineTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4E930624B4E00FFA1B3 /* TimetableEngineTests.swift */; };
+		A806D4EC30639BD800FFA1B3 /* CourseCountdownViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4EB30639BD800FFA1B3 /* CourseCountdownViews.swift */; };
+		A806D4EE3063E62B00FFA1B3 /* InfoPlist.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = A806D4ED3063E62B00FFA1B3 /* InfoPlist.xcstrings */; };
+		A806D4F03064E94E00FFA1B3 /* PurchaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4EF3064E94E00FFA1B3 /* PurchaseStore.swift */; };
+		A806D4F23064E94E00FFA1B3 /* ProUpgradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4F13064E94E00FFA1B3 /* ProUpgradeView.swift */; };
+		A806D4F43064EB8D00FFA1B3 /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = A806D4F33064EB8D00FFA1B3 /* Products.storekit */; };
+		A8439992306FD03D00251EB7 /* SonnerieProfWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A8439991306FD03D00251EB7 /* SonnerieProfWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		A843999E306FD03E00251EB7 /* SonnerieProfWatch.app in Resources */ = {isa = PBXBuildFile; fileRef = A843998C306FD03D00251EB7 /* SonnerieProfWatch.app */; };
+		A84399AE3070587900251EB7 /* CloudTransferModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84399AD3070587900251EB7 /* CloudTransferModels.swift */; };
+		A84399AF3070587900251EB7 /* CloudTransferModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84399AD3070587900251EB7 /* CloudTransferModels.swift */; };
+		A84399B13070587900251EB7 /* CloudDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84399B03070587900251EB7 /* CloudDataService.swift */; };
+		A84399B33070587900251EB7 /* CloudTransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84399B23070587900251EB7 /* CloudTransferView.swift */; };
+		A84399B53070589500251EB7 /* CloudTransferModelsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84399B43070589500251EB7 /* CloudTransferModelsTests.swift */; };
+		A84399B73070E24C00251EB7 /* BuiltInSitePresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84399B63070E24C00251EB7 /* BuiltInSitePresets.swift */; };
+		A84399B83070E24C00251EB7 /* BuiltInSitePresets.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84399B63070E24C00251EB7 /* BuiltInSitePresets.swift */; };
+		A8A1A7A4305F178200A6EC03 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A8A1A7A3305F178200A6EC03 /* Assets.xcassets */; };
+		B10000000000000000000002 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* Localizable.xcstrings */; };
+		B10000000000000000000003 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = B10000000000000000000001 /* Localizable.xcstrings */; };
+		B20000000000000000000004 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B20000000000000000000003 /* InfoPlist.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		00000000000000000000003A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000000000038;
+			remoteInfo = SonnerieProfWidgets;
+		};
+		A0000000000000000000000D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 000000000000000000000037;
+			remoteInfo = SonnerieProf;
+		};
+		A8439993306FD03D00251EB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A8439990306FD03D00251EB7;
+			remoteInfo = "SonnerieProfWatch Watch App";
+		};
+		A843999C306FD03E00251EB7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 000000000000000000000039 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A843998B306FD03D00251EB7;
+			remoteInfo = SonnerieProfWatch;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		000000000000000000000033 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				000000000000000000000028 /* SonnerieProfWidgets.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A84399A2306FD03E00251EB7 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				A8439992306FD03D00251EB7 /* SonnerieProfWatch Watch App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		000000000000000000000001 /* SonnerieProfApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonnerieProfApp.swift; sourceTree = "<group>"; };
+		000000000000000000000002 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		000000000000000000000003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000004 /* SonnerieProf.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SonnerieProf.entitlements; sourceTree = "<group>"; };
+		000000000000000000000005 /* SiteStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteStore.swift; sourceTree = "<group>"; };
+		000000000000000000000006 /* LocationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationService.swift; sourceTree = "<group>"; };
+		000000000000000000000007 /* LiveActivityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveActivityManager.swift; sourceTree = "<group>"; };
+		000000000000000000000008 /* SiteEditorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteEditorView.swift; sourceTree = "<group>"; };
+		000000000000000000000009 /* AppGroup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppGroup.swift; sourceTree = "<group>"; };
+		00000000000000000000000A /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		00000000000000000000000B /* ScheduleEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEngine.swift; sourceTree = "<group>"; };
+		00000000000000000000000C /* SiteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SiteRepository.swift; sourceTree = "<group>"; };
+		00000000000000000000000D /* BellActivityAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BellActivityAttributes.swift; sourceTree = "<group>"; };
+		00000000000000000000000E /* SonnerieProfWidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SonnerieProfWidgetsBundle.swift; sourceTree = "<group>"; };
+		00000000000000000000000F /* NextBellWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBellWidget.swift; sourceTree = "<group>"; };
+		000000000000000000000010 /* NextBellLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NextBellLiveActivity.swift; sourceTree = "<group>"; };
+		000000000000000000000011 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		000000000000000000000012 /* SonnerieProfWidgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = SonnerieProfWidgets.entitlements; sourceTree = "<group>"; };
+		000000000000000000000013 /* SonnerieProf.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonnerieProf.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		000000000000000000000014 /* SonnerieProfWidgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = SonnerieProfWidgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		A00000000000000000000001 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A00000000000000000000002 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		A00000000000000000000003 /* ScheduleEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScheduleEngineTests.swift; sourceTree = "<group>"; };
+		A00000000000000000000004 /* SonnerieProfTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SonnerieProfTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		A806D4DC30624A8900FFA1B3 /* TimetableEngine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableEngine.swift; sourceTree = "<group>"; };
+		A806D4DF30624A8900FFA1B3 /* TimetableModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableModels.swift; sourceTree = "<group>"; };
+		A806D4E230624A8900FFA1B3 /* TimetableStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableStore.swift; sourceTree = "<group>"; };
+		A806D4E430624A8900FFA1B3 /* TimetableRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableRepository.swift; sourceTree = "<group>"; };
+		A806D4E730624AEB00FFA1B3 /* TimetableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableView.swift; sourceTree = "<group>"; };
+		A806D4E930624B4E00FFA1B3 /* TimetableEngineTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimetableEngineTests.swift; sourceTree = "<group>"; };
+		A806D4EB30639BD800FFA1B3 /* CourseCountdownViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseCountdownViews.swift; sourceTree = "<group>"; };
+		A806D4ED3063E62B00FFA1B3 /* InfoPlist.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = InfoPlist.xcstrings; sourceTree = "<group>"; };
+		A806D4EF3064E94E00FFA1B3 /* PurchaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseStore.swift; sourceTree = "<group>"; };
+		A806D4F13064E94E00FFA1B3 /* ProUpgradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProUpgradeView.swift; sourceTree = "<group>"; };
+		A806D4F33064EB8D00FFA1B3 /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
+		A843998C306FD03D00251EB7 /* SonnerieProfWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonnerieProfWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A8439991306FD03D00251EB7 /* SonnerieProfWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SonnerieProfWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A84399A8306FEA2A00251EB7 /* SonnerieProfWatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SonnerieProfWatch-Info.plist"; sourceTree = "<group>"; };
+		A84399AD3070587900251EB7 /* CloudTransferModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudTransferModels.swift; sourceTree = "<group>"; };
+		A84399B03070587900251EB7 /* CloudDataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudDataService.swift; sourceTree = "<group>"; };
+		A84399B23070587900251EB7 /* CloudTransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudTransferView.swift; sourceTree = "<group>"; };
+		A84399B43070589500251EB7 /* CloudTransferModelsTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CloudTransferModelsTests.swift; sourceTree = "<group>"; };
+		A84399B63070E24C00251EB7 /* BuiltInSitePresets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuiltInSitePresets.swift; sourceTree = "<group>"; };
+		A8A1A7A3305F178200A6EC03 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B10000000000000000000001 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		B20000000000000000000001 /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20000000000000000000002 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20000000000000000000010 /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20000000000000000000011 /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20000000000000000000012 /* it */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = it; path = it.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20000000000000000000013 /* pt-PT */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-PT"; path = "pt-PT.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		B20000000000000000000014 /* nl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = nl; path = nl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20000000000000000000015 /* pl */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pl; path = pl.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20000000000000000000016 /* ro */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ro; path = ro.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20000000000000000000017 /* cs */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = cs; path = cs.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20000000000000000000018 /* sv */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = sv; path = sv.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20000000000000000000019 /* da */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = da; path = da.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B20000000000000000000020 /* pt-BR */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "pt-BR"; path = "pt-BR.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		A8439995306FD03D00251EB7 /* SonnerieProfWatch Watch App */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = "SonnerieProfWatch Watch App"; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		000000000000000000000031 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000035 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0000000000000000000000A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A843998E306FD03D00251EB7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		000000000000000000000029 = {
+			isa = PBXGroup;
+			children = (
+				A84399A8306FEA2A00251EB7 /* SonnerieProfWatch-Info.plist */,
+				00000000000000000000002A /* SonnerieProf */,
+				00000000000000000000002D /* Shared */,
+				00000000000000000000002E /* SonnerieProfWidgets */,
+				A00000000000000000000008 /* SonnerieProfTests */,
+				A8439995306FD03D00251EB7 /* SonnerieProfWatch Watch App */,
+				00000000000000000000002F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00000000000000000000002A /* SonnerieProf */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000001 /* SonnerieProfApp.swift */,
+				000000000000000000000002 /* ContentView.swift */,
+				00000000000000000000002B /* Services */,
+				00000000000000000000002C /* Views */,
+				000000000000000000000003 /* Info.plist */,
+				000000000000000000000004 /* SonnerieProf.entitlements */,
+				A8A1A7A3305F178200A6EC03 /* Assets.xcassets */,
+				A00000000000000000000001 /* PrivacyInfo.xcprivacy */,
+				B20000000000000000000003 /* InfoPlist.strings */,
+				A806D4F33064EB8D00FFA1B3 /* Products.storekit */,
+			);
+			path = SonnerieProf;
+			sourceTree = "<group>";
+		};
+		00000000000000000000002B /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000005 /* SiteStore.swift */,
+				000000000000000000000006 /* LocationService.swift */,
+				000000000000000000000007 /* LiveActivityManager.swift */,
+				A806D4E230624A8900FFA1B3 /* TimetableStore.swift */,
+				A806D4EF3064E94E00FFA1B3 /* PurchaseStore.swift */,
+				A84399B03070587900251EB7 /* CloudDataService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		00000000000000000000002C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000008 /* SiteEditorView.swift */,
+				A806D4E730624AEB00FFA1B3 /* TimetableView.swift */,
+				A806D4EB30639BD800FFA1B3 /* CourseCountdownViews.swift */,
+				A806D4F13064E94E00FFA1B3 /* ProUpgradeView.swift */,
+				A84399B23070587900251EB7 /* CloudTransferView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		00000000000000000000002D /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000009 /* AppGroup.swift */,
+				00000000000000000000000A /* Models.swift */,
+				00000000000000000000000B /* ScheduleEngine.swift */,
+				00000000000000000000000C /* SiteRepository.swift */,
+				00000000000000000000000D /* BellActivityAttributes.swift */,
+				B10000000000000000000001 /* Localizable.xcstrings */,
+				A806D4ED3063E62B00FFA1B3 /* InfoPlist.xcstrings */,
+				A806D4DC30624A8900FFA1B3 /* TimetableEngine.swift */,
+				A806D4DF30624A8900FFA1B3 /* TimetableModels.swift */,
+				A806D4E430624A8900FFA1B3 /* TimetableRepository.swift */,
+				A84399AD3070587900251EB7 /* CloudTransferModels.swift */,
+				A84399B63070E24C00251EB7 /* BuiltInSitePresets.swift */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		00000000000000000000002E /* SonnerieProfWidgets */ = {
+			isa = PBXGroup;
+			children = (
+				00000000000000000000000E /* SonnerieProfWidgetsBundle.swift */,
+				00000000000000000000000F /* NextBellWidget.swift */,
+				000000000000000000000010 /* NextBellLiveActivity.swift */,
+				000000000000000000000011 /* Info.plist */,
+				000000000000000000000012 /* SonnerieProfWidgets.entitlements */,
+				A00000000000000000000002 /* PrivacyInfo.xcprivacy */,
+			);
+			path = SonnerieProfWidgets;
+			sourceTree = "<group>";
+		};
+		00000000000000000000002F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				000000000000000000000013 /* SonnerieProf.app */,
+				000000000000000000000014 /* SonnerieProfWidgets.appex */,
+				A00000000000000000000004 /* SonnerieProfTests.xctest */,
+				A843998C306FD03D00251EB7 /* SonnerieProfWatch.app */,
+				A8439991306FD03D00251EB7 /* SonnerieProfWatch Watch App.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A00000000000000000000008 /* SonnerieProfTests */ = {
+			isa = PBXGroup;
+			children = (
+				A00000000000000000000003 /* ScheduleEngineTests.swift */,
+				A806D4E930624B4E00FFA1B3 /* TimetableEngineTests.swift */,
+				A84399B43070589500251EB7 /* CloudTransferModelsTests.swift */,
+			);
+			path = SonnerieProfTests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		000000000000000000000037 /* SonnerieProf */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000043 /* Build configuration list for PBXNativeTarget "SonnerieProf" */;
+			buildPhases = (
+				000000000000000000000030 /* Sources */,
+				000000000000000000000031 /* Frameworks */,
+				000000000000000000000032 /* Resources */,
+				000000000000000000000033 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				00000000000000000000003B /* PBXTargetDependency */,
+				A843999D306FD03E00251EB7 /* PBXTargetDependency */,
+			);
+			name = SonnerieProf;
+			productName = SonnerieProf;
+			productReference = 000000000000000000000013 /* SonnerieProf.app */;
+			productType = "com.apple.product-type.application";
+		};
+		000000000000000000000038 /* SonnerieProfWidgets */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 000000000000000000000044 /* Build configuration list for PBXNativeTarget "SonnerieProfWidgets" */;
+			buildPhases = (
+				000000000000000000000034 /* Sources */,
+				000000000000000000000035 /* Frameworks */,
+				000000000000000000000036 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SonnerieProfWidgets;
+			productName = SonnerieProfWidgets;
+			productReference = 000000000000000000000014 /* SonnerieProfWidgets.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+		A0000000000000000000000C /* SonnerieProfTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A00000000000000000000011 /* Build configuration list for PBXNativeTarget "SonnerieProfTests" */;
+			buildPhases = (
+				A00000000000000000000009 /* Sources */,
+				A0000000000000000000000A /* Frameworks */,
+				A0000000000000000000000B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A0000000000000000000000E /* PBXTargetDependency */,
+			);
+			name = SonnerieProfTests;
+			productName = SonnerieProfTests;
+			productReference = A00000000000000000000004 /* SonnerieProfTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		A843998B306FD03D00251EB7 /* SonnerieProfWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A84399A3306FD03E00251EB7 /* Build configuration list for PBXNativeTarget "SonnerieProfWatch" */;
+			buildPhases = (
+				A843998A306FD03D00251EB7 /* Resources */,
+				A84399A2306FD03E00251EB7 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A8439994306FD03D00251EB7 /* PBXTargetDependency */,
+			);
+			name = SonnerieProfWatch;
+			packageProductDependencies = (
+			);
+			productName = SonnerieProfWatch;
+			productReference = A843998C306FD03D00251EB7 /* SonnerieProfWatch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		A8439990306FD03D00251EB7 /* SonnerieProfWatch Watch App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A843999F306FD03E00251EB7 /* Build configuration list for PBXNativeTarget "SonnerieProfWatch Watch App" */;
+			buildPhases = (
+				A843998D306FD03D00251EB7 /* Sources */,
+				A843998E306FD03D00251EB7 /* Frameworks */,
+				A843998F306FD03D00251EB7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				A8439995306FD03D00251EB7 /* SonnerieProfWatch Watch App */,
+			);
+			name = "SonnerieProfWatch Watch App";
+			packageProductDependencies = (
+			);
+			productName = "SonnerieProfWatch Watch App";
+			productReference = A8439991306FD03D00251EB7 /* SonnerieProfWatch Watch App.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		000000000000000000000039 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					000000000000000000000037 = {
+						CreatedOnToolsVersion = 26.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups = {
+								enabled = 1;
+							};
+						};
+					};
+					000000000000000000000038 = {
+						CreatedOnToolsVersion = 26.0;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups = {
+								enabled = 1;
+							};
+						};
+					};
+					A0000000000000000000000C = {
+						CreatedOnToolsVersion = 26.0;
+						TestTargetID = 000000000000000000000037;
+					};
+					A843998B306FD03D00251EB7 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					A8439990306FD03D00251EB7 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = 000000000000000000000042 /* Build configuration list for PBXProject "SonnerieProf" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = fr;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				fr,
+				en,
+				de,
+				es,
+				it,
+				"pt-PT",
+				"pt-BR",
+				nl,
+				pl,
+				ro,
+				cs,
+				sv,
+				da,
+				Base,
+			);
+			mainGroup = 000000000000000000000029;
+			productRefGroup = 00000000000000000000002F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				000000000000000000000037 /* SonnerieProf */,
+				000000000000000000000038 /* SonnerieProfWidgets */,
+				A0000000000000000000000C /* SonnerieProfTests */,
+				A843998B306FD03D00251EB7 /* SonnerieProfWatch */,
+				A8439990306FD03D00251EB7 /* SonnerieProfWatch Watch App */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		000000000000000000000032 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A8A1A7A4305F178200A6EC03 /* Assets.xcassets in Resources */,
+				A00000000000000000000005 /* PrivacyInfo.xcprivacy in Resources */,
+				B10000000000000000000002 /* Localizable.xcstrings in Resources */,
+				A843999E306FD03E00251EB7 /* SonnerieProfWatch.app in Resources */,
+				A806D4F43064EB8D00FFA1B3 /* Products.storekit in Resources */,
+				B20000000000000000000004 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000036 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A806D4EE3063E62B00FFA1B3 /* InfoPlist.xcstrings in Resources */,
+				A00000000000000000000006 /* PrivacyInfo.xcprivacy in Resources */,
+				B10000000000000000000003 /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A0000000000000000000000B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A843998A306FD03D00251EB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A843998F306FD03D00251EB7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		000000000000000000000030 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A806D4E830624AEB00FFA1B3 /* TimetableView.swift in Sources */,
+				A84399B73070E24C00251EB7 /* BuiltInSitePresets.swift in Sources */,
+				000000000000000000000015 /* SonnerieProfApp.swift in Sources */,
+				A806D4E130624A8900FFA1B3 /* TimetableModels.swift in Sources */,
+				000000000000000000000016 /* ContentView.swift in Sources */,
+				A84399AF3070587900251EB7 /* CloudTransferModels.swift in Sources */,
+				A84399B33070587900251EB7 /* CloudTransferView.swift in Sources */,
+				A806D4E630624A8900FFA1B3 /* TimetableRepository.swift in Sources */,
+				000000000000000000000017 /* SiteStore.swift in Sources */,
+				000000000000000000000018 /* LocationService.swift in Sources */,
+				000000000000000000000019 /* LiveActivityManager.swift in Sources */,
+				A84399B13070587900251EB7 /* CloudDataService.swift in Sources */,
+				A806D4DD30624A8900FFA1B3 /* TimetableEngine.swift in Sources */,
+				00000000000000000000001A /* SiteEditorView.swift in Sources */,
+				00000000000000000000001B /* AppGroup.swift in Sources */,
+				A806D4F23064E94E00FFA1B3 /* ProUpgradeView.swift in Sources */,
+				A806D4EC30639BD800FFA1B3 /* CourseCountdownViews.swift in Sources */,
+				00000000000000000000001C /* Models.swift in Sources */,
+				00000000000000000000001D /* ScheduleEngine.swift in Sources */,
+				A806D4F03064E94E00FFA1B3 /* PurchaseStore.swift in Sources */,
+				A806D4E330624A8900FFA1B3 /* TimetableStore.swift in Sources */,
+				00000000000000000000001E /* SiteRepository.swift in Sources */,
+				00000000000000000000001F /* BellActivityAttributes.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		000000000000000000000034 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				000000000000000000000020 /* SonnerieProfWidgetsBundle.swift in Sources */,
+				000000000000000000000021 /* NextBellWidget.swift in Sources */,
+				A84399B83070E24C00251EB7 /* BuiltInSitePresets.swift in Sources */,
+				000000000000000000000022 /* NextBellLiveActivity.swift in Sources */,
+				000000000000000000000023 /* AppGroup.swift in Sources */,
+				000000000000000000000024 /* Models.swift in Sources */,
+				A806D4E030624A8900FFA1B3 /* TimetableModels.swift in Sources */,
+				A806D4DE30624A8900FFA1B3 /* TimetableEngine.swift in Sources */,
+				000000000000000000000025 /* ScheduleEngine.swift in Sources */,
+				A84399AE3070587900251EB7 /* CloudTransferModels.swift in Sources */,
+				000000000000000000000026 /* SiteRepository.swift in Sources */,
+				000000000000000000000027 /* BellActivityAttributes.swift in Sources */,
+				A806D4E530624A8900FFA1B3 /* TimetableRepository.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A00000000000000000000009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A84399B53070589500251EB7 /* CloudTransferModelsTests.swift in Sources */,
+				A00000000000000000000007 /* ScheduleEngineTests.swift in Sources */,
+				A806D4EA30624B4E00FFA1B3 /* TimetableEngineTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A843998D306FD03D00251EB7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		00000000000000000000003B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000000000038 /* SonnerieProfWidgets */;
+			targetProxy = 00000000000000000000003A /* PBXContainerItemProxy */;
+		};
+		A0000000000000000000000E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 000000000000000000000037 /* SonnerieProf */;
+			targetProxy = A0000000000000000000000D /* PBXContainerItemProxy */;
+		};
+		A8439994306FD03D00251EB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A8439990306FD03D00251EB7 /* SonnerieProfWatch Watch App */;
+			targetProxy = A8439993306FD03D00251EB7 /* PBXContainerItemProxy */;
+		};
+		A843999D306FD03E00251EB7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A843998B306FD03D00251EB7 /* SonnerieProfWatch */;
+			targetProxy = A843999C306FD03E00251EB7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B20000000000000000000003 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B20000000000000000000001 /* fr */,
+				B20000000000000000000002 /* en */,
+				B20000000000000000000010 /* de */,
+				B20000000000000000000011 /* es */,
+				B20000000000000000000012 /* it */,
+				B20000000000000000000013 /* pt-PT */,
+				B20000000000000000000020 /* pt-BR */,
+				B20000000000000000000014 /* nl */,
+				B20000000000000000000015 /* pl */,
+				B20000000000000000000016 /* ro */,
+				B20000000000000000000017 /* cs */,
+				B20000000000000000000018 /* sv */,
+				B20000000000000000000019 /* da */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00000000000000000000003C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = SBATJA33N6;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		00000000000000000000003D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = SBATJA33N6;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00000000000000000000003E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = SonnerieProf/SonnerieProf.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				EXCLUDED_SOURCE_FILE_NAMES = SonnerieProfWatch.app;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SonnerieProf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.sonnerieprof;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		00000000000000000000003F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = SonnerieProf/SonnerieProf.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				EXCLUDED_SOURCE_FILE_NAMES = SonnerieProfWatch.app;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SonnerieProf/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.sonnerieprof;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		000000000000000000000040 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = SonnerieProfWidgets/SonnerieProfWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SonnerieProfWidgets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.sonnerieprof.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		000000000000000000000041 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_ENTITLEMENTS = SonnerieProfWidgets/SonnerieProfWidgets.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = SonnerieProfWidgets/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 0.9;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.sonnerieprof.widgets;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		A0000000000000000000000F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.sonnerieprof.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SonnerieProf.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SonnerieProf";
+			};
+			name = Debug;
+		};
+		A00000000000000000000010 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.sonnerieprof.tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SonnerieProf.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/SonnerieProf";
+			};
+			name = Release;
+		};
+		A84399A0306FD03E00251EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SonnerieProfWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 0.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.SonnerieProfWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Debug;
+		};
+		A84399A1306FD03E00251EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_PREVIEWS = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = SonnerieProfWatch;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 0.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.SonnerieProfWatch.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 27.0;
+			};
+			name = Release;
+		};
+		A84399A4306FD03E00251EB7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "SonnerieProfWatch-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SonnerieProfWatch;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 0.9;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.SonnerieProfWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A84399A5306FD03E00251EB7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				INFOPLIST_FILE = "SonnerieProfWatch-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = SonnerieProfWatch;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MARKETING_VERSION = 0.9;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.SonnerieProfWatch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		000000000000000000000042 /* Build configuration list for PBXProject "SonnerieProf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000003C /* Debug */,
+				00000000000000000000003D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000043 /* Build configuration list for PBXNativeTarget "SonnerieProf" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00000000000000000000003E /* Debug */,
+				00000000000000000000003F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		000000000000000000000044 /* Build configuration list for PBXNativeTarget "SonnerieProfWidgets" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				000000000000000000000040 /* Debug */,
+				000000000000000000000041 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A00000000000000000000011 /* Build configuration list for PBXNativeTarget "SonnerieProfTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A0000000000000000000000F /* Debug */,
+				A00000000000000000000010 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A843999F306FD03E00251EB7 /* Build configuration list for PBXNativeTarget "SonnerieProfWatch Watch App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84399A0306FD03E00251EB7 /* Debug */,
+				A84399A1306FD03E00251EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A84399A3306FD03E00251EB7 /* Build configuration list for PBXNativeTarget "SonnerieProfWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A84399A4306FD03E00251EB7 /* Debug */,
+				A84399A5306FD03E00251EB7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 000000000000000000000039 /* Project object */;
+}

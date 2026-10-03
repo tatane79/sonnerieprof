@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%@ – %@</key>
+	<string>%1$@ – %2$@</string>
+	<key>+15 min</key>
+	<string>+15 min</string>
+	<key>+55 min</key>
+	<string>+55 min</string>
+	<key>1 min avant la prochaine sonnerie</key>
+	<string>1 min før næste ringning</string>
+	<key>12 h (AM/PM)</key>
+	<string>12 h (AM/PM)</string>
+	<key>24 h</key>
+	<string>24 h</string>
+	<key>5 min avant la prochaine sonnerie</key>
+	<string>5 min før næste ringning</string>
+	<key>Affiche le temps restant avant la prochaine sonnerie.</key>
+	<string>Viser den resterende tid til næste skoleklokke.</string>
+	<key>Afficher en plein écran</key>
+	<string>Vis i fuld skærm</string>
+	<key>Ajouter un site</key>
+	<string>Tilføj sted</string>
+	<key>Ajoutez les horaires de ce site dans Réglages.</key>
+	<string>Tilføj ringetiderne for dette sted i Indstillinger.</string>
+	<key>Ajoutez vos séances dans l’emploi du temps.</key>
+	<string>Føj dine lektioner til skemaet.</string>
+	<key>Ajoutez votre établissement et ses horaires de sonnerie.</key>
+	<string>Tilføj din skole og dens ringetider.</string>
+	<key>Annuler</key>
+	<string>Annuller</string>
+	<key>Appliquer le lundi à toute la semaine</key>
+	<string>Anvend mandagens tider på hele ugen</string>
+	<key>Appliquer les horaires du lundi ?</key>
+	<string>Anvend mandagens tider?</string>
+	<key>Aucun compte requis</key>
+	<string>Ingen konto nødvendig</string>
+	<key>Aucun cours en ce moment</key>
+	<string>Ingen lektion lige nu</string>
+	<key>Aucun prochain cours programmé</key>
+	<string>Ingen kommende lektion planlagt</string>
+	<key>Aucun site configuré</key>
+	<string>Intet sted konfigureret</string>
+	<key>Aucune publicité ni suivi</key>
+	<string>Ingen annoncer eller sporing</string>
+	<key>Aucune sonnerie</key>
+	<string>Ingen ringning</string>
+	<key>Aucune sonnerie configurée</key>
+	<string>Ingen ringetider konfigureret</string>
+	<key>Auteur</key>
+	<string>Forfatter</string>
+	<key>Autre horaire…</key>
+	<string>Andet tidspunkt…</string>
+	<key>Bienvenue dans Sonnerie Prof</key>
+	<string>Velkommen til Sonnerie Prof</string>
+	<key>Compilation</key>
+	<string>Build</string>
+	<key>Confidentialité</key>
+	<string>Anonymitet</string>
+	<key>Configurer plus tard</key>
+	<string>Konfigurer senere</string>
+	<key>Configurez un premier établissement. Aucun compte n'est requis et vos données restent sur l'iPhone.</key>
+	<string>Konfigurer din første skole. Der kræves ingen konto, og dine data forbliver på din iPhone.</string>
+	<key>Conflit d’emploi du temps</key>
+	<string>Skemakonflikt</string>
+	<key>Conserve le site, le jour et le type de semaine, puis prépare le créneau suivant.</key>
+	<string>Bevarer stedet, dagen og ugetypen og forbereder derefter det næste tidsrum.</string>
+	<key>Créer mon site</key>
+	<string>Opret mit sted</string>
+	<key>Date et heure simulées</key>
+	<string>Simuleret dato og klokkeslæt</string>
+	<key>Données enregistrées localement</key>
+	<string>Data gemmes lokalt</string>
+	<key>Détecter automatiquement</key>
+	<string>Registrer automatisk</string>
+	<key>Elle permet uniquement de sélectionner automatiquement le bon site lorsque vous utilisez plusieurs établissements.</key>
+	<string>Den bruges kun til automatisk at vælge det rigtige sted, når du bruger flere skoler.</string>
+	<key>Emploi du temps</key>
+	<string>Skema</string>
+	<key>Ex. Collège Jean-Moulin</key>
+	<string>Fx Østerbro Gymnasium</string>
+	<key>Fermer le plein écran</key>
+	<string>Luk fuld skærm</string>
+	<key>Format de l’heure</key>
+	<string>Tidsformat</string>
+	<key>Glisser à gauche pour supprimer un site.</key>
+	<string>Stryg til venstre for at slette et sted.</string>
+	<key>Heure simulée</key>
+	<string>Simuleret tid</string>
+	<key>Horaires HH:mm</key>
+	<string>Tider HH:mm</string>
+	<key>Horaires terminés</key>
+	<string>Ingen flere ringetider</string>
+	<key>Jour</key>
+	<string>Dag</string>
+	<key>La localisation est facultative et n’est jamais transmise. Lorsque les mises à jour Always-On à distance sont activées, seules les heures de sonnerie nécessaires et un identifiant technique temporaire sont transmis au service de mise à jour.</key>
+	<string>Placering er valgfri og overføres aldrig. Når fjernopdateringer til Always-On er aktiveret, sendes kun de nødvendige ringetider og en midlertidig teknisk identifikator til opdateringstjenesten.</string>
+	<key>La localisation est facultative. Elle sert uniquement à sélectionner automatiquement le site le plus proche et n'est ni conservée séparément ni transmise.</key>
+	<string>Placering er valgfri. Den bruges kun til automatisk at vælge det nærmeste sted og gemmes ikke separat eller overføres.</string>
+	<key>Langue de test</key>
+	<string>Testsprog</string>
+	<key>Latitude</key>
+	<string>Breddegrad</string>
+	<key>Les Live Activities sont désactivées dans les réglages iOS.</key>
+	<string>Live Activities er deaktiveret i iOS-indstillingerne.</string>
+	<key>Les doublons seront supprimés automatiquement.</key>
+	<string>Dubletter fjernes automatisk.</string>
+	<key>Les horaires du mardi au samedi seront remplacés par ceux définis pour le lundi.</key>
+	<string>Tiderne fra tirsdag til lørdag erstattes af dem, der er angivet for mandag.</string>
+	<key>Les horaires seront triés automatiquement et normalisés au format HH:mm.</key>
+	<string>Tiderne sorteres automatisk og normaliseres til formatet HH:mm.</string>
+	<key>Les modifications sont enregistrées automatiquement.</key>
+	<string>Ændringer gemmes automatisk.</string>
+	<key>Les modifications valides sont enregistrées automatiquement.</key>
+	<string>Gyldige ændringer gemmes automatisk.</string>
+	<key>Les vibrations sont déclenchées uniquement lorsque Sonnerie Prof est active au premier plan. Aucun son n'est joué.</key>
+	<string>Vibrationer udløses kun, når Sonnerie Prof er aktiv i forgrunden. Der afspilles ingen lyd.</string>
+	<key>Localisation (facultatif)</key>
+	<string>Placering (valgfri)</string>
+	<key>Longitude</key>
+	<string>Længdegrad</string>
+	<key>L’heure simulée avance à vitesse réelle. Elle est utilisée par l’app, le widget et la Live Activity. Ce réglage existe uniquement dans les builds Debug et n’apparaît pas dans la version App Store.</key>
+	<string>Den simulerede tid går med virkelig hastighed. Den bruges af appen, widgetten og Live Activity. Indstillingen findes kun i Debug-builds og vises ikke i App Store-versionen.</string>
+	<key>Maximum de 4 sites atteint</key>
+	<string>Maksimum på 4 steder er nået</string>
+	<key>Mise à jour…</key>
+	<string>Opdaterer…</string>
+	<key>Mode développeur</key>
+	<string>Udviklertilstand</string>
+	<key>Mode test actif</key>
+	<string>Testtilstand aktiv</string>
+	<key>Modifiez le jour, les horaires ou le type de semaine avant d’enregistrer.</key>
+	<string>Rediger dagen, tidspunkterne eller ugetypen, før du gemmer.</string>
+	<key>Mon établissement</key>
+	<string>Min skole</string>
+	<key>Même horaires du lundi au vendredi</key>
+	<string>Samme tider mandag til fredag</string>
+	<key>Même horaires le samedi</key>
+	<string>Samme tider om lørdagen</string>
+	<key>Nom</key>
+	<string>Navn</string>
+	<key>Nom de l'établissement</key>
+	<string>Skolens navn</string>
+	<key>Nombre de vibrations</key>
+	<string>Antal vibrationer</string>
+	<key>Nouveau site</key>
+	<string>Nyt sted</string>
+	<key>Pendant une suspension (vacances, fermeture, congé), aucune sonnerie n'est proposée avant la date de reprise.</key>
+	<string>Under en pause (ferie, lukning eller orlov) planlægges der ingen ringninger før genoptagelsesdatoen.</string>
+	<key>Planning</key>
+	<string>Skema</string>
+	<key>Position approximative</key>
+	<string>Omtrentlig placering</string>
+	<key>Position enregistrée</key>
+	<string>Placering gemt</string>
+	<key>Position non configurée</key>
+	<string>Placering ikke konfigureret</string>
+	<key>Pour un suivi fiable sur toute la journée, ajoutez aussi le widget « Sonnerie Prof » à l’écran verrouillé. iOS limite une Live Activity active à environ 8 heures.</key>
+	<string>For pålidelig visning hele dagen skal du også føje widgetten “Sonnerie Prof” til låseskærmen. iOS begrænser en aktiv Live Activity til cirka 8 timer.</string>
+	<key>Prochaine sonnerie :</key>
+	<string>Næste ringning:</string>
+	<key>Q1</key>
+	<string>Q1</string>
+	<key>Q2</key>
+	<string>Q2</string>
+	<key>Rayon (m)</key>
+	<string>Radius (m)</string>
+	<key>Reprendre le</key>
+	<string>Genoptag den</string>
+	<key>Revenir à l’heure réelle</key>
+	<string>Gå tilbage til virkelig tid</string>
+	<key>Réglages</key>
+	<string>Indstillinger</string>
+	<key>Saisissez les horaires jour par jour ou recopiez ceux du lundi sur le mardi, mercredi, jeudi, vendredi et samedi.</key>
+	<string>Indtast tider dag for dag, eller kopier mandagens tider til tirsdag, onsdag, torsdag, fredag og lørdag.</string>
+	<key>Site</key>
+	<string>Sted</string>
+	<key>Site actuel</key>
+	<string>Aktuelt sted</string>
+	<key>Sites</key>
+	<string>Steder</string>
+	<key>Sonnerie Prof</key>
+	<string>Sonnerie Prof</string>
+	<key>Sonnerie Prof est conçue pour aider les enseignants à garder un œil sur le temps restant avant la prochaine sonnerie, directement depuis l’app ou l’écran verrouillé</key>
+	<string>Sonnerie Prof hjælper lærere med at holde øje med tiden til næste ringning, direkte i appen eller på låseskærmen.</string>
+	<key>Sonneries</key>
+	<string>Ringetider</string>
+	<key>Sonneries du lundi</key>
+	<string>Mandagens ringetider</string>
+	<key>Supprimer</key>
+	<string>Slet</string>
+	<key>Supprimer ce site ?</key>
+	<string>Slet dette sted?</string>
+	<key>Suspendre temporairement</key>
+	<string>Sæt midlertidigt på pause</string>
+	<key>Temps restant</key>
+	<string>Resterende tid</string>
+	<key>Tester</key>
+	<string>Test</string>
+	<key>Un horaire par ligne, au format HH:mm.</key>
+	<string>Én tid pr. linje i formatet HH:mm.</string>
+	<key>Un horaire par ligne. Les boutons ajoutent automatiquement une ligne à partir du dernier horaire saisi.</key>
+	<string>Én tid pr. linje. Knapperne tilføjer automatisk en linje baseret på den senest indtastede tid.</string>
+	<key>Utiliser ma position</key>
+	<string>Brug min placering</string>
+	<key>Utiliser ma position actuelle</key>
+	<string>Brug min aktuelle placering</string>
+	<key>Utiliser une heure simulée</key>
+	<string>Brug simuleret tid</string>
+	<key>Version</key>
+	<string>Version</string>
+	<key>Vibrations</key>
+	<string>Vibrationer</string>
+	<key>Vibrer à la sonnerie</key>
+	<string>Vibrer ved ringetid</string>
+	<key>common.not_available</key>
+	<string>—</string>
+	<key>day.fallback</key>
+	<string>Dag %d</string>
+	<key>editor.duplicate_count.many</key>
+	<string>%d dubletter fjernes automatisk, når du gemmer.</string>
+	<key>editor.duplicate_count.one</key>
+	<string>%d dublet fjernes automatisk, når du gemmer.</string>
+	<key>editor.invalid_times</key>
+	<string>Ugyldig(e) tid(er): %@. Brug HH:mm, f.eks. 08:10.</string>
+	<key>fullscreen.minutes_remaining</key>
+	<string>%d min</string>
+	<key>jusqu'à la sonnerie</key>
+	<string>til ringningen</string>
+	<key>language.cs</key>
+	<string>Čeština</string>
+	<key>language.da</key>
+	<string>Dansk</string>
+	<key>language.de</key>
+	<string>Deutsch</string>
+	<key>language.en</key>
+	<string>English</string>
+	<key>language.es</key>
+	<string>Español</string>
+	<key>language.fr</key>
+	<string>Français</string>
+	<key>language.it</key>
+	<string>Italiano</string>
+	<key>language.nl</key>
+	<string>Nederlands</string>
+	<key>language.pl</key>
+	<string>Polski</string>
+	<key>language.pt_BR</key>
+	<string>Português (Brasil)</string>
+	<key>language.pt_PT</key>
+	<string>Português (Portugal)</string>
+	<key>language.ro</key>
+	<string>Română</string>
+	<key>language.sv</key>
+	<string>Svenska</string>
+	<key>language.system</key>
+	<string>System</string>
+	<key>live_activity.disabled</key>
+	<string>Live Activities er deaktiveret for denne app i iOS-indstillingerne.</string>
+	<key>live_activity.next_bell</key>
+	<string>Næste ringning: %@</string>
+	<key>live_activity.no_upcoming</key>
+	<string>Der er ingen kommende ringning tilgængelig for dette sted.</string>
+	<key>location.permission_denied</key>
+	<string>Tillad adgang til placering i Indstillinger for automatisk at registrere stedet.</string>
+	<key>location.precise_unavailable</key>
+	<string>Præcis placering er ikke tilgængelig. Du kan stadig vælge stedet manuelt. (%@)</string>
+	<key>location.unknown_status</key>
+	<string>Ukendt status for placeringstilladelse.</string>
+	<key>lock.active_next</key>
+	<string>Aktiv · næste ringning %@.</string>
+	<key>lock.active_until</key>
+	<string>Aktiv indtil næste ringning kl. %@.</string>
+	<key>lock.add_site_first</key>
+	<string>Tilføj først et sted.</string>
+	<key>lock.long_delay</key>
+	<string>Visning på låseskærmen er aktiveret. Der er lang tid til næste ringning; iOS kan fjerne Live Activity inden da. Widgetten på låseskærmen anbefales stadig.</string>
+	<key>lock.no_upcoming</key>
+	<string>Der er ingen kommende ringning tilgængelig.</string>
+	<key>lockscreen.description</key>
+	<string>Vis den resterende tid på låseskærmen og, hvis tilgængeligt, i Always-On-tilstand.</string>
+	<key>next_bell_at</key>
+	<string>Næste ringning kl. %@</string>
+	<key>onboarding.invalid_times</key>
+	<string>Ugyldig(e) tid(er): %@.</string>
+	<key>quick_add_minutes</key>
+	<string>+%d min</string>
+	<key>schedule.suspended_until</key>
+	<string>Skema sat på pause indtil %@</string>
+	<key>seconds.short</key>
+	<string>%d s</string>
+	<key>settings.after_last_bell</key>
+	<string>Efter sidste ringning</string>
+	<key>settings.after_last_bell.hide_until_one_hour</key>
+	<string>Skjul indtil 1 time før</string>
+	<key>settings.after_last_bell.show_next</key>
+	<string>Vis næste ringning</string>
+	<key>site.delete_message</key>
+	<string>Stedet “%@” og alle dets ringetider slettes permanent.</string>
+	<key>site.schedule_count.many</key>
+	<string>%d tider</string>
+	<key>site.schedule_count.one</key>
+	<string>%d tid</string>
+	<key>tip.body</key>
+	<string>Alle funktioner i Sonnerie Prof er gratis. Hvis appen hjælper dig i hverdagen, kan du støtte udviklingen med frivillige drikkepenge.</string>
+	<key>tip.debug_show</key>
+	<string>Vis forslag om drikkepenge</string>
+	<key>tip.navigation_title</key>
+	<string>Støt Sonnerie Prof</string>
+	<key>tip.no_unlock</key>
+	<string>Drikkepengene er helt frivillige og låser ikke nogen funktioner op.</string>
+	<key>tip.product.large</key>
+	<string>En stor tak</string>
+	<key>tip.product.medium</key>
+	<string>En kop kaffe</string>
+	<key>tip.product.small</key>
+	<string>En lille tak</string>
+	<key>tip.products_load_error</key>
+	<string>Mulighederne for drikkepenge kunne ikke indlæses.</string>
+	<key>tip.products_unavailable</key>
+	<string>Drikkepenge er midlertidigt utilgængelige.</string>
+	<key>tip.purchase_error</key>
+	<string>Betalingen kunne ikke gennemføres.</string>
+	<key>tip.purchase_pending</key>
+	<string>Betalingen afventer godkendelse.</string>
+	<key>tip.support_about</key>
+	<string>Sonnerie Prof er gratis, og alle funktioner er tilgængelige uden betaling. Hvis du har lyst, kan du støtte udviklingen med frivillige drikkepenge.</string>
+	<key>tip.support_button</key>
+	<string>Støt Sonnerie Prof</string>
+	<key>tip.support_section</key>
+	<string>Støt appen</string>
+	<key>tip.thank_you_message</key>
+	<string>Tak, fordi du støtter udviklingen af Sonnerie Prof.</string>
+	<key>tip.thank_you_title</key>
+	<string>Mange tak!</string>
+	<key>tip.title</key>
+	<string>Et lille bidrag?</string>
+	<key>tip.voluntary</key>
+	<string>Frivillige drikkepenge</string>
+	<key>weekday.short.friday</key>
+	<string>F</string>
+	<key>weekday.short.monday</key>
+	<string>M</string>
+	<key>weekday.short.saturday</key>
+	<string>L</string>
+	<key>weekday.short.thursday</key>
+	<string>To</string>
+	<key>weekday.short.tuesday</key>
+	<string>Ti</string>
+	<key>weekday.short.wednesday</key>
+	<string>O</string>
+	<key>widget.inline_next</key>
+	<string>🔔 Næste: %@</string>
+	<key>À propos</key>
+	<string>Om</string>
+	<key>Écran verrouillé</key>
+	<string>Låseskærm</string>
+	<key>Écraser les horaires</key>
+	<string>Overskriv tider</string>
+	<key>–</key>
+	<string>–</string>
+</dict>
+</plist>

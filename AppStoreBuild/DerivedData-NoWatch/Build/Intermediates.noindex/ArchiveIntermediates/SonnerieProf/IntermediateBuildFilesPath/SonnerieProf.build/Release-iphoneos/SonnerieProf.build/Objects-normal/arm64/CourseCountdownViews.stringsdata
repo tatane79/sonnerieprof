@@ -1,0 +1,88 @@
+{
+  "source": "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/SonnerieProf/Views/CourseCountdownViews.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "1 jour %@ h",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 16
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ jours %@ h",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 19
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ h",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 22
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ajoutez vos séances dans l’emploi du temps.",
+        "location": {
+          "startingColumn": 39,
+          "startingLine": 130
+        }
+      },
+      {
+        "comment": "",
+        "key": "Aucun cours programmé",
+        "location": {
+          "startingColumn": 21,
+          "startingLine": 128
+        }
+      },
+      {
+        "comment": "",
+        "key": "Temps restant",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 98
+        }
+      },
+      {
+        "comment": "",
+        "key": "Afficher en plein écran",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 123
+        }
+      },
+      {
+        "comment": "",
+        "key": "Aucun cours programmé",
+        "location": {
+          "startingColumn": 29,
+          "startingLine": 273
+        }
+      },
+      {
+        "comment": "",
+        "key": "%@ min",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 346
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fermer",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 291
+        }
+      }
+    ]
+  },
+  "version": 1
+}

@@ -1,0 +1,1218 @@
+{
+  "source": "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-iphoneos/SonnerieProf.build/DerivedSources/GeneratedStringSymbols_Localizable.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "+15 min",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 25
+        }
+      },
+      {
+        "comment": "",
+        "key": "+55 min",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 32
+        }
+      },
+      {
+        "comment": "",
+        "key": "1 min avant la prochaine sonnerie",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 39
+        }
+      },
+      {
+        "comment": "",
+        "key": "12 h (AM/PM)",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 46
+        }
+      },
+      {
+        "comment": "",
+        "key": "24 h",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 53
+        }
+      },
+      {
+        "comment": "",
+        "key": "5 min avant la prochaine sonnerie",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "Affiche le temps restant avant la prochaine sonnerie.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 67
+        }
+      },
+      {
+        "comment": "",
+        "key": "Afficher en plein écran",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 74
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ajouter un site",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ajoutez les horaires de ce site dans Réglages.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 88
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ajoutez votre établissement et ses horaires de sonnerie.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 95
+        }
+      },
+      {
+        "comment": "",
+        "key": "Annuler",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 102
+        }
+      },
+      {
+        "comment": "",
+        "key": "Appliquer le lundi à toute la semaine",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 109
+        }
+      },
+      {
+        "comment": "",
+        "key": "Appliquer les horaires du lundi ?",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 116
+        }
+      },
+      {
+        "comment": "",
+        "key": "Aucun compte requis",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 123
+        }
+      },
+      {
+        "comment": "",
+        "key": "Aucun site configuré",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 130
+        }
+      },
+      {
+        "comment": "",
+        "key": "Aucune publicité ni suivi",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 137
+        }
+      },
+      {
+        "comment": "",
+        "key": "Aucune sonnerie",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 144
+        }
+      },
+      {
+        "comment": "",
+        "key": "Aucune sonnerie configurée",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 151
+        }
+      },
+      {
+        "comment": "",
+        "key": "Auteur",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 158
+        }
+      },
+      {
+        "comment": "",
+        "key": "Bienvenue dans Sonnerie Prof",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 165
+        }
+      },
+      {
+        "comment": "",
+        "key": "Compilation",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 172
+        }
+      },
+      {
+        "comment": "",
+        "key": "Confidentialité",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 179
+        }
+      },
+      {
+        "comment": "",
+        "key": "Configurer plus tard",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 186
+        }
+      },
+      {
+        "comment": "",
+        "key": "Configurez un premier établissement. Aucun compte n'est requis et vos données restent sur l'iPhone.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 193
+        }
+      },
+      {
+        "comment": "",
+        "key": "Créer mon site",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 200
+        }
+      },
+      {
+        "comment": "",
+        "key": "Date et heure simulées",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 207
+        }
+      },
+      {
+        "comment": "",
+        "key": "Données enregistrées localement",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 214
+        }
+      },
+      {
+        "comment": "",
+        "key": "Détecter automatiquement",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 221
+        }
+      },
+      {
+        "comment": "",
+        "key": "Elle permet uniquement de sélectionner automatiquement le bon site lorsque vous utilisez plusieurs établissements.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 228
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ex. Collège Jean-Moulin",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 235
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fermer le plein écran",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 242
+        }
+      },
+      {
+        "comment": "",
+        "key": "Format de l’heure",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 249
+        }
+      },
+      {
+        "comment": "",
+        "key": "Glisser à gauche pour supprimer un site.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 256
+        }
+      },
+      {
+        "comment": "",
+        "key": "Heure simulée",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 263
+        }
+      },
+      {
+        "comment": "",
+        "key": "Horaires HH:mm",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 270
+        }
+      },
+      {
+        "comment": "",
+        "key": "Horaires terminés",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 277
+        }
+      },
+      {
+        "comment": "",
+        "key": "Jour",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 284
+        }
+      },
+      {
+        "comment": "",
+        "key": "La localisation est facultative et n’est jamais transmise. Lorsque les mises à jour Always-On à distance sont activées, seules les heures de sonnerie nécessaires et un identifiant technique temporaire sont transmis au service de mise à jour.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 291
+        }
+      },
+      {
+        "comment": "",
+        "key": "La localisation est facultative. Elle sert uniquement à sélectionner automatiquement le site le plus proche et n'est ni conservée séparément ni transmise.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 298
+        }
+      },
+      {
+        "comment": "",
+        "key": "Langue de test",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 305
+        }
+      },
+      {
+        "comment": "",
+        "key": "Latitude",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 312
+        }
+      },
+      {
+        "comment": "",
+        "key": "Les Live Activities sont désactivées dans les réglages iOS.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 319
+        }
+      },
+      {
+        "comment": "",
+        "key": "Les doublons seront supprimés automatiquement.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 326
+        }
+      },
+      {
+        "comment": "",
+        "key": "Les horaires du mardi au samedi seront remplacés par ceux définis pour le lundi.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 333
+        }
+      },
+      {
+        "comment": "",
+        "key": "Les horaires seront triés automatiquement et normalisés au format HH:mm.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 340
+        }
+      },
+      {
+        "comment": "",
+        "key": "Les modifications sont enregistrées automatiquement.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 347
+        }
+      },
+      {
+        "comment": "",
+        "key": "Les modifications valides sont enregistrées automatiquement.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 354
+        }
+      },
+      {
+        "comment": "",
+        "key": "Les vibrations sont déclenchées uniquement lorsque Sonnerie Prof est active au premier plan. Aucun son n'est joué.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 361
+        }
+      },
+      {
+        "comment": "",
+        "key": "Localisation (facultatif)",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 368
+        }
+      },
+      {
+        "comment": "",
+        "key": "Longitude",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 375
+        }
+      },
+      {
+        "comment": "",
+        "key": "L’heure simulée avance à vitesse réelle. Elle est utilisée par l’app, le widget et la Live Activity. Ce réglage existe uniquement dans les builds Debug et n’apparaît pas dans la version App Store.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 382
+        }
+      },
+      {
+        "comment": "",
+        "key": "Maximum de 4 sites atteint",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 389
+        }
+      },
+      {
+        "comment": "",
+        "key": "Mise à jour…",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 396
+        }
+      },
+      {
+        "comment": "",
+        "key": "Mode développeur",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 403
+        }
+      },
+      {
+        "comment": "",
+        "key": "Mode test actif",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 410
+        }
+      },
+      {
+        "comment": "",
+        "key": "Mon établissement",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 417
+        }
+      },
+      {
+        "comment": "",
+        "key": "Même horaires du lundi au vendredi",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 424
+        }
+      },
+      {
+        "comment": "",
+        "key": "Même horaires le samedi",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 431
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nom",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 438
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nom de l'établissement",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 445
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nombre de vibrations",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 452
+        }
+      },
+      {
+        "comment": "",
+        "key": "Nouveau site",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 459
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pendant une suspension (vacances, fermeture, congé), aucune sonnerie n'est proposée avant la date de reprise.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 466
+        }
+      },
+      {
+        "comment": "",
+        "key": "Planning",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 473
+        }
+      },
+      {
+        "comment": "",
+        "key": "Position approximative",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 480
+        }
+      },
+      {
+        "comment": "",
+        "key": "Position enregistrée",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 487
+        }
+      },
+      {
+        "comment": "",
+        "key": "Position non configurée",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 494
+        }
+      },
+      {
+        "comment": "",
+        "key": "Pour un suivi fiable sur toute la journée, ajoutez aussi le widget « Sonnerie Prof » à l’écran verrouillé. iOS limite une Live Activity active à environ 8 heures.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 501
+        }
+      },
+      {
+        "comment": "",
+        "key": "Prochaine sonnerie :",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 508
+        }
+      },
+      {
+        "comment": "",
+        "key": "Rayon (m)",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 515
+        }
+      },
+      {
+        "comment": "",
+        "key": "Reprendre le",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 522
+        }
+      },
+      {
+        "comment": "",
+        "key": "Revenir à l’heure réelle",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 529
+        }
+      },
+      {
+        "comment": "",
+        "key": "Réglages",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 536
+        }
+      },
+      {
+        "comment": "",
+        "key": "Saisissez les horaires jour par jour ou recopiez ceux du lundi sur le mardi, mercredi, jeudi, vendredi et samedi.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 543
+        }
+      },
+      {
+        "comment": "",
+        "key": "Site",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 550
+        }
+      },
+      {
+        "comment": "",
+        "key": "Site actuel",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 557
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sites",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 564
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sonnerie Prof",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 571
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sonnerie Prof est conçue pour aider les enseignants à garder un œil sur le temps restant avant la prochaine sonnerie, directement depuis l’app ou l’écran verrouillé",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 578
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sonneries",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 585
+        }
+      },
+      {
+        "comment": "",
+        "key": "Sonneries du lundi",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 592
+        }
+      },
+      {
+        "comment": "",
+        "key": "Supprimer",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 599
+        }
+      },
+      {
+        "comment": "",
+        "key": "Supprimer ce site ?",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 606
+        }
+      },
+      {
+        "comment": "",
+        "key": "Suspendre temporairement",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 613
+        }
+      },
+      {
+        "comment": "",
+        "key": "Temps restant",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 620
+        }
+      },
+      {
+        "comment": "",
+        "key": "Tester",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 627
+        }
+      },
+      {
+        "comment": "",
+        "key": "Un horaire par ligne, au format HH:mm.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 634
+        }
+      },
+      {
+        "comment": "",
+        "key": "Un horaire par ligne. Les boutons ajoutent automatiquement une ligne à partir du dernier horaire saisi.",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 641
+        }
+      },
+      {
+        "comment": "",
+        "key": "Utiliser ma position",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 648
+        }
+      },
+      {
+        "comment": "",
+        "key": "Utiliser ma position actuelle",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 655
+        }
+      },
+      {
+        "comment": "",
+        "key": "Utiliser une heure simulée",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 662
+        }
+      },
+      {
+        "comment": "",
+        "key": "Version",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 669
+        }
+      },
+      {
+        "comment": "",
+        "key": "Vibrations",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 676
+        }
+      },
+      {
+        "comment": "",
+        "key": "Vibrer à la sonnerie",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 683
+        }
+      },
+      {
+        "comment": "",
+        "key": "common.not_available",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 690
+        }
+      },
+      {
+        "comment": "",
+        "key": "day.fallback",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 697
+        },
+        "value": "%d"
+      },
+      {
+        "comment": "",
+        "key": "editor.duplicate_count.many",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 704
+        },
+        "value": "%d"
+      },
+      {
+        "comment": "",
+        "key": "editor.duplicate_count.one",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 711
+        },
+        "value": "%d"
+      },
+      {
+        "comment": "",
+        "key": "editor.invalid_times",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 718
+        },
+        "value": "%@"
+      },
+      {
+        "comment": "",
+        "key": "fullscreen.minutes_remaining",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 725
+        },
+        "value": "%d"
+      },
+      {
+        "comment": "",
+        "key": "jusqu'à la sonnerie",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 732
+        }
+      },
+      {
+        "comment": "",
+        "key": "language.cs",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 739
+        }
+      },
+      {
+        "comment": "",
+        "key": "language.da",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 746
+        }
+      },
+      {
+        "comment": "",
+        "key": "language.de",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 753
+        }
+      },
+      {
+        "comment": "",
+        "key": "language.en",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 760
+        }
+      },
+      {
+        "comment": "",
+        "key": "language.es",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 767
+        }
+      },
+      {
+        "comment": "",
+        "key": "language.fr",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 774
+        }
+      },
+      {
+        "comment": "",
+        "key": "language.it",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 781
+        }
+      },
+      {
+        "comment": "",
+        "key": "language.nl",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 788
+        }
+      },
+      {
+        "comment": "",
+        "key": "language.pl",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 795
+        }
+      },
+      {
+        "comment": "",
+        "key": "language.pt_BR",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 802
+        }
+      },
+      {
+        "comment": "",
+        "key": "language.pt_PT",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 809
+        }
+      },
+      {
+        "comment": "",
+        "key": "language.ro",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 816
+        }
+      },
+      {
+        "comment": "",
+        "key": "language.sv",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 823
+        }
+      },
+      {
+        "comment": "",
+        "key": "language.system",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 830
+        }
+      },
+      {
+        "comment": "",
+        "key": "live_activity.disabled",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 837
+        }
+      },
+      {
+        "comment": "",
+        "key": "live_activity.next_bell",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 844
+        },
+        "value": "%@"
+      },
+      {
+        "comment": "",
+        "key": "live_activity.no_upcoming",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 851
+        }
+      },
+      {
+        "comment": "",
+        "key": "location.permission_denied",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 858
+        }
+      },
+      {
+        "comment": "",
+        "key": "location.precise_unavailable",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 865
+        },
+        "value": "%@"
+      },
+      {
+        "comment": "",
+        "key": "location.unknown_status",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 872
+        }
+      },
+      {
+        "comment": "",
+        "key": "lock.active_next",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 879
+        },
+        "value": "%@"
+      },
+      {
+        "comment": "",
+        "key": "lock.active_until",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 886
+        },
+        "value": "%@"
+      },
+      {
+        "comment": "",
+        "key": "lock.add_site_first",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 893
+        }
+      },
+      {
+        "comment": "",
+        "key": "lock.long_delay",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 900
+        }
+      },
+      {
+        "comment": "",
+        "key": "lock.no_upcoming",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 907
+        }
+      },
+      {
+        "comment": "",
+        "key": "lockscreen.description",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 914
+        }
+      },
+      {
+        "comment": "",
+        "key": "next_bell_at",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 921
+        },
+        "value": "%@"
+      },
+      {
+        "comment": "",
+        "key": "onboarding.invalid_times",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 928
+        },
+        "value": "%@"
+      },
+      {
+        "comment": "",
+        "key": "quick_add_minutes",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 935
+        },
+        "value": "%d"
+      },
+      {
+        "comment": "",
+        "key": "schedule.suspended_until",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 942
+        },
+        "value": "%@"
+      },
+      {
+        "comment": "",
+        "key": "seconds.short",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 949
+        },
+        "value": "%d"
+      },
+      {
+        "comment": "",
+        "key": "settings.after_last_bell",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 956
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.after_last_bell.hide_until_one_hour",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 963
+        }
+      },
+      {
+        "comment": "",
+        "key": "settings.after_last_bell.show_next",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 970
+        }
+      },
+      {
+        "comment": "",
+        "key": "site.delete_message",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 977
+        },
+        "value": "%@"
+      },
+      {
+        "comment": "",
+        "key": "site.schedule_count.many",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 984
+        },
+        "value": "%d"
+      },
+      {
+        "comment": "",
+        "key": "site.schedule_count.one",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 991
+        },
+        "value": "%d"
+      },
+      {
+        "comment": "",
+        "key": "weekday.short.friday",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 998
+        }
+      },
+      {
+        "comment": "",
+        "key": "weekday.short.monday",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 1005
+        }
+      },
+      {
+        "comment": "",
+        "key": "weekday.short.saturday",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 1012
+        }
+      },
+      {
+        "comment": "",
+        "key": "weekday.short.thursday",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 1019
+        }
+      },
+      {
+        "comment": "",
+        "key": "weekday.short.tuesday",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 1026
+        }
+      },
+      {
+        "comment": "",
+        "key": "weekday.short.wednesday",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 1033
+        }
+      },
+      {
+        "comment": "",
+        "key": "widget.inline_next",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 1040
+        },
+        "value": "%@"
+      },
+      {
+        "comment": "",
+        "key": "À propos",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 1047
+        }
+      },
+      {
+        "comment": "",
+        "key": "Écran verrouillé",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 1054
+        }
+      },
+      {
+        "comment": "",
+        "key": "Écraser les horaires",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 1061
+        }
+      }
+    ]
+  },
+  "version": 1
+}

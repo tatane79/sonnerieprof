@@ -1,0 +1,87 @@
+{
+  "buildCommand" : {
+    "command" : "build",
+    "skipDependencies" : false,
+    "style" : "buildAndRun"
+  },
+  "configuredTargets" : [
+    {
+      "guid" : "fc59417d69c944818776ad5f638727095a199c41c84f97df12775657ce6566a8"
+    }
+  ],
+  "containerPath" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/SonnerieProf.xcodeproj",
+  "continueBuildingAfterErrors" : false,
+  "dependencyScope" : "workspace",
+  "enableIndexBuildArena" : false,
+  "hideShellScriptEnvironment" : false,
+  "parameters" : {
+    "action" : "install",
+    "activeArchitecture" : "undefined_arch",
+    "activeRunDestination" : {
+      "disableOnlyActiveArch" : true,
+      "hostTargetedPlatform" : null,
+      "platform" : "iphoneos",
+      "sdk" : "iphoneos27.0",
+      "sdkVariant" : "iphoneos",
+      "supportedArchitectures" : [
+        "armv4t",
+        "armv5",
+        "armv6",
+        "armv7",
+        "armv7f",
+        "armv7s",
+        "armv7k",
+        "arm64",
+        "arm64e"
+      ],
+      "targetArchitecture" : "undefined_arch"
+    },
+    "arenaInfo" : {
+      "buildIntermediatesPath" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Intermediates.noindex",
+      "buildProductsPath" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Products",
+      "derivedDataPath" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch",
+      "indexDataStoreFolderPath" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Index.noindex/DataStore",
+      "indexEnableDataStore" : true,
+      "indexPCHPath" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Index.noindex/PrecompiledHeaders",
+      "pchPath" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Intermediates.noindex/PrecompiledHeaders"
+    },
+    "configurationName" : "Release",
+    "overrides" : {
+      "commandLine" : {
+        "table" : {
+          "OTHER_SWIFT_FLAGS" : "-disable-sandbox"
+        }
+      },
+      "synthesized" : {
+        "table" : {
+          "ACTION" : "install",
+          "ASSET_PACK_FOLDER_PATH" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/InstallationBuildProductsLocation/OnDemandResources",
+          "ASSETCATALOG_COMPILER_FLATTENED_APP_ICON_PATH" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/BuildProductsPath/ProductIcon.png",
+          "DEPLOYMENT_LOCATION" : "YES",
+          "DEPLOYMENT_POSTPROCESSING" : "YES",
+          "DSTROOT" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/InstallationBuildProductsLocation",
+          "EMBED_ASSET_PACKS_IN_PRODUCT_BUNDLE" : "NO",
+          "ENABLE_PREVIEWS" : "NO",
+          "ENABLE_SIGNATURE_AGGREGATION" : "YES",
+          "ENABLE_XOJIT_PREVIEWS" : "YES",
+          "INDEX_ENABLE_DATA_STORE" : "NO",
+          "MESSAGES_APPLICATION_EXTENSION_SUPPORT_FOLDER_PATH" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/BuildProductsPath/MessagesApplicationExtensionSupport",
+          "MESSAGES_APPLICATION_SUPPORT_FOLDER_PATH" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/BuildProductsPath/MessagesApplicationSupport",
+          "OBJROOT" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath",
+          "ONLY_ACTIVE_ARCH" : "YES",
+          "SHARED_PRECOMPS_DIR" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/PrecompiledHeaders",
+          "SIGNATURE_METADATA_FOLDER_PATH" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/BuildProductsPath/Signatures",
+          "SWIFT_STDLIB_TOOL_UNSIGNED_DESTINATION_DIR" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/BuildProductsPath/SwiftSupport",
+          "SYMROOT" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/BuildProductsPath",
+          "WATCHKIT_2_SUPPORT_FOLDER_PATH" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData-NoWatch/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/BuildProductsPath/WatchKitSupport2"
+        }
+      }
+    }
+  },
+  "schemeCommand" : "archive",
+  "showNonLoggedProgress" : true,
+  "useDryRun" : false,
+  "useImplicitDependencies" : true,
+  "useLegacyBuildLocations" : false,
+  "useParallelTargets" : true
+}

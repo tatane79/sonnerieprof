@@ -1,0 +1,55 @@
+name: SonnerieProf
+options:
+  bundleIdPrefix: fr.jonathanlafarge
+  developmentLanguage: fr
+settings:
+  base:
+    IPHONEOS_DEPLOYMENT_TARGET: 18.0
+    SWIFT_VERSION: 5.0
+targets:
+  SonnerieProf:
+    type: application
+    platform: iOS
+    sources:
+      - path: SonnerieProf
+      - path: Shared
+    info:
+      path: SonnerieProf/Info.plist
+    entitlements:
+      path: SonnerieProf/SonnerieProf.entitlements
+    dependencies:
+      - target: SonnerieProfWidgets
+        embed: true
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: fr.jonathanlafarge.sonnerieprof
+        MARKETING_VERSION: 0.9
+        CURRENT_PROJECT_VERSION: 1
+  SonnerieProfWidgets:
+    type: app-extension
+    platform: iOS
+    sources:
+      - path: SonnerieProfWidgets
+      - path: Shared
+    info:
+      path: SonnerieProfWidgets/Info.plist
+    entitlements:
+      path: SonnerieProfWidgets/SonnerieProfWidgets.entitlements
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: fr.jonathanlafarge.sonnerieprof.widgets
+        APPLICATION_EXTENSION_API_ONLY: YES
+        SKIP_INSTALL: YES
+        MARKETING_VERSION: 0.9
+        CURRENT_PROJECT_VERSION: 1
+  SonnerieProfTests:
+    type: bundle.unit-test
+    platform: iOS
+    sources:
+      - path: SonnerieProfTests
+    dependencies:
+      - target: SonnerieProf
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: fr.jonathanlafarge.sonnerieprof.tests
+        GENERATE_INFOPLIST_FILE: YES

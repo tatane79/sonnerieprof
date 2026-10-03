@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%@ – %@</key>
+	<string>%1$@ – %2$@</string>
+	<key>+15 min</key>
+	<string>+15 min</string>
+	<key>+55 min</key>
+	<string>+55 min</string>
+	<key>1 min avant la prochaine sonnerie</key>
+	<string>1 min před dalším zvoněním</string>
+	<key>12 h (AM/PM)</key>
+	<string>12 h (AM/PM)</string>
+	<key>24 h</key>
+	<string>24 h</string>
+	<key>5 min avant la prochaine sonnerie</key>
+	<string>5 min před dalším zvoněním</string>
+	<key>Affiche le temps restant avant la prochaine sonnerie.</key>
+	<string>Zobrazuje zbývající čas do dalšího zvonění.</string>
+	<key>Afficher en plein écran</key>
+	<string>Zobrazit na celou obrazovku</string>
+	<key>Ajouter un site</key>
+	<string>Přidat pracoviště</string>
+	<key>Ajoutez les horaires de ce site dans Réglages.</key>
+	<string>Přidejte časy zvonění tohoto pracoviště v Nastavení.</string>
+	<key>Ajoutez vos séances dans l’emploi du temps.</key>
+	<string>Přidejte své hodiny do rozvrhu.</string>
+	<key>Ajoutez votre établissement et ses horaires de sonnerie.</key>
+	<string>Přidejte svou školu a časy zvonění.</string>
+	<key>Annuler</key>
+	<string>Zrušit</string>
+	<key>Appliquer le lundi à toute la semaine</key>
+	<string>Použít pondělí na celý týden</string>
+	<key>Appliquer les horaires du lundi ?</key>
+	<string>Použít pondělní časy?</string>
+	<key>Aucun compte requis</key>
+	<string>Účet není potřeba</string>
+	<key>Aucun cours en ce moment</key>
+	<string>Právě neprobíhá žádná hodina</string>
+	<key>Aucun prochain cours programmé</key>
+	<string>Není naplánována žádná další hodina</string>
+	<key>Aucun site configuré</key>
+	<string>Není nastaveno žádné pracoviště</string>
+	<key>Aucune publicité ni suivi</key>
+	<string>Bez reklam a sledování</string>
+	<key>Aucune sonnerie</key>
+	<string>Žádné zvonění</string>
+	<key>Aucune sonnerie configurée</key>
+	<string>Nejsou nastaveny žádné časy zvonění</string>
+	<key>Auteur</key>
+	<string>Autor</string>
+	<key>Autre horaire…</key>
+	<string>Jiný čas…</string>
+	<key>Bienvenue dans Sonnerie Prof</key>
+	<string>Vítejte v Sonnerie Prof</string>
+	<key>Compilation</key>
+	<string>Sestavení</string>
+	<key>Confidentialité</key>
+	<string>Soukromí</string>
+	<key>Configurer plus tard</key>
+	<string>Nastavit později</string>
+	<key>Configurez un premier établissement. Aucun compte n'est requis et vos données restent sur l'iPhone.</key>
+	<string>Nastavte svou první školu. Účet není potřeba a vaše data zůstávají v iPhonu.</string>
+	<key>Conflit d’emploi du temps</key>
+	<string>Konflikt v rozvrhu</string>
+	<key>Conserve le site, le jour et le type de semaine, puis prépare le créneau suivant.</key>
+	<string>Zachová místo, den a typ týdne a poté připraví další časový úsek.</string>
+	<key>Créer mon site</key>
+	<string>Vytvořit moje pracoviště</string>
+	<key>Date et heure simulées</key>
+	<string>Simulované datum a čas</string>
+	<key>Données enregistrées localement</key>
+	<string>Data jsou uložena lokálně</string>
+	<key>Détecter automatiquement</key>
+	<string>Zjistit automaticky</string>
+	<key>Elle permet uniquement de sélectionner automatiquement le bon site lorsque vous utilisez plusieurs établissements.</key>
+	<string>Používá se pouze k automatickému výběru správného pracoviště, pokud používáte více škol.</string>
+	<key>Emploi du temps</key>
+	<string>Rozvrh</string>
+	<key>Ex. Collège Jean-Moulin</key>
+	<string>Např. Gymnázium Jana Nerudy</string>
+	<key>Fermer le plein écran</key>
+	<string>Zavřít celou obrazovku</string>
+	<key>Format de l’heure</key>
+	<string>Formát času</string>
+	<key>Glisser à gauche pour supprimer un site.</key>
+	<string>Pro odstranění pracoviště přejeďte doleva.</string>
+	<key>Heure simulée</key>
+	<string>Simulovaný čas</string>
+	<key>Horaires HH:mm</key>
+	<string>Časy HH:mm</string>
+	<key>Horaires terminés</key>
+	<string>Žádná další zvonění</string>
+	<key>Jour</key>
+	<string>Den</string>
+	<key>La localisation est facultative et n’est jamais transmise. Lorsque les mises à jour Always-On à distance sont activées, seules les heures de sonnerie nécessaires et un identifiant technique temporaire sont transmis au service de mise à jour.</key>
+	<string>Poloha je volitelná a nikdy se neodesílá. Když jsou zapnuté vzdálené aktualizace Always-On, službě aktualizací se odesílají pouze potřebné časy zvonění a dočasný technický identifikátor.</string>
+	<key>La localisation est facultative. Elle sert uniquement à sélectionner automatiquement le site le plus proche et n'est ni conservée séparément ni transmise.</key>
+	<string>Poloha je volitelná. Používá se pouze k automatickému výběru nejbližšího pracoviště a není samostatně ukládána ani přenášena.</string>
+	<key>Langue de test</key>
+	<string>Testovací jazyk</string>
+	<key>Latitude</key>
+	<string>Zeměpisná šířka</string>
+	<key>Les Live Activities sont désactivées dans les réglages iOS.</key>
+	<string>Live Activities jsou v nastavení iOS vypnuté.</string>
+	<key>Les doublons seront supprimés automatiquement.</key>
+	<string>Duplicitní časy budou automaticky odstraněny.</string>
+	<key>Les horaires du mardi au samedi seront remplacés par ceux définis pour le lundi.</key>
+	<string>Časy od úterý do soboty budou nahrazeny časy nastavenými pro pondělí.</string>
+	<key>Les horaires seront triés automatiquement et normalisés au format HH:mm.</key>
+	<string>Časy budou automaticky seřazeny a normalizovány do formátu HH:mm.</string>
+	<key>Les modifications sont enregistrées automatiquement.</key>
+	<string>Změny se ukládají automaticky.</string>
+	<key>Les modifications valides sont enregistrées automatiquement.</key>
+	<string>Platné změny se ukládají automaticky.</string>
+	<key>Les vibrations sont déclenchées uniquement lorsque Sonnerie Prof est active au premier plan. Aucun son n'est joué.</key>
+	<string>Vibrace se spustí pouze tehdy, když je Sonnerie Prof aktivní v popředí. Nebude přehrán žádný zvuk.</string>
+	<key>Localisation (facultatif)</key>
+	<string>Poloha (volitelné)</string>
+	<key>Longitude</key>
+	<string>Zeměpisná délka</string>
+	<key>L’heure simulée avance à vitesse réelle. Elle est utilisée par l’app, le widget et la Live Activity. Ce réglage existe uniquement dans les builds Debug et n’apparaît pas dans la version App Store.</key>
+	<string>Simulovaný čas běží skutečnou rychlostí. Používá ho aplikace, widget i Live Activity. Toto nastavení existuje pouze v Debug buildech a ve verzi z App Storu se nezobrazuje.</string>
+	<key>Maximum de 4 sites atteint</key>
+	<string>Bylo dosaženo maxima 4 pracovišť</string>
+	<key>Mise à jour…</key>
+	<string>Aktualizace…</string>
+	<key>Mode développeur</key>
+	<string>Vývojářský režim</string>
+	<key>Mode test actif</key>
+	<string>Testovací režim aktivní</string>
+	<key>Modifiez le jour, les horaires ou le type de semaine avant d’enregistrer.</key>
+	<string>Před uložením změňte den, časy nebo typ týdne.</string>
+	<key>Mon établissement</key>
+	<string>Moje škola</string>
+	<key>Même horaires du lundi au vendredi</key>
+	<string>Stejné časy od pondělí do pátku</string>
+	<key>Même horaires le samedi</key>
+	<string>Stejné časy v sobotu</string>
+	<key>Nom</key>
+	<string>Název</string>
+	<key>Nom de l'établissement</key>
+	<string>Název školy</string>
+	<key>Nombre de vibrations</key>
+	<string>Počet vibrací</string>
+	<key>Nouveau site</key>
+	<string>Nové pracoviště</string>
+	<key>Pendant une suspension (vacances, fermeture, congé), aucune sonnerie n'est proposée avant la date de reprise.</key>
+	<string>Během pozastavení (prázdniny, uzavření nebo volno) nebudou před datem obnovení naplánována žádná zvonění.</string>
+	<key>Planning</key>
+	<string>Rozvrh</string>
+	<key>Position approximative</key>
+	<string>Přibližná poloha</string>
+	<key>Position enregistrée</key>
+	<string>Poloha uložena</string>
+	<key>Position non configurée</key>
+	<string>Poloha není nastavena</string>
+	<key>Pour un suivi fiable sur toute la journée, ajoutez aussi le widget « Sonnerie Prof » à l’écran verrouillé. iOS limite une Live Activity active à environ 8 heures.</key>
+	<string>Pro spolehlivé sledování po celý den přidejte také widget „Sonnerie Prof“ na zamčenou obrazovku. iOS omezuje aktivní Live Activity přibližně na 8 hodin.</string>
+	<key>Prochaine sonnerie :</key>
+	<string>Další zvonění:</string>
+	<key>Q1</key>
+	<string>Q1</string>
+	<key>Q2</key>
+	<string>Q2</string>
+	<key>Rayon (m)</key>
+	<string>Poloměr (m)</string>
+	<key>Reprendre le</key>
+	<string>Obnovit dne</string>
+	<key>Revenir à l’heure réelle</key>
+	<string>Vrátit se ke skutečnému času</string>
+	<key>Réglages</key>
+	<string>Nastavení</string>
+	<key>Saisissez les horaires jour par jour ou recopiez ceux du lundi sur le mardi, mercredi, jeudi, vendredi et samedi.</key>
+	<string>Zadejte časy po jednotlivých dnech nebo zkopírujte pondělní časy na úterý, středu, čtvrtek, pátek a sobotu.</string>
+	<key>Site</key>
+	<string>Pracoviště</string>
+	<key>Site actuel</key>
+	<string>Aktuální pracoviště</string>
+	<key>Sites</key>
+	<string>Pracoviště</string>
+	<key>Sonnerie Prof</key>
+	<string>Sonnerie Prof</string>
+	<key>Sonnerie Prof est conçue pour aider les enseignants à garder un œil sur le temps restant avant la prochaine sonnerie, directement depuis l’app ou l’écran verrouillé</key>
+	<string>Sonnerie Prof pomáhá učitelům sledovat čas zbývající do dalšího zvonění přímo v aplikaci nebo na zamčené obrazovce.</string>
+	<key>Sonneries</key>
+	<string>Časy zvonění</string>
+	<key>Sonneries du lundi</key>
+	<string>Pondělní zvonění</string>
+	<key>Supprimer</key>
+	<string>Odstranit</string>
+	<key>Supprimer ce site ?</key>
+	<string>Odstranit toto pracoviště?</string>
+	<key>Suspendre temporairement</key>
+	<string>Dočasně pozastavit</string>
+	<key>Temps restant</key>
+	<string>Zbývající čas</string>
+	<key>Tester</key>
+	<string>Vyzkoušet</string>
+	<key>Un horaire par ligne, au format HH:mm.</key>
+	<string>Jeden čas na řádek ve formátu HH:mm.</string>
+	<key>Un horaire par ligne. Les boutons ajoutent automatiquement une ligne à partir du dernier horaire saisi.</key>
+	<string>Jeden čas na řádek. Tlačítka automaticky přidají řádek podle posledního zadaného času.</string>
+	<key>Utiliser ma position</key>
+	<string>Použít moji polohu</string>
+	<key>Utiliser ma position actuelle</key>
+	<string>Použít moji aktuální polohu</string>
+	<key>Utiliser une heure simulée</key>
+	<string>Použít simulovaný čas</string>
+	<key>Version</key>
+	<string>Verze</string>
+	<key>Vibrations</key>
+	<string>Vibrace</string>
+	<key>Vibrer à la sonnerie</key>
+	<string>Vibrovat při zvonění</string>
+	<key>common.not_available</key>
+	<string>—</string>
+	<key>day.fallback</key>
+	<string>Den %d</string>
+	<key>editor.duplicate_count.many</key>
+	<string>Při ukládání bude automaticky odstraněno %d duplicit.</string>
+	<key>editor.duplicate_count.one</key>
+	<string>Při ukládání bude automaticky odstraněn %d duplikát.</string>
+	<key>editor.invalid_times</key>
+	<string>Neplatný čas/neplatné časy: %@. Použijte HH:mm, například 08:10.</string>
+	<key>fullscreen.minutes_remaining</key>
+	<string>%d min</string>
+	<key>jusqu'à la sonnerie</key>
+	<string>do zvonění</string>
+	<key>language.cs</key>
+	<string>Čeština</string>
+	<key>language.da</key>
+	<string>Dansk</string>
+	<key>language.de</key>
+	<string>Deutsch</string>
+	<key>language.en</key>
+	<string>English</string>
+	<key>language.es</key>
+	<string>Español</string>
+	<key>language.fr</key>
+	<string>Français</string>
+	<key>language.it</key>
+	<string>Italiano</string>
+	<key>language.nl</key>
+	<string>Nederlands</string>
+	<key>language.pl</key>
+	<string>Polski</string>
+	<key>language.pt_BR</key>
+	<string>Português (Brasil)</string>
+	<key>language.pt_PT</key>
+	<string>Português (Portugal)</string>
+	<key>language.ro</key>
+	<string>Română</string>
+	<key>language.sv</key>
+	<string>Svenska</string>
+	<key>language.system</key>
+	<string>Systém</string>
+	<key>live_activity.disabled</key>
+	<string>Live Activities jsou pro tuto aplikaci v nastavení iOS vypnuté.</string>
+	<key>live_activity.next_bell</key>
+	<string>Další zvonění: %@</string>
+	<key>live_activity.no_upcoming</key>
+	<string>Pro toto pracoviště není k dispozici žádné další zvonění.</string>
+	<key>location.permission_denied</key>
+	<string>Povolte přístup k poloze v Nastavení, aby bylo možné pracoviště zjistit automaticky.</string>
+	<key>location.precise_unavailable</key>
+	<string>Přesná poloha není k dispozici. Pracoviště můžete stále vybrat ručně. (%@)</string>
+	<key>location.unknown_status</key>
+	<string>Neznámý stav oprávnění k poloze.</string>
+	<key>lock.active_next</key>
+	<string>Aktivní · další zvonění %@.</string>
+	<key>lock.active_until</key>
+	<string>Aktivní do dalšího zvonění v %@.</string>
+	<key>lock.add_site_first</key>
+	<string>Nejprve přidejte pracoviště.</string>
+	<key>lock.long_delay</key>
+	<string>Zobrazení na zamčené obrazovce je zapnuté. Další zvonění je daleko; iOS může Live Activity odstranit dříve. Widget na zamčené obrazovce je nadále doporučen.</string>
+	<key>lock.no_upcoming</key>
+	<string>Není k dispozici žádné další zvonění.</string>
+	<key>lockscreen.description</key>
+	<string>Zobrazovat zbývající čas na zamčené obrazovce a, pokud je k dispozici, v režimu Always-On.</string>
+	<key>next_bell_at</key>
+	<string>Další zvonění v %@</string>
+	<key>onboarding.invalid_times</key>
+	<string>Neplatný čas/neplatné časy: %@.</string>
+	<key>quick_add_minutes</key>
+	<string>+%d min</string>
+	<key>schedule.suspended_until</key>
+	<string>Rozvrh pozastaven do %@</string>
+	<key>seconds.short</key>
+	<string>%d s</string>
+	<key>settings.after_last_bell</key>
+	<string>Po posledním zvonění</string>
+	<key>settings.after_last_bell.hide_until_one_hour</key>
+	<string>Skrýt až do 1 hodiny předem</string>
+	<key>settings.after_last_bell.show_next</key>
+	<string>Zobrazit další zvonění</string>
+	<key>site.delete_message</key>
+	<string>Pracoviště „%@“ a všechny jeho časy zvonění budou trvale odstraněny.</string>
+	<key>site.schedule_count.many</key>
+	<string>%d časů</string>
+	<key>site.schedule_count.one</key>
+	<string>%d čas</string>
+	<key>tip.body</key>
+	<string>Všechny funkce Sonnerie Prof jsou zdarma. Pokud vám aplikace pomáhá každý den, můžete její vývoj podpořit dobrovolným spropitným.</string>
+	<key>tip.debug_show</key>
+	<string>Zobrazit nabídku spropitného</string>
+	<key>tip.navigation_title</key>
+	<string>Podpora Sonnerie Prof</string>
+	<key>tip.no_unlock</key>
+	<string>Spropitné je zcela dobrovolné a neodemyká žádné funkce.</string>
+	<key>tip.product.large</key>
+	<string>Velké poděkování</string>
+	<key>tip.product.medium</key>
+	<string>Káva</string>
+	<key>tip.product.small</key>
+	<string>Malé poděkování</string>
+	<key>tip.products_load_error</key>
+	<string>Nabídky spropitného se nepodařilo načíst.</string>
+	<key>tip.products_unavailable</key>
+	<string>Spropitné je momentálně nedostupné.</string>
+	<key>tip.purchase_error</key>
+	<string>Platbu se nepodařilo dokončit.</string>
+	<key>tip.purchase_pending</key>
+	<string>Platba čeká na schválení.</string>
+	<key>tip.support_about</key>
+	<string>Aplikace Sonnerie Prof je zdarma a všechny její funkce jsou dostupné bez placení. Pokud chcete, můžete její vývoj podpořit dobrovolným spropitným.</string>
+	<key>tip.support_button</key>
+	<string>Podpořit Sonnerie Prof</string>
+	<key>tip.support_section</key>
+	<string>Podpora aplikace</string>
+	<key>tip.thank_you_message</key>
+	<string>Děkujeme, že podporujete vývoj Sonnerie Prof.</string>
+	<key>tip.thank_you_title</key>
+	<string>Moc děkujeme!</string>
+	<key>tip.title</key>
+	<string>Malá podpora?</string>
+	<key>tip.voluntary</key>
+	<string>Dobrovolné spropitné</string>
+	<key>weekday.short.friday</key>
+	<string>Pá</string>
+	<key>weekday.short.monday</key>
+	<string>Po</string>
+	<key>weekday.short.saturday</key>
+	<string>So</string>
+	<key>weekday.short.thursday</key>
+	<string>Čt</string>
+	<key>weekday.short.tuesday</key>
+	<string>Út</string>
+	<key>weekday.short.wednesday</key>
+	<string>St</string>
+	<key>widget.inline_next</key>
+	<string>🔔 Další: %@</string>
+	<key>À propos</key>
+	<string>Informace</string>
+	<key>Écran verrouillé</key>
+	<string>Zamčená obrazovka</string>
+	<key>Écraser les horaires</key>
+	<string>Přepsat časy</string>
+	<key>–</key>
+	<string>–</string>
+</dict>
+</plist>

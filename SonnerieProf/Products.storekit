@@ -1,0 +1,108 @@
+{
+  "appPolicies" : {
+    "eula" : "",
+    "policies" : [
+      {
+        "locale" : "en_US",
+        "policyText" : "",
+        "policyURL" : ""
+      }
+    ]
+  },
+  "identifier" : "C3A8FD04-EC2F-4C18-BB5E-9C0F1D9E6E71",
+  "nonRenewingSubscriptions" : [
+
+  ],
+  "products" : [
+    {
+      "displayPrice" : "1.99",
+      "familyShareable" : false,
+      "internalID" : "BB844E10-440C-45D0-85D0-71FCA1B57D7D",
+      "localizations" : [
+        {
+          "description" : "Un petit pourboire volontaire pour soutenir Sonnerie Prof.",
+          "displayName" : "Petit merci",
+          "locale" : "fr"
+        },
+        {
+          "description" : "A small optional tip to support Sonnerie Prof.",
+          "displayName" : "Small thank you",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "fr.jonathanlafarge.sonnerieprof.tip.small",
+      "referenceName" : "Tip - Small",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "4.99",
+      "familyShareable" : false,
+      "internalID" : "A652792C-996C-477F-A24B-D962546E399D",
+      "localizations" : [
+        {
+          "description" : "Un pourboire volontaire pour soutenir le développement de Sonnerie Prof.",
+          "displayName" : "Un café",
+          "locale" : "fr"
+        },
+        {
+          "description" : "An optional tip to support the development of Sonnerie Prof.",
+          "displayName" : "A coffee",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "fr.jonathanlafarge.sonnerieprof.tip.medium",
+      "referenceName" : "Tip - Medium",
+      "type" : "Consumable"
+    },
+    {
+      "displayPrice" : "9.99",
+      "familyShareable" : false,
+      "internalID" : "2BB993F5-593C-42E7-93E5-353CF92D77F2",
+      "localizations" : [
+        {
+          "description" : "Un grand pourboire volontaire pour soutenir Sonnerie Prof.",
+          "displayName" : "Grand merci",
+          "locale" : "fr"
+        },
+        {
+          "description" : "A larger optional tip to support Sonnerie Prof.",
+          "displayName" : "Big thank you",
+          "locale" : "en_US"
+        }
+      ],
+      "productID" : "fr.jonathanlafarge.sonnerieprof.tip.large",
+      "referenceName" : "Tip - Large",
+      "type" : "Consumable"
+    }
+  ],
+  "settings" : {
+    "_applicationInternalID" : "0",
+    "_askToBuyEnabled" : false,
+    "_billingGracePeriodEnabled" : false,
+    "_billingIssuesEnabled" : false,
+    "_developerTeamID" : "",
+    "_disableDialogs" : false,
+    "_failTransactionsEnabled" : false,
+    "_lastSynchronizedDate" : 0,
+    "_locale" : "fr",
+    "_renewalBillingIssuesEnabled" : false,
+    "_storefront" : "FRA",
+    "_storeKitErrors" : [
+
+    ],
+    "_timeRate" : 0
+  },
+  "subscriptionBundleGroups" : [
+
+  ],
+  "subscriptionGroups" : [
+
+  ],
+  "subscriptionSuiteGroups" : [
+
+  ],
+  "version" : {
+    "major" : 6,
+    "minor" : 3
+  }
+}

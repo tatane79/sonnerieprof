@@ -1,0 +1,32 @@
+{
+  "source": "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/SonnerieProf/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Ouvre les réglages de l’emploi du temps.",
+        "location": {
+          "startingColumn": 40,
+          "startingLine": 111
+        }
+      },
+      {
+        "comment": "",
+        "key": "Emploi du temps",
+        "location": {
+          "startingColumn": 46,
+          "startingLine": 126
+        }
+      },
+      {
+        "comment": "",
+        "key": "Emploi du temps",
+        "location": {
+          "startingColumn": 27,
+          "startingLine": 712
+        }
+      }
+    ]
+  },
+  "version": 1
+}

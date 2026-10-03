@@ -1,0 +1,31 @@
+{
+  "" : {
+    "const-values" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/SonnerieProfWatch Watch App-primary.swiftconstvalues",
+    "dependencies" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/SonnerieProfWatch Watch App-primary.d",
+    "diagnostics" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/SonnerieProfWatch Watch App-primary.dia",
+    "emit-module-dependencies" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/SonnerieProfWatch Watch App-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/SonnerieProfWatch Watch App-primary-emit-module.dia",
+    "pch" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/SonnerieProfWatch Watch App-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/SonnerieProfWatch Watch App-primary.swiftdeps"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/SonnerieProfWatch Watch App/ContentView.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/SonnerieProfWatch Watch App/SonnerieProfWatchApp.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/SonnerieProfWatchApp.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/SonnerieProfWatchApp.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/SonnerieProfWatchApp.o"
+  },
+  "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/SonnerieProfWatch Watch App/WatchScheduleModel.swift" : {
+    "index-unit-output-path" : "/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/WatchScheduleModel.o",
+    "llvm-bc" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/WatchScheduleModel.bc",
+    "object" : "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/AppStoreBuild/DerivedData/Build/Intermediates.noindex/ArchiveIntermediates/SonnerieProf/IntermediateBuildFilesPath/SonnerieProf.build/Release-watchos/SonnerieProfWatch Watch App.build/Objects-normal/arm64/WatchScheduleModel.o"
+  }
+}

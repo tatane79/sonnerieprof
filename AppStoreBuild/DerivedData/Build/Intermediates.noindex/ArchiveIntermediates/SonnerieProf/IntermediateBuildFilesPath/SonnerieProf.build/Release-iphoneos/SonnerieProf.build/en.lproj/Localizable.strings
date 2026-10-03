@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%@ – %@</key>
+	<string>%1$@ – %2$@</string>
+	<key>+15 min</key>
+	<string>+15 min</string>
+	<key>+55 min</key>
+	<string>+55 min</string>
+	<key>1 min avant la prochaine sonnerie</key>
+	<string>1 min before the next bell</string>
+	<key>12 h (AM/PM)</key>
+	<string>12 h (AM/PM)</string>
+	<key>24 h</key>
+	<string>24 h</string>
+	<key>5 min avant la prochaine sonnerie</key>
+	<string>5 min before the next bell</string>
+	<key>Affiche le temps restant avant la prochaine sonnerie.</key>
+	<string>Shows the time remaining until the next bell.</string>
+	<key>Afficher en plein écran</key>
+	<string>Show full screen</string>
+	<key>Ajouter un site</key>
+	<string>Add a site</string>
+	<key>Ajoutez les horaires de ce site dans Réglages.</key>
+	<string>Add this site's bell times in Settings.</string>
+	<key>Ajoutez vos séances dans l’emploi du temps.</key>
+	<string>Add your classes to the timetable.</string>
+	<key>Ajoutez votre établissement et ses horaires de sonnerie.</key>
+	<string>Add your school and its bell times.</string>
+	<key>Annuler</key>
+	<string>Cancel</string>
+	<key>Appliquer le lundi à toute la semaine</key>
+	<string>Apply Monday to the whole week</string>
+	<key>Appliquer les horaires du lundi ?</key>
+	<string>Apply Monday's times?</string>
+	<key>Aucun compte requis</key>
+	<string>No account required</string>
+	<key>Aucun cours en ce moment</key>
+	<string>No class right now</string>
+	<key>Aucun prochain cours programmé</key>
+	<string>No upcoming class scheduled</string>
+	<key>Aucun site configuré</key>
+	<string>No site configured</string>
+	<key>Aucune publicité ni suivi</key>
+	<string>No ads or tracking</string>
+	<key>Aucune sonnerie</key>
+	<string>No bell</string>
+	<key>Aucune sonnerie configurée</key>
+	<string>No bell times configured</string>
+	<key>Auteur</key>
+	<string>Author</string>
+	<key>Autre horaire…</key>
+	<string>Other time…</string>
+	<key>Bienvenue dans Sonnerie Prof</key>
+	<string>Welcome to Sonnerie Prof</string>
+	<key>Compilation</key>
+	<string>Build</string>
+	<key>Confidentialité</key>
+	<string>Privacy</string>
+	<key>Configurer plus tard</key>
+	<string>Set up later</string>
+	<key>Configurez un premier établissement. Aucun compte n'est requis et vos données restent sur l'iPhone.</key>
+	<string>Set up your first school. No account is required and your data stays on your iPhone.</string>
+	<key>Conflit d’emploi du temps</key>
+	<string>Timetable conflict</string>
+	<key>Conserve le site, le jour et le type de semaine, puis prépare le créneau suivant.</key>
+	<string>Keeps the site, day, and week type, then prepares the next time slot.</string>
+	<key>Créer mon site</key>
+	<string>Create my site</string>
+	<key>Date et heure simulées</key>
+	<string>Simulated date and time</string>
+	<key>Données enregistrées localement</key>
+	<string>Data stored locally</string>
+	<key>Détecter automatiquement</key>
+	<string>Detect automatically</string>
+	<key>Elle permet uniquement de sélectionner automatiquement le bon site lorsque vous utilisez plusieurs établissements.</key>
+	<string>It is only used to automatically select the right site when you use several schools.</string>
+	<key>Emploi du temps</key>
+	<string>Timetable</string>
+	<key>Ex. Collège Jean-Moulin</key>
+	<string>e.g. Central High School</string>
+	<key>Fermer le plein écran</key>
+	<string>Close full screen</string>
+	<key>Format de l’heure</key>
+	<string>Time format</string>
+	<key>Glisser à gauche pour supprimer un site.</key>
+	<string>Swipe left to delete a site.</string>
+	<key>Heure simulée</key>
+	<string>Simulated time</string>
+	<key>Horaires HH:mm</key>
+	<string>Times HH:mm</string>
+	<key>Horaires terminés</key>
+	<string>No more bell times</string>
+	<key>Jour</key>
+	<string>Day</string>
+	<key>La localisation est facultative et n’est jamais transmise. Lorsque les mises à jour Always-On à distance sont activées, seules les heures de sonnerie nécessaires et un identifiant technique temporaire sont transmis au service de mise à jour.</key>
+	<string>Location is optional and is never transmitted. When remote Always-On updates are enabled, only the required bell times and a temporary technical identifier are sent to the update service.</string>
+	<key>La localisation est facultative. Elle sert uniquement à sélectionner automatiquement le site le plus proche et n'est ni conservée séparément ni transmise.</key>
+	<string>Location is optional. It is only used to automatically select the nearest site and is neither stored separately nor transmitted.</string>
+	<key>Langue de test</key>
+	<string>Test language</string>
+	<key>Latitude</key>
+	<string>Latitude</string>
+	<key>Les Live Activities sont désactivées dans les réglages iOS.</key>
+	<string>Live Activities are disabled in iOS Settings.</string>
+	<key>Les doublons seront supprimés automatiquement.</key>
+	<string>Duplicate times will be removed automatically.</string>
+	<key>Les horaires du mardi au samedi seront remplacés par ceux définis pour le lundi.</key>
+	<string>Tuesday to Saturday times will be replaced by Monday's times.</string>
+	<key>Les horaires seront triés automatiquement et normalisés au format HH:mm.</key>
+	<string>Times will be sorted automatically and normalized to HH:mm format.</string>
+	<key>Les modifications sont enregistrées automatiquement.</key>
+	<string>Changes are saved automatically.</string>
+	<key>Les modifications valides sont enregistrées automatiquement.</key>
+	<string>Valid changes are saved automatically.</string>
+	<key>Les vibrations sont déclenchées uniquement lorsque Sonnerie Prof est active au premier plan. Aucun son n'est joué.</key>
+	<string>Vibrations are triggered only while Sonnerie Prof is active in the foreground. No sound is played.</string>
+	<key>Localisation (facultatif)</key>
+	<string>Location (optional)</string>
+	<key>Longitude</key>
+	<string>Longitude</string>
+	<key>L’heure simulée avance à vitesse réelle. Elle est utilisée par l’app, le widget et la Live Activity. Ce réglage existe uniquement dans les builds Debug et n’apparaît pas dans la version App Store.</key>
+	<string>Simulated time advances at real speed. It is used by the app, widget, and Live Activity. This setting exists only in Debug builds and does not appear in the App Store version.</string>
+	<key>Maximum de 4 sites atteint</key>
+	<string>Maximum of 4 sites reached</string>
+	<key>Mise à jour…</key>
+	<string>Updating…</string>
+	<key>Mode développeur</key>
+	<string>Developer mode</string>
+	<key>Mode test actif</key>
+	<string>Test mode active</string>
+	<key>Modifiez le jour, les horaires ou le type de semaine avant d’enregistrer.</key>
+	<string>Change the day, times, or week type before saving.</string>
+	<key>Mon établissement</key>
+	<string>My school</string>
+	<key>Même horaires du lundi au vendredi</key>
+	<string>Same times Monday to Friday</string>
+	<key>Même horaires le samedi</key>
+	<string>Same times on Saturday</string>
+	<key>Nom</key>
+	<string>Name</string>
+	<key>Nom de l'établissement</key>
+	<string>School name</string>
+	<key>Nombre de vibrations</key>
+	<string>Number of vibrations</string>
+	<key>Nouveau site</key>
+	<string>New site</string>
+	<key>Pendant une suspension (vacances, fermeture, congé), aucune sonnerie n'est proposée avant la date de reprise.</key>
+	<string>While paused (holidays, closure or leave), no bells are scheduled before the resume date.</string>
+	<key>Planning</key>
+	<string>Schedule</string>
+	<key>Position approximative</key>
+	<string>Approximate location</string>
+	<key>Position enregistrée</key>
+	<string>Location saved</string>
+	<key>Position non configurée</key>
+	<string>Location not configured</string>
+	<key>Pour un suivi fiable sur toute la journée, ajoutez aussi le widget « Sonnerie Prof » à l’écran verrouillé. iOS limite une Live Activity active à environ 8 heures.</key>
+	<string>For reliable all-day tracking, also add the “Sonnerie Prof” widget to the Lock Screen. iOS limits an active Live Activity to about 8 hours.</string>
+	<key>Prochaine sonnerie :</key>
+	<string>Next bell:</string>
+	<key>Q1</key>
+	<string>Q1</string>
+	<key>Q2</key>
+	<string>Q2</string>
+	<key>Rayon (m)</key>
+	<string>Radius (m)</string>
+	<key>Reprendre le</key>
+	<string>Resume on</string>
+	<key>Revenir à l’heure réelle</key>
+	<string>Return to real time</string>
+	<key>Réglages</key>
+	<string>Settings</string>
+	<key>Saisissez les horaires jour par jour ou recopiez ceux du lundi sur le mardi, mercredi, jeudi, vendredi et samedi.</key>
+	<string>Enter times day by day or copy Monday's times to Tuesday, Wednesday, Thursday, Friday and Saturday.</string>
+	<key>Site</key>
+	<string>Site</string>
+	<key>Site actuel</key>
+	<string>Current site</string>
+	<key>Sites</key>
+	<string>Sites</string>
+	<key>Sonnerie Prof</key>
+	<string>Sonnerie Prof</string>
+	<key>Sonnerie Prof est conçue pour aider les enseignants à garder un œil sur le temps restant avant la prochaine sonnerie, directement depuis l’app ou l’écran verrouillé</key>
+	<string>Sonnerie Prof is designed to help teachers keep an eye on the time remaining until the next bell, directly from the app or the Lock Screen.</string>
+	<key>Sonneries</key>
+	<string>Bell times</string>
+	<key>Sonneries du lundi</key>
+	<string>Monday bell times</string>
+	<key>Supprimer</key>
+	<string>Delete</string>
+	<key>Supprimer ce site ?</key>
+	<string>Delete this site?</string>
+	<key>Suspendre temporairement</key>
+	<string>Pause temporarily</string>
+	<key>Temps restant</key>
+	<string>Time remaining</string>
+	<key>Tester</key>
+	<string>Test</string>
+	<key>Un horaire par ligne, au format HH:mm.</key>
+	<string>One time per line, in HH:mm format.</string>
+	<key>Un horaire par ligne. Les boutons ajoutent automatiquement une ligne à partir du dernier horaire saisi.</key>
+	<string>One time per line. The buttons automatically add a line based on the last time entered.</string>
+	<key>Utiliser ma position</key>
+	<string>Use my location</string>
+	<key>Utiliser ma position actuelle</key>
+	<string>Use my current location</string>
+	<key>Utiliser une heure simulée</key>
+	<string>Use simulated time</string>
+	<key>Version</key>
+	<string>Version</string>
+	<key>Vibrations</key>
+	<string>Vibrations</string>
+	<key>Vibrer à la sonnerie</key>
+	<string>Vibrate at bell time</string>
+	<key>common.not_available</key>
+	<string>—</string>
+	<key>day.fallback</key>
+	<string>Day %d</string>
+	<key>editor.duplicate_count.many</key>
+	<string>%d duplicates will be removed automatically when saving.</string>
+	<key>editor.duplicate_count.one</key>
+	<string>%d duplicate will be removed automatically when saving.</string>
+	<key>editor.invalid_times</key>
+	<string>Invalid time(s): %@. Use HH:mm, for example 08:10.</string>
+	<key>fullscreen.minutes_remaining</key>
+	<string>%d min</string>
+	<key>jusqu'à la sonnerie</key>
+	<string>until the bell</string>
+	<key>language.cs</key>
+	<string>Čeština</string>
+	<key>language.da</key>
+	<string>Dansk</string>
+	<key>language.de</key>
+	<string>Deutsch</string>
+	<key>language.en</key>
+	<string>English</string>
+	<key>language.es</key>
+	<string>Español</string>
+	<key>language.fr</key>
+	<string>Français</string>
+	<key>language.it</key>
+	<string>Italiano</string>
+	<key>language.nl</key>
+	<string>Nederlands</string>
+	<key>language.pl</key>
+	<string>Polski</string>
+	<key>language.pt_BR</key>
+	<string>Português (Brasil)</string>
+	<key>language.pt_PT</key>
+	<string>Português (Portugal)</string>
+	<key>language.ro</key>
+	<string>Română</string>
+	<key>language.sv</key>
+	<string>Svenska</string>
+	<key>language.system</key>
+	<string>System</string>
+	<key>live_activity.disabled</key>
+	<string>Live Activities are disabled for this app in iOS Settings.</string>
+	<key>live_activity.next_bell</key>
+	<string>Next bell: %@</string>
+	<key>live_activity.no_upcoming</key>
+	<string>No upcoming bell is available for this site.</string>
+	<key>location.permission_denied</key>
+	<string>Allow location access in Settings to detect the site automatically.</string>
+	<key>location.precise_unavailable</key>
+	<string>Precise location is not available. You can still choose the site manually. (%@)</string>
+	<key>location.unknown_status</key>
+	<string>Unknown location authorization status.</string>
+	<key>lock.active_next</key>
+	<string>Active · next bell %@.</string>
+	<key>lock.active_until</key>
+	<string>Active until the next bell at %@.</string>
+	<key>lock.add_site_first</key>
+	<string>Add a site first.</string>
+	<key>lock.long_delay</key>
+	<string>Lock Screen display enabled. The next bell is far away; iOS may remove the Live Activity before then. The Lock Screen widget is still recommended.</string>
+	<key>lock.no_upcoming</key>
+	<string>No upcoming bell is available.</string>
+	<key>lockscreen.description</key>
+	<string>Show the remaining time on the Lock Screen and, when available, in Always-On mode.</string>
+	<key>next_bell_at</key>
+	<string>Next bell at %@</string>
+	<key>onboarding.invalid_times</key>
+	<string>Invalid time(s): %@.</string>
+	<key>quick_add_minutes</key>
+	<string>+%d min</string>
+	<key>schedule.suspended_until</key>
+	<string>Schedule paused until %@</string>
+	<key>seconds.short</key>
+	<string>%d s</string>
+	<key>settings.after_last_bell</key>
+	<string>After the last bell</string>
+	<key>settings.after_last_bell.hide_until_one_hour</key>
+	<string>Hide until 1 hour before</string>
+	<key>settings.after_last_bell.show_next</key>
+	<string>Show the next bell</string>
+	<key>site.delete_message</key>
+	<string>The site “%@” and all its bell times will be permanently deleted.</string>
+	<key>site.schedule_count.many</key>
+	<string>%d times</string>
+	<key>site.schedule_count.one</key>
+	<string>%d time</string>
+	<key>tip.body</key>
+	<string>All Sonnerie Prof features are free. If the app helps you every day, you can support its development with an optional tip.</string>
+	<key>tip.debug_show</key>
+	<string>Show Tip Prompt</string>
+	<key>tip.navigation_title</key>
+	<string>Support Sonnerie Prof</string>
+	<key>tip.no_unlock</key>
+	<string>Tipping is completely optional and doesn’t unlock any features.</string>
+	<key>tip.product.large</key>
+	<string>A Big Thank-You</string>
+	<key>tip.product.medium</key>
+	<string>A Coffee</string>
+	<key>tip.product.small</key>
+	<string>A Little Thank-You</string>
+	<key>tip.products_load_error</key>
+	<string>Couldn’t load the tip options.</string>
+	<key>tip.products_unavailable</key>
+	<string>Tips are temporarily unavailable.</string>
+	<key>tip.purchase_error</key>
+	<string>The payment couldn’t be completed.</string>
+	<key>tip.purchase_pending</key>
+	<string>The payment is awaiting approval.</string>
+	<key>tip.support_about</key>
+	<string>Sonnerie Prof is free, and all its features are available without payment. If you’d like, you can support its development with an optional tip.</string>
+	<key>tip.support_button</key>
+	<string>Support Sonnerie Prof</string>
+	<key>tip.support_section</key>
+	<string>Support the App</string>
+	<key>tip.thank_you_message</key>
+	<string>Thank you for supporting the development of Sonnerie Prof.</string>
+	<key>tip.thank_you_title</key>
+	<string>Thank You!</string>
+	<key>tip.title</key>
+	<string>A Little Support?</string>
+	<key>tip.voluntary</key>
+	<string>Optional Tip</string>
+	<key>weekday.short.friday</key>
+	<string>F</string>
+	<key>weekday.short.monday</key>
+	<string>M</string>
+	<key>weekday.short.saturday</key>
+	<string>Sa</string>
+	<key>weekday.short.thursday</key>
+	<string>Th</string>
+	<key>weekday.short.tuesday</key>
+	<string>Tu</string>
+	<key>weekday.short.wednesday</key>
+	<string>W</string>
+	<key>widget.inline_next</key>
+	<string>🔔 Next: %@</string>
+	<key>À propos</key>
+	<string>About</string>
+	<key>Écran verrouillé</key>
+	<string>Lock Screen</string>
+	<key>Écraser les horaires</key>
+	<string>Overwrite times</string>
+	<key>–</key>
+	<string>–</string>
+</dict>
+</plist>

@@ -1,0 +1,96 @@
+{
+  "source": "/Users/jonathanlafarge/Downloads/SonnerieProf_v0.7/SonnerieProfWatch Watch App/ContentView.swift",
+  "tables": {
+    "Localizable": [
+      {
+        "comment": "",
+        "key": "Échec de la dernière synchronisation",
+        "location": {
+          "startingColumn": 41,
+          "startingLine": 56
+        }
+      },
+      {
+        "comment": "",
+        "key": "Synchroniser avec l’iPhone",
+        "location": {
+          "startingColumn": 33,
+          "startingLine": 64
+        }
+      },
+      {
+        "comment": "",
+        "key": "Synchroniser",
+        "location": {
+          "startingColumn": 23,
+          "startingLine": 60
+        }
+      },
+      {
+        "comment": "",
+        "key": "Ouvrez Sonnerie Prof sur l’iPhone",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 77
+        }
+      },
+      {
+        "comment": "",
+        "key": "Les données seront ensuite disponibles sans l’iPhone.",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 81
+        }
+      },
+      {
+        "comment": "",
+        "key": "Aucune sonnerie prévue",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 99
+        }
+      },
+      {
+        "comment": "",
+        "key": "Fin dans",
+        "location": {
+          "startingColumn": 32,
+          "startingLine": 124
+        }
+      },
+      {
+        "comment": "",
+        "key": "Prochaine sonnerie",
+        "location": {
+          "startingColumn": 45,
+          "startingLine": 124
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld s",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 158
+        }
+      },
+      {
+        "comment": "",
+        "key": "%lld min",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 168
+        }
+      },
+      {
+        "comment": "",
+        "key": "Synchronisé",
+        "location": {
+          "startingColumn": 18,
+          "startingLine": 182
+        }
+      }
+    ]
+  },
+  "version": 1
+}

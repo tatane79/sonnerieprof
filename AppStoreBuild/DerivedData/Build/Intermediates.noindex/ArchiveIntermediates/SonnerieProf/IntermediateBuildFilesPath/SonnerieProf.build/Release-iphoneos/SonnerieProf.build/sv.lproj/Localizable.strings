@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>%@ – %@</key>
+	<string>%1$@ – %2$@</string>
+	<key>+15 min</key>
+	<string>+15 min</string>
+	<key>+55 min</key>
+	<string>+55 min</string>
+	<key>1 min avant la prochaine sonnerie</key>
+	<string>1 min före nästa ringning</string>
+	<key>12 h (AM/PM)</key>
+	<string>12 h (AM/PM)</string>
+	<key>24 h</key>
+	<string>24 h</string>
+	<key>5 min avant la prochaine sonnerie</key>
+	<string>5 min före nästa ringning</string>
+	<key>Affiche le temps restant avant la prochaine sonnerie.</key>
+	<string>Visar tiden som återstår till nästa skolklocka.</string>
+	<key>Afficher en plein écran</key>
+	<string>Visa i helskärm</string>
+	<key>Ajouter un site</key>
+	<string>Lägg till plats</string>
+	<key>Ajoutez les horaires de ce site dans Réglages.</key>
+	<string>Lägg till ringtiderna för den här platsen i Inställningar.</string>
+	<key>Ajoutez vos séances dans l’emploi du temps.</key>
+	<string>Lägg till dina lektioner i schemat.</string>
+	<key>Ajoutez votre établissement et ses horaires de sonnerie.</key>
+	<string>Lägg till din skola och dess ringtider.</string>
+	<key>Annuler</key>
+	<string>Avbryt</string>
+	<key>Appliquer le lundi à toute la semaine</key>
+	<string>Använd måndagens tider för hela veckan</string>
+	<key>Appliquer les horaires du lundi ?</key>
+	<string>Använd måndagens tider?</string>
+	<key>Aucun compte requis</key>
+	<string>Inget konto krävs</string>
+	<key>Aucun cours en ce moment</key>
+	<string>Ingen lektion just nu</string>
+	<key>Aucun prochain cours programmé</key>
+	<string>Ingen kommande lektion är schemalagd</string>
+	<key>Aucun site configuré</key>
+	<string>Ingen plats konfigurerad</string>
+	<key>Aucune publicité ni suivi</key>
+	<string>Ingen reklam eller spårning</string>
+	<key>Aucune sonnerie</key>
+	<string>Ingen ringning</string>
+	<key>Aucune sonnerie configurée</key>
+	<string>Inga ringtider konfigurerade</string>
+	<key>Auteur</key>
+	<string>Författare</string>
+	<key>Autre horaire…</key>
+	<string>Annan tid…</string>
+	<key>Bienvenue dans Sonnerie Prof</key>
+	<string>Välkommen till Sonnerie Prof</string>
+	<key>Compilation</key>
+	<string>Version</string>
+	<key>Confidentialité</key>
+	<string>Integritet</string>
+	<key>Configurer plus tard</key>
+	<string>Konfigurera senare</string>
+	<key>Configurez un premier établissement. Aucun compte n'est requis et vos données restent sur l'iPhone.</key>
+	<string>Konfigurera din första skola. Inget konto krävs och dina data stannar på din iPhone.</string>
+	<key>Conflit d’emploi du temps</key>
+	<string>Schemakonflikt</string>
+	<key>Conserve le site, le jour et le type de semaine, puis prépare le créneau suivant.</key>
+	<string>Behåller platsen, dagen och veckotypen och förbereder sedan nästa tidsintervall.</string>
+	<key>Créer mon site</key>
+	<string>Skapa min plats</string>
+	<key>Date et heure simulées</key>
+	<string>Simulerat datum och tid</string>
+	<key>Données enregistrées localement</key>
+	<string>Data lagras lokalt</string>
+	<key>Détecter automatiquement</key>
+	<string>Identifiera automatiskt</string>
+	<key>Elle permet uniquement de sélectionner automatiquement le bon site lorsque vous utilisez plusieurs établissements.</key>
+	<string>Den används endast för att automatiskt välja rätt plats när du använder flera skolor.</string>
+	<key>Emploi du temps</key>
+	<string>Schema</string>
+	<key>Ex. Collège Jean-Moulin</key>
+	<string>T.ex. Östra gymnasiet</string>
+	<key>Fermer le plein écran</key>
+	<string>Stäng helskärm</string>
+	<key>Format de l’heure</key>
+	<string>Tidsformat</string>
+	<key>Glisser à gauche pour supprimer un site.</key>
+	<string>Svep åt vänster för att ta bort en plats.</string>
+	<key>Heure simulée</key>
+	<string>Simulerad tid</string>
+	<key>Horaires HH:mm</key>
+	<string>Tider HH:mm</string>
+	<key>Horaires terminés</key>
+	<string>Inga fler ringtider</string>
+	<key>Jour</key>
+	<string>Dag</string>
+	<key>La localisation est facultative et n’est jamais transmise. Lorsque les mises à jour Always-On à distance sont activées, seules les heures de sonnerie nécessaires et un identifiant technique temporaire sont transmis au service de mise à jour.</key>
+	<string>Platsåtkomst är valfri och överförs aldrig. När fjärruppdateringar för Always-On är aktiverade skickas endast nödvändiga ringtider och en tillfällig teknisk identifierare till uppdateringstjänsten.</string>
+	<key>La localisation est facultative. Elle sert uniquement à sélectionner automatiquement le site le plus proche et n'est ni conservée séparément ni transmise.</key>
+	<string>Platsåtkomst är valfri. Den används endast för att automatiskt välja den närmaste platsen och lagras inte separat eller överförs.</string>
+	<key>Langue de test</key>
+	<string>Testspråk</string>
+	<key>Latitude</key>
+	<string>Latitud</string>
+	<key>Les Live Activities sont désactivées dans les réglages iOS.</key>
+	<string>Live Activities är avstängda i iOS-inställningarna.</string>
+	<key>Les doublons seront supprimés automatiquement.</key>
+	<string>Dubbletter tas bort automatiskt.</string>
+	<key>Les horaires du mardi au samedi seront remplacés par ceux définis pour le lundi.</key>
+	<string>Tiderna från tisdag till lördag ersätts med tiderna för måndag.</string>
+	<key>Les horaires seront triés automatiquement et normalisés au format HH:mm.</key>
+	<string>Tiderna sorteras automatiskt och normaliseras till formatet HH:mm.</string>
+	<key>Les modifications sont enregistrées automatiquement.</key>
+	<string>Ändringar sparas automatiskt.</string>
+	<key>Les modifications valides sont enregistrées automatiquement.</key>
+	<string>Giltiga ändringar sparas automatiskt.</string>
+	<key>Les vibrations sont déclenchées uniquement lorsque Sonnerie Prof est active au premier plan. Aucun son n'est joué.</key>
+	<string>Vibrationer utlöses endast när Sonnerie Prof är aktiv i förgrunden. Inget ljud spelas upp.</string>
+	<key>Localisation (facultatif)</key>
+	<string>Plats (valfritt)</string>
+	<key>Longitude</key>
+	<string>Longitud</string>
+	<key>L’heure simulée avance à vitesse réelle. Elle est utilisée par l’app, le widget et la Live Activity. Ce réglage existe uniquement dans les builds Debug et n’apparaît pas dans la version App Store.</key>
+	<string>Den simulerade tiden går i verklig hastighet. Den används av appen, widgeten och Live Activity. Inställningen finns endast i Debug-byggen och visas inte i App Store-versionen.</string>
+	<key>Maximum de 4 sites atteint</key>
+	<string>Maximalt 4 platser har uppnåtts</string>
+	<key>Mise à jour…</key>
+	<string>Uppdaterar…</string>
+	<key>Mode développeur</key>
+	<string>Utvecklarläge</string>
+	<key>Mode test actif</key>
+	<string>Testläge aktivt</string>
+	<key>Modifiez le jour, les horaires ou le type de semaine avant d’enregistrer.</key>
+	<string>Ändra dagen, tiderna eller veckotypen innan du sparar.</string>
+	<key>Mon établissement</key>
+	<string>Min skola</string>
+	<key>Même horaires du lundi au vendredi</key>
+	<string>Samma tider måndag till fredag</string>
+	<key>Même horaires le samedi</key>
+	<string>Samma tider på lördag</string>
+	<key>Nom</key>
+	<string>Namn</string>
+	<key>Nom de l'établissement</key>
+	<string>Skolans namn</string>
+	<key>Nombre de vibrations</key>
+	<string>Antal vibrationer</string>
+	<key>Nouveau site</key>
+	<string>Ny plats</string>
+	<key>Pendant une suspension (vacances, fermeture, congé), aucune sonnerie n'est proposée avant la date de reprise.</key>
+	<string>Under en paus (lov, stängning eller ledighet) schemaläggs inga ringningar före återupptagningsdatumet.</string>
+	<key>Planning</key>
+	<string>Schema</string>
+	<key>Position approximative</key>
+	<string>Ungefärlig plats</string>
+	<key>Position enregistrée</key>
+	<string>Plats sparad</string>
+	<key>Position non configurée</key>
+	<string>Plats inte konfigurerad</string>
+	<key>Pour un suivi fiable sur toute la journée, ajoutez aussi le widget « Sonnerie Prof » à l’écran verrouillé. iOS limite une Live Activity active à environ 8 heures.</key>
+	<string>För tillförlitlig visning hela dagen lägger du även till widgeten ”Sonnerie Prof” på låsskärmen. iOS begränsar en aktiv Live Activity till cirka 8 timmar.</string>
+	<key>Prochaine sonnerie :</key>
+	<string>Nästa ringning:</string>
+	<key>Q1</key>
+	<string>Q1</string>
+	<key>Q2</key>
+	<string>Q2</string>
+	<key>Rayon (m)</key>
+	<string>Radie (m)</string>
+	<key>Reprendre le</key>
+	<string>Återuppta den</string>
+	<key>Revenir à l’heure réelle</key>
+	<string>Återgå till verklig tid</string>
+	<key>Réglages</key>
+	<string>Inställningar</string>
+	<key>Saisissez les horaires jour par jour ou recopiez ceux du lundi sur le mardi, mercredi, jeudi, vendredi et samedi.</key>
+	<string>Ange tider dag för dag eller kopiera måndagens tider till tisdag, onsdag, torsdag, fredag och lördag.</string>
+	<key>Site</key>
+	<string>Plats</string>
+	<key>Site actuel</key>
+	<string>Aktuell plats</string>
+	<key>Sites</key>
+	<string>Platser</string>
+	<key>Sonnerie Prof</key>
+	<string>Sonnerie Prof</string>
+	<key>Sonnerie Prof est conçue pour aider les enseignants à garder un œil sur le temps restant avant la prochaine sonnerie, directement depuis l’app ou l’écran verrouillé</key>
+	<string>Sonnerie Prof hjälper lärare att hålla koll på tiden till nästa ringning, direkt i appen eller på låsskärmen.</string>
+	<key>Sonneries</key>
+	<string>Ringtider</string>
+	<key>Sonneries du lundi</key>
+	<string>Måndagens ringtider</string>
+	<key>Supprimer</key>
+	<string>Ta bort</string>
+	<key>Supprimer ce site ?</key>
+	<string>Ta bort den här platsen?</string>
+	<key>Suspendre temporairement</key>
+	<string>Pausa tillfälligt</string>
+	<key>Temps restant</key>
+	<string>Återstående tid</string>
+	<key>Tester</key>
+	<string>Testa</string>
+	<key>Un horaire par ligne, au format HH:mm.</key>
+	<string>En tid per rad, i formatet HH:mm.</string>
+	<key>Un horaire par ligne. Les boutons ajoutent automatiquement une ligne à partir du dernier horaire saisi.</key>
+	<string>En tid per rad. Knapparna lägger automatiskt till en rad utifrån den senast angivna tiden.</string>
+	<key>Utiliser ma position</key>
+	<string>Använd min plats</string>
+	<key>Utiliser ma position actuelle</key>
+	<string>Använd min aktuella plats</string>
+	<key>Utiliser une heure simulée</key>
+	<string>Använd simulerad tid</string>
+	<key>Version</key>
+	<string>Version</string>
+	<key>Vibrations</key>
+	<string>Vibrationer</string>
+	<key>Vibrer à la sonnerie</key>
+	<string>Vibrera vid ringtid</string>
+	<key>common.not_available</key>
+	<string>—</string>
+	<key>day.fallback</key>
+	<string>Dag %d</string>
+	<key>editor.duplicate_count.many</key>
+	<string>%d dubbletter tas automatiskt bort när du sparar.</string>
+	<key>editor.duplicate_count.one</key>
+	<string>%d dubblett tas automatiskt bort när du sparar.</string>
+	<key>editor.invalid_times</key>
+	<string>Ogiltig(a) tid(er): %@. Använd HH:mm, till exempel 08:10.</string>
+	<key>fullscreen.minutes_remaining</key>
+	<string>%d min</string>
+	<key>jusqu'à la sonnerie</key>
+	<string>till ringningen</string>
+	<key>language.cs</key>
+	<string>Čeština</string>
+	<key>language.da</key>
+	<string>Dansk</string>
+	<key>language.de</key>
+	<string>Deutsch</string>
+	<key>language.en</key>
+	<string>English</string>
+	<key>language.es</key>
+	<string>Español</string>
+	<key>language.fr</key>
+	<string>Français</string>
+	<key>language.it</key>
+	<string>Italiano</string>
+	<key>language.nl</key>
+	<string>Nederlands</string>
+	<key>language.pl</key>
+	<string>Polski</string>
+	<key>language.pt_BR</key>
+	<string>Português (Brasil)</string>
+	<key>language.pt_PT</key>
+	<string>Português (Portugal)</string>
+	<key>language.ro</key>
+	<string>Română</string>
+	<key>language.sv</key>
+	<string>Svenska</string>
+	<key>language.system</key>
+	<string>System</string>
+	<key>live_activity.disabled</key>
+	<string>Live Activities är avstängda för den här appen i iOS-inställningarna.</string>
+	<key>live_activity.next_bell</key>
+	<string>Nästa ringning: %@</string>
+	<key>live_activity.no_upcoming</key>
+	<string>Det finns ingen kommande ringning för den här platsen.</string>
+	<key>location.permission_denied</key>
+	<string>Tillåt platsåtkomst i Inställningar för att identifiera platsen automatiskt.</string>
+	<key>location.precise_unavailable</key>
+	<string>Exakt plats är inte tillgänglig. Du kan fortfarande välja plats manuellt. (%@)</string>
+	<key>location.unknown_status</key>
+	<string>Okänd status för platsbehörighet.</string>
+	<key>lock.active_next</key>
+	<string>Aktiv · nästa ringning %@.</string>
+	<key>lock.active_until</key>
+	<string>Aktiv till nästa ringning kl. %@.</string>
+	<key>lock.add_site_first</key>
+	<string>Lägg till en plats först.</string>
+	<key>lock.long_delay</key>
+	<string>Visning på låsskärmen är aktiverad. Nästa ringning ligger långt fram; iOS kan ta bort Live Activity innan dess. Låsskärmswidgeten rekommenderas fortfarande.</string>
+	<key>lock.no_upcoming</key>
+	<string>Det finns ingen kommande ringning.</string>
+	<key>lockscreen.description</key>
+	<string>Visa återstående tid på låsskärmen och, om tillgängligt, i Always-On-läge.</string>
+	<key>next_bell_at</key>
+	<string>Nästa ringning kl. %@</string>
+	<key>onboarding.invalid_times</key>
+	<string>Ogiltig(a) tid(er): %@.</string>
+	<key>quick_add_minutes</key>
+	<string>+%d min</string>
+	<key>schedule.suspended_until</key>
+	<string>Schema pausat till %@</string>
+	<key>seconds.short</key>
+	<string>%d s</string>
+	<key>settings.after_last_bell</key>
+	<string>Efter sista ringningen</string>
+	<key>settings.after_last_bell.hide_until_one_hour</key>
+	<string>Dölj till 1 timme före</string>
+	<key>settings.after_last_bell.show_next</key>
+	<string>Visa nästa ringning</string>
+	<key>site.delete_message</key>
+	<string>Platsen ”%@” och alla dess ringtider tas bort permanent.</string>
+	<key>site.schedule_count.many</key>
+	<string>%d tider</string>
+	<key>site.schedule_count.one</key>
+	<string>%d tid</string>
+	<key>tip.body</key>
+	<string>Alla funktioner i Sonnerie Prof är gratis. Om appen hjälper dig i vardagen kan du stödja utvecklingen med frivillig dricks.</string>
+	<key>tip.debug_show</key>
+	<string>Visa dricksförslag</string>
+	<key>tip.navigation_title</key>
+	<string>Stöd Sonnerie Prof</string>
+	<key>tip.no_unlock</key>
+	<string>Dricksen är helt frivillig och låser inte upp några funktioner.</string>
+	<key>tip.product.large</key>
+	<string>Ett stort tack</string>
+	<key>tip.product.medium</key>
+	<string>En kaffe</string>
+	<key>tip.product.small</key>
+	<string>Ett litet tack</string>
+	<key>tip.products_load_error</key>
+	<string>Det gick inte att läsa in dricksalternativen.</string>
+	<key>tip.products_unavailable</key>
+	<string>Dricks är tillfälligt otillgängligt.</string>
+	<key>tip.purchase_error</key>
+	<string>Det gick inte att slutföra betalningen.</string>
+	<key>tip.purchase_pending</key>
+	<string>Betalningen väntar på godkännande.</string>
+	<key>tip.support_about</key>
+	<string>Sonnerie Prof är gratis och alla funktioner är tillgängliga utan betalning. Om du vill kan du stödja utvecklingen med frivillig dricks.</string>
+	<key>tip.support_button</key>
+	<string>Stöd Sonnerie Prof</string>
+	<key>tip.support_section</key>
+	<string>Stöd appen</string>
+	<key>tip.thank_you_message</key>
+	<string>Tack för att du stödjer utvecklingen av Sonnerie Prof.</string>
+	<key>tip.thank_you_title</key>
+	<string>Tack så mycket!</string>
+	<key>tip.title</key>
+	<string>Ett litet bidrag?</string>
+	<key>tip.voluntary</key>
+	<string>Frivillig dricks</string>
+	<key>weekday.short.friday</key>
+	<string>F</string>
+	<key>weekday.short.monday</key>
+	<string>M</string>
+	<key>weekday.short.saturday</key>
+	<string>L</string>
+	<key>weekday.short.thursday</key>
+	<string>To</string>
+	<key>weekday.short.tuesday</key>
+	<string>Ti</string>
+	<key>weekday.short.wednesday</key>
+	<string>O</string>
+	<key>widget.inline_next</key>
+	<string>🔔 Nästa: %@</string>
+	<key>À propos</key>
+	<string>Om</string>
+	<key>Écran verrouillé</key>
+	<string>Låsskärm</string>
+	<key>Écraser les horaires</key>
+	<string>Skriv över tider</string>
+	<key>–</key>
+	<string>–</string>
+</dict>
+</plist>
