@@ -66,6 +66,24 @@ h1 { font-size: clamp(2.3rem, 7vw, 4.8rem); line-height:1.02; margin:.25em 0 .25
 .button { display:inline-flex; align-items:center; min-height:44px; padding:0 17px; border-radius:13px; text-decoration:none; font-weight:700; border:1px solid var(--border); background:var(--surface-strong); color:var(--text); }
 .button.primary { background:var(--accent); border-color:var(--accent); color:white; }
 .button.disabled { opacity:.7; cursor:default; }
+.showcase { margin-bottom:64px; }
+.showcase-heading { max-width:640px; margin:0 auto 30px; text-align:center; }
+.showcase-heading h2 { margin:.2em 0; font-size:clamp(1.8rem,4vw,2.7rem); line-height:1.1; letter-spacing:-.025em; }
+.showcase-heading p { margin:0; color:var(--muted); }
+.screenshots { display:grid; grid-template-columns:repeat(3, 1fr); align-items:start; gap:22px; }
+.screenshot { margin:0; text-align:center; }
+.screenshot:nth-child(2) { margin-top:42px; }
+.screenshot-link { display:block; border-radius:30px; outline-offset:5px; }
+.screenshot img {
+  display:block;
+  width:100%;
+  height:auto;
+  border-radius:30px;
+  border:1px solid var(--border);
+  background:#000;
+  box-shadow:0 24px 60px rgba(15,23,42,.18);
+}
+.screenshot figcaption { margin-top:14px; color:var(--muted); font-size:.95rem; }
 .grid { display:grid; grid-template-columns:repeat(3, 1fr); gap:16px; margin: 18px 0 58px; }
 .card { background:var(--surface); border:1px solid var(--border); border-radius:20px; padding:22px; box-shadow:var(--shadow); }
 .card h2, .card h3 { margin-top:0; line-height:1.25; }
@@ -93,4 +111,17 @@ code { background:var(--accent-soft); padding:.12em .35em; border-radius:6px; }
   .hero { padding-top:50px; }
   .nav-inner { align-items:flex-start; padding:12px 0; }
   .nav-links { gap:10px 13px; }
+  .showcase { overflow:hidden; }
+  .showcase-heading { padding:0 18px; }
+  .screenshots {
+    display:flex;
+    gap:16px;
+    overflow-x:auto;
+    scroll-snap-type:x mandatory;
+    scrollbar-width:none;
+    padding:8px 18px 28px;
+  }
+  .screenshots::-webkit-scrollbar { display:none; }
+  .screenshot { flex:0 0 min(76vw, 310px); scroll-snap-align:center; }
+  .screenshot:nth-child(2) { margin-top:0; }
 }
