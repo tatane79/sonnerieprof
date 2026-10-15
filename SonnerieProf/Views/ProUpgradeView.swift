@@ -10,7 +10,7 @@ struct TipPromptView: View {
         NavigationStack {
             ScrollView {
                 VStack(spacing: 22) {
-                    Image(systemName: store.didJustTip ? "heart.fill" : "heart.circle.fill")
+                    Image(systemName: "heart.fill")
                         .font(.system(size: 54, weight: .semibold))
                         .foregroundStyle(.tint)
                         .accessibilityHidden(true)

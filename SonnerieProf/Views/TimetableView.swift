@@ -1,5 +1,31 @@
 import SwiftUI
 
+// Ces déclarations donnent à Xcode la valeur source française des clés utilisées
+// par `L`, afin que le catalogue puisse les extraire et les traduire.
+private enum CourseEditorLocalizationSources {
+    static func registerForExtraction() {
+        _ = String(localized: "Cours")
+        _ = String(localized: "Classe (ex. 5e3)")
+        _ = String(localized: "Salle (ex. 5e3)")
+        _ = String(localized: "Horaire")
+        _ = String(localized: "Début")
+        _ = String(localized: "Fin")
+        _ = String(localized: "Aucun horaire de sonnerie n’est configuré pour ce site et ce jour. Saisissez les horaires manuellement.")
+        _ = String(localized: "L’heure de fin doit être après l’heure de début.")
+        _ = String(localized: "Cette séance chevauche un ou plusieurs cours existants.")
+        _ = String(localized: "Modifiez le jour, les horaires ou le type de semaine avant d’enregistrer.")
+        _ = String(localized: "Toutes les semaines")
+        _ = String(localized: "Type de semaine")
+        _ = String(localized: "Par défaut, cette séance apparaît toutes les semaines. Désactivez l’option uniquement si son horaire dépend du type de semaine.")
+        _ = String(localized: "Enregistrer et suivant")
+        _ = String(localized: "Conserve le site, le jour et le type de semaine, puis prépare le créneau suivant.")
+        _ = String(localized: "Nouveau cours")
+        _ = String(localized: "Modifier le cours")
+        _ = String(localized: "Autre horaire…")
+        _ = String(localized: "Horaire personnalisé")
+    }
+}
+
 private enum TimetableLocalizationSources {
     static func registerForExtraction() {
         _ = String(localized: "Personnaliser les noms des semaines")
@@ -398,9 +424,7 @@ struct CourseSessionEditorView: View {
             } footer: {
                 Text(
                     L(
-                        "Par défaut, cette séance apparaît en %@ et en %@. Désactivez l’option uniquement si son horaire dépend du type de semaine.",
-                        store.weekName(for: .q1),
-                        store.weekName(for: .q2)
+                        "Par défaut, cette séance apparaît toutes les semaines. Désactivez l’option uniquement si son horaire dépend du type de semaine."
                     )
                 )
             }

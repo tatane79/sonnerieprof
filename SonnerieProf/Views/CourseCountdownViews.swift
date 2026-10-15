@@ -16,19 +16,16 @@ private struct DistantCourseCountdownText: View {
     let targetDate: Date
 
     var body: some View {
-        let remainingSeconds = max(0, targetDate.timeIntervalSince(currentDate))
-        let totalHours = max(1, Int(remainingSeconds / (60 * 60)))
-        let days = totalHours / 24
-        let hours = totalHours % 24
+        let components = BellCountdownClock.components(from: currentDate, to: targetDate)
 
-        if days == 1 {
-            Text("1 jour \(hours, format: .number) h")
+        if components.hasDays {
+            Text("\(components.days, format: .number) j \(components.hours, format: .number)h\(components.minutes, format: .number.precision(.integerLength(2)))min")
                 .monospacedDigit()
-        } else if days > 1 {
-            Text("\(days, format: .number) jours \(hours, format: .number) h")
+        } else if components.hasHours {
+            Text("\(components.hours, format: .number)h\(components.minutes, format: .number.precision(.integerLength(2)))min")
                 .monospacedDigit()
         } else {
-            Text("\(hours, format: .number) h")
+            Text("\(components.minutes, format: .number) min")
                 .monospacedDigit()
         }
     }
@@ -37,6 +34,8 @@ private struct DistantCourseCountdownText: View {
 /// Carte principale : décompte vers la fin du cours ou le prochain cours.
 /// Sans emploi du temps, elle revient automatiquement à la prochaine sonnerie.
 struct CourseCountdownCard: View {
+    @State private var showsNextBell = false
+
     let sessions: [CourseSession]
     let sites: [BellSite]
     let referenceWeekStart: Date
@@ -58,19 +57,20 @@ struct CourseCountdownCard: View {
                 referenceWeekStart: referenceWeekStart,
                 referenceWeek: referenceWeek
             )
-            let fallbackBell = sessions.isEmpty
-                ? fallbackSite.flatMap {
-                    bellEngine.nextBell(
-                        after: displayDate,
-                        at: $0,
-                        suspendedUntil: suspendedUntil
-                    )
-                }
-                : nil
+            let nextBell = fallbackSite.flatMap {
+                bellEngine.nextBell(
+                    after: displayDate,
+                    at: $0,
+                    suspendedUntil: suspendedUntil
+                )
+            }
+            let usesBellCountdown = sessions.isEmpty || showsNextBell
+            let courseTarget = status.current?.endDate ?? status.next?.startDate
+            let target = usesBellCountdown ? nextBell : courseTarget
 
-            if let target = status.current?.endDate ?? status.next?.startDate ?? fallbackBell {
+            if let target {
                 let systemTarget = target.addingTimeInterval(-timeOffset)
-                let occurrence = status.current ?? status.next
+                let occurrence = usesBellCountdown ? nil : (status.current ?? status.next)
 
                 VStack(spacing: 16) {
                     if let occurrence {
@@ -110,11 +110,24 @@ struct CourseCountdownCard: View {
                         status: status,
                         target: target,
                         displayDate: displayDate,
-                        isFallbackBell: fallbackBell != nil
+                        isFallbackBell: usesBellCountdown
                     ))
                         .font(.headline)
                         .foregroundStyle(.secondary)
                         .multilineTextAlignment(.center)
+
+                    if !sessions.isEmpty, fallbackSite != nil {
+                        Toggle(isOn: $showsNextBell) {
+                            if showsNextBell {
+                                Text("Prochaine sonnerie")
+                            } else {
+                                Text("Prochain cours")
+                            }
+                        }
+                        .font(.subheadline.weight(.semibold))
+                        .toggleStyle(.switch)
+                        .accessibilityHint("Change la destination du compte à rebours")
+                    }
                 }
                 .frame(maxWidth: .infinity)
                 .padding(.vertical, 36)
@@ -191,6 +204,7 @@ struct CourseCountdownCard: View {
 /// Variante plein écran du même compte à rebours, destinée à rester lisible de loin.
 struct CourseFullscreenCountdownView: View {
     @Environment(\.dismiss) private var dismiss
+    @Environment(\.scenePhase) private var scenePhase
     @State private var previousIdleTimerDisabled = false
     @State private var isManagingIdleTimer = false
 
@@ -254,10 +268,12 @@ struct CourseFullscreenCountdownView: View {
                                     .foregroundStyle(.white)
                             }
 
-                            countdownText(
-                                from: context.date,
-                                to: systemTarget,
-                                omitsSeconds: isOnLaterDay(target, than: displayDate)
+                            Text(
+                                .currentDate,
+                                format: BellCountdownFormatStyle(
+                                    targetDate: systemTarget,
+                                    presentation: .full
+                                )
                             )
                             .font(.system(size: min(geometry.size.width * 0.28, 160), weight: .bold, design: .rounded))
                             .monospacedDigit()
@@ -309,6 +325,10 @@ struct CourseFullscreenCountdownView: View {
             isManagingIdleTimer = true
             UIApplication.shared.isIdleTimerDisabled = true
         }
+        .onChange(of: scenePhase) { _, newPhase in
+            guard newPhase == .active, isManagingIdleTimer else { return }
+            UIApplication.shared.isIdleTimerDisabled = true
+        }
         .onDisappear {
             guard isManagingIdleTimer else { return }
             UIApplication.shared.isIdleTimerDisabled = previousIdleTimerDisabled
@@ -334,30 +354,6 @@ struct CourseFullscreenCountdownView: View {
             return L("Début du prochain cours\n%@", dayAndTime)
         }
         return L("Début du prochain cours à %@", time)
-    }
-
-    @ViewBuilder
-    private func countdownText(from startDate: Date, to targetDate: Date, omitsSeconds: Bool) -> some View {
-        if omitsSeconds {
-            DistantCourseCountdownText(
-                currentDate: startDate,
-                targetDate: targetDate
-            )
-        } else if targetDate.timeIntervalSince(startDate) >= 2 * 60 {
-            let remainingMinutes = BellCountdownClock.remainingMinutes(
-                from: startDate,
-                to: targetDate
-            )
-            Text("\(remainingMinutes, format: .number) min")
-                .monospacedDigit()
-        } else {
-            Text(
-                timerInterval: startDate...targetDate,
-                pauseTime: targetDate,
-                countsDown: true,
-                showsHours: true
-            )
-        }
     }
 
     private func isOnLaterDay(_ target: Date, than displayDate: Date) -> Bool {

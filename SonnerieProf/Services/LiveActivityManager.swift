@@ -175,7 +175,12 @@ enum LiveActivityManager {
     ) -> [CourseActivityDetails] {
         details
             .filter { detail in
-                dates.contains { abs($0.timeIntervalSince(detail.startDate)) < 1 }
+                dates.contains { date in
+                    abs(date.timeIntervalSince(detail.startDate)) < 1
+                        || detail.endDate.map {
+                            abs(date.timeIntervalSince($0)) < 1
+                        } == true
+                }
             }
             .sorted { $0.startDate < $1.startDate }
             .prefix(maximumCourseDetails)

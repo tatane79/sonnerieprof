@@ -151,9 +151,12 @@ struct ContentView: View {
                     }
                     .accessibilityLabel(Text(L("À propos")))
 
-                    NavigationLink(L("Réglages")) {
+                    NavigationLink {
                         settingsView
+                    } label: {
+                        Image(systemName: "gearshape")
                     }
+                    .accessibilityLabel(Text(L("Réglages")))
                 }
             }
             .task {
@@ -302,8 +305,10 @@ struct ContentView: View {
                 }
 
                 HStack {
-                    Button(L("Détecter automatiquement")) {
+                    Button {
                         locationService.requestCurrentLocation()
+                    } label: {
+                        Label(L("Utiliser ma position actuelle"), systemImage: "scope")
                     }
                     .buttonStyle(.bordered)
 
@@ -986,7 +991,7 @@ struct ContentView: View {
                         "tip.debug_show",
                         fallback: "Un petit coup de pouce pour Sonnerie Prof ?"
                     ),
-                    systemImage: "heart.circle"
+                    systemImage: "heart.fill"
                 )
             }
         } header: {
@@ -1020,7 +1025,7 @@ struct ContentView: View {
                             "tip.support_button",
                             fallback: "Soutenir Sonnerie Prof"
                         ),
-                        systemImage: "heart.circle.fill"
+                        systemImage: "heart.fill"
                     )
                 }
 
@@ -1065,6 +1070,17 @@ struct ContentView: View {
                 )
                 .font(.footnote)
                 .foregroundStyle(.secondary)
+
+                if let privacyPolicyURL = URL(
+                    string: "https://tatane79.github.io/sonnerieprof/privacy.html"
+                ) {
+                    Link(destination: privacyPolicyURL) {
+                        Label(
+                            L("Confidentialité"),
+                            systemImage: "doc.text"
+                        )
+                    }
+                }
             }
 
             // Informations sur l'application
@@ -1417,11 +1433,16 @@ struct ContentView: View {
                     minutesSinceMidnight: session.startMinutes,
                     on: day
                 )
-                guard displayStart > appNow else { continue }
+                let displayEnd = timetableEngine.date(
+                    minutesSinceMidnight: session.endMinutes,
+                    on: day
+                )
+                guard displayEnd > appNow else { continue }
 
                 details.append(
                     CourseActivityDetails(
                         startDate: systemDate(for: displayStart),
+                        endDate: systemDate(for: displayEnd),
                         siteName: store.sites.first(where: { $0.id == session.siteID })?.name,
                         roomName: session.roomName,
                         className: session.className

@@ -4,9 +4,33 @@ import Foundation
 /// Règle de décompte commune à l'app et à la Live Activity.
 /// Une minute commencée reste affichée jusqu'à son expiration complète.
 enum BellCountdownClock {
+    static let secondsDisplayThreshold: TimeInterval = 3 * 60
+
+    struct Components: Equatable {
+        let days: Int
+        let hours: Int
+        let minutes: Int
+
+        var hasDays: Bool { days > 0 }
+        var hasHours: Bool { hours > 0 }
+    }
+
     static func remainingMinutes(from currentDate: Date, to targetDate: Date) -> Int {
         let remainingSeconds = max(0, targetDate.timeIntervalSince(currentDate))
         return max(1, Int((remainingSeconds / 60).rounded(.up)))
+    }
+
+    static func components(from currentDate: Date, to targetDate: Date) -> Components {
+        let totalMinutes = remainingMinutes(from: currentDate, to: targetDate)
+        return Components(
+            days: totalMinutes / (24 * 60),
+            hours: (totalMinutes % (24 * 60)) / 60,
+            minutes: totalMinutes % 60
+        )
+    }
+
+    static func showsSeconds(from currentDate: Date, to targetDate: Date) -> Bool {
+        targetDate.timeIntervalSince(currentDate) < secondsDisplayThreshold
     }
 
     /// `Date.OffsetFormatStyle` tronque les minutes. Ce décalage lui applique
@@ -16,8 +40,69 @@ enum BellCountdownClock {
     }
 }
 
+/// Format dynamique utilisé par SwiftUI et WidgetKit sans exécution périodique de l'extension.
+struct BellCountdownFormatStyle: DiscreteFormatStyle, Codable, Hashable {
+    enum Presentation: String, Codable, Hashable {
+        case full
+        case compact
+    }
+
+    let targetDate: Date
+    let presentation: Presentation
+
+    func format(_ value: Date) -> String {
+        let remainingSeconds = max(0, Int(ceil(targetDate.timeIntervalSince(value))))
+
+        if remainingSeconds < Int(BellCountdownClock.secondsDisplayThreshold) {
+            let minutes = remainingSeconds / 60
+            let seconds = remainingSeconds % 60
+            return "\(minutes):\(String(format: "%02d", seconds))"
+        }
+
+        let totalMinutes = max(1, Int(ceil(Double(remainingSeconds) / 60)))
+        let days = totalMinutes / (24 * 60)
+        let hours = (totalMinutes % (24 * 60)) / 60
+        let minutes = totalMinutes % 60
+        let paddedMinutes = String(format: "%02d", minutes)
+
+        if days > 0 {
+            let suffix = presentation == .full ? "min" : ""
+            return "\(days) j \(hours)h\(paddedMinutes)\(suffix)"
+        }
+        if hours > 0 {
+            let suffix = presentation == .full ? "min" : ""
+            return "\(hours)h\(paddedMinutes)\(suffix)"
+        }
+        return "\(minutes)min"
+    }
+
+    func discreteInput(after input: Date) -> Date? {
+        let remainingSeconds = targetDate.timeIntervalSince(input)
+        guard remainingSeconds > 0 else { return nil }
+
+        if remainingSeconds <= BellCountdownClock.secondsDisplayThreshold {
+            return min(targetDate, input.addingTimeInterval(1))
+        }
+
+        let displayedMinutes = Int(ceil(remainingSeconds / 60))
+        let nextBoundary = targetDate.addingTimeInterval(
+            -TimeInterval((displayedMinutes - 1) * 60)
+        )
+        return max(input.addingTimeInterval(0.001), nextBoundary)
+    }
+
+    func discreteInput(before input: Date) -> Date? {
+        input.addingTimeInterval(
+            targetDate.timeIntervalSince(input) <= BellCountdownClock.secondsDisplayThreshold
+                ? -1
+                : -60
+        )
+    }
+}
+
 struct CourseActivityDetails: Codable, Hashable {
     let startDate: Date
+    let endDate: Date?
     let siteName: String?
     let roomName: String
     let className: String

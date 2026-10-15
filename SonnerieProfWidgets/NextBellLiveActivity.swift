@@ -2,11 +2,80 @@ import ActivityKit
 import SwiftUI
 import WidgetKit
 
+private struct BellActivityTarget {
+    let date: Date
+    let courseDetails: CourseActivityDetails?
+}
+
+private struct BellTimelineSchedule: TimelineSchedule {
+    private let dates: [Date]
+
+    init(state: BellActivityAttributes.ContentState) {
+        let activityEnd = min(
+            state.bellDates.last ?? state.startDate.addingTimeInterval(8 * 60 * 60),
+            state.startDate.addingTimeInterval(8 * 60 * 60)
+        )
+        let courseBoundaries = (state.courseDetails ?? []).flatMap { course in
+            [course.startDate, course.endDate].compactMap { $0 }
+        }
+        let boundaries = state.bellDates + courseBoundaries
+        let boundaryRefreshes = boundaries.flatMap { boundary in
+            [
+                boundary,
+                boundary.addingTimeInterval(0.3),
+                boundary.addingTimeInterval(2)
+            ]
+        }
+
+        var minuteRefreshes: [Date] = []
+        var minute = Calendar.autoupdatingCurrent.date(
+            bySetting: .second,
+            value: 0,
+            of: state.startDate
+        )?.addingTimeInterval(60) ?? state.startDate.addingTimeInterval(60)
+
+        while minute <= activityEnd {
+            minuteRefreshes.append(minute)
+            minute = minute.addingTimeInterval(60)
+        }
+
+        dates = Array(
+            Set(boundaryRefreshes + minuteRefreshes)
+        ).sorted()
+    }
+
+    func entries(from startDate: Date, mode: Mode) -> [Date] {
+        dates.filter { $0 >= startDate }
+    }
+}
+
+#if DEBUG
+private func logBellTimelineUpdate(
+    _ date: Date,
+    cadenceDescription: String,
+    presentation: String
+) {
+    print(
+        "🔔 Live Activity \(presentation) refresh at \(date), cadence: \(cadenceDescription)"
+    )
+}
+#endif
+
 private struct BellActivityTiming {
     let state: BellActivityAttributes.ContentState
 
-    func nextTarget(after date: Date) -> Date? {
-        state.bellDates.first(where: { $0 > date })
+    func target(after date: Date) -> BellActivityTarget? {
+        let boundaryTolerance: TimeInterval = 0.5
+        guard let nextBoundary = state.bellDates
+            .filter({ $0.timeIntervalSince(date) > boundaryTolerance })
+            .min() else {
+            return nil
+        }
+
+        return BellActivityTarget(
+            date: nextBoundary,
+            courseDetails: courseDetails(at: nextBoundary)
+        )
     }
 
     func displayDate(for systemDate: Date) -> Date {
@@ -22,14 +91,12 @@ private struct BellActivityTiming {
     }
 
     func courseDetails(at targetDate: Date) -> CourseActivityDetails? {
-        state.courseDetails?.first {
-            abs($0.startDate.timeIntervalSince(targetDate)) < 1
+        state.courseDetails?.first { course in
+            abs(course.startDate.timeIntervalSince(targetDate)) < 1
+                || course.endDate.map {
+                    abs($0.timeIntervalSince(targetDate)) < 1
+                } == true
         }
-    }
-
-    var timelineDates: [Date] {
-        let dayTransitions = state.bellDates.map(systemStartOfDisplayDay(containing:))
-        return Array(Set([state.startDate] + state.bellDates + dayTransitions)).sorted()
     }
 
     func systemStartOfDisplayDay(containing systemDate: Date) -> Date {
@@ -69,21 +136,30 @@ private struct BellLockScreenView: View {
 
     var body: some View {
         let timing = BellActivityTiming(state: context.state)
-        // La timeline ne sert qu'à basculer de cible aux bornes prévues.
-        // Le Text temporel ci-dessous est actualisé directement par le système.
-        TimelineView(.explicit(timing.timelineDates)) { timeline in
-            let targetDate = timing.nextTarget(after: timeline.date)
+        // On réévalue le même état d'emploi du temps que l'app. iOS peut
+        // réduire la cadence en Always-On, mais la date fournie reste courante.
+        TimelineView(BellTimelineSchedule(state: context.state)) { timeline in
+#if DEBUG
+            let _ = logBellTimelineUpdate(
+                timeline.date,
+                cadenceDescription: String(describing: timeline.cadence),
+                presentation: "Lock Screen"
+            )
+#endif
+            let currentDate = max(timeline.date, Date.now)
+            let target = timing.target(after: currentDate)
+            let targetDate = target?.date
             let isDistantCourse = targetDate.map {
-                timing.isNextCourseOnLaterDay($0, than: timeline.date)
+                timing.isNextCourseOnLaterDay($0, than: currentDate)
             } ?? false
 
             VStack(spacing: 6) {
                 BellActivityHeader(
                     siteName: context.attributes.siteName,
-                    currentDate: timeline.date,
+                    currentDate: currentDate,
                     targetDate: targetDate,
                     timing: timing,
-                    courseDetails: targetDate.flatMap(timing.courseDetails(at:))
+                    courseDetails: target?.courseDetails
                 )
                 .font(isDistantCourse ? .title3 : .headline)
                 .fontWeight(.semibold)
@@ -92,12 +168,14 @@ private struct BellLockScreenView: View {
                 .foregroundStyle(.secondary)
 
                 if let targetDate,
-                   !isDistantCourse,
-                   !timing.shouldHide(targetDate: targetDate, at: timeline.date) {
-                    BellMinuteCountdown(
+                   !timing.shouldHide(targetDate: targetDate, at: currentDate) {
+                    BellSystemCountdown(
+                        startDate: context.state.startDate,
+                        currentDate: currentDate,
                         targetDate: targetDate
                     )
                     .font(.system(size: 48, weight: .bold, design: .rounded))
+                    .monospacedDigit()
                     .minimumScaleFactor(0.55)
                     .lineLimit(1)
                 } else if targetDate == nil {
@@ -130,10 +208,6 @@ private struct BellActivityHeader: View {
                         roomName: courseDetails.roomName
                     )
                 }
-                BellDistantDurationText(
-                    currentDate: currentDate,
-                    targetDate: targetDate
-                )
             }
             .multilineTextAlignment(.center)
         } else {
@@ -155,78 +229,90 @@ private struct BellCourseLocationRow: View {
     }
 }
 
-private struct BellDistantDurationText: View {
-    let currentDate: Date
-    let targetDate: Date
-
-    var body: some View {
-        let remainingSeconds = max(0, targetDate.timeIntervalSince(currentDate))
-        let totalHours = max(1, Int(remainingSeconds / (60 * 60)))
-        let days = totalHours / 24
-        let hours = totalHours % 24
-
-        if days == 1 {
-            Text("1 jour \(hours, format: .number) h")
-                .monospacedDigit()
-        } else if days > 1 {
-            Text("\(days, format: .number) jours \(hours, format: .number) h")
-                .monospacedDigit()
-        } else {
-            Text("\(hours, format: .number) h")
-                .monospacedDigit()
-        }
-    }
-}
-
-private struct BellMinuteCountdown: View {
-    let targetDate: Date
-
-    var body: some View {
-        Text(
-            .currentDate,
-            format: .offset(
-                to: BellCountdownClock.minuteDisplayTarget(targetDate),
-                allowedFields: [.minute],
-                maxFieldCount: 1,
-                sign: .never
-            )
-        )
-        .monospacedDigit()
-    }
-}
-
 private struct BellDynamicIslandCountdown: View {
     let context: ActivityViewContext<BellActivityAttributes>
 
     var body: some View {
         let timing = BellActivityTiming(state: context.state)
-        TimelineView(.explicit(timing.timelineDates)) { timeline in
-            if let targetDate = timing.nextTarget(after: timeline.date),
-               !timing.shouldHide(targetDate: targetDate, at: timeline.date) {
-                if timing.isNextCourseOnLaterDay(targetDate, than: timeline.date) {
-                    let dayCount = timing.calendarDayCount(
-                        to: targetDate,
-                        from: timeline.date
-                    )
-                    Text("\(dayCount, format: .number) j")
-                        .monospacedDigit()
-                } else {
-                    let countdownStart = max(
-                        context.state.startDate,
-                        timing.systemStartOfDisplayDay(containing: targetDate)
-                    )
-                    Text(
-                        .currentDate,
-                        format: .timer(
-                            countingDownIn: countdownStart..<targetDate,
-                            showsHours: true,
-                            maxFieldCount: 2,
-                            maxPrecision: .seconds(1)
-                        )
-                    )
+        let currentDate = Date.now
+
+        if let targetDate = timing.target(after: currentDate)?.date,
+           !timing.shouldHide(targetDate: targetDate, at: currentDate) {
+            if timing.isNextCourseOnLaterDay(targetDate, than: currentDate) {
+                let dayCount = timing.calendarDayCount(
+                    to: targetDate,
+                    from: currentDate
+                )
+                Text("\(dayCount, format: .number) j")
                     .monospacedDigit()
-                    .frame(width: 34, alignment: .trailing)
-                }
+            } else {
+                Text(
+                    timerInterval: context.state.startDate...targetDate,
+                    countsDown: true
+                )
+                .monospacedDigit()
+            }
+        } else {
+            Text(verbatim: "—")
+        }
+    }
+}
+
+private struct BellSystemCountdown: View {
+    let startDate: Date
+    let currentDate: Date
+    let targetDate: Date
+
+    var body: some View {
+        let intervalStart = min(startDate, currentDate)
+
+        if BellCountdownClock.showsSeconds(from: currentDate, to: targetDate) {
+            Text(
+                .currentDate,
+                format: .timer(
+                    countingDownIn: intervalStart..<targetDate,
+                    showsHours: true,
+                    maxFieldCount: 2,
+                    maxPrecision: .seconds(1)
+                )
+            )
+            .monospacedDigit()
+        } else {
+            Text(
+                .currentDate,
+                format: .timer(
+                    countingDownIn: intervalStart..<targetDate,
+                    showsHours: true,
+                    maxFieldCount: 2,
+                    maxPrecision: .seconds(60)
+                )
+            )
+            .monospacedDigit()
+        }
+    }
+}
+
+private struct BellDynamicIslandExpandedView: View {
+    let context: ActivityViewContext<BellActivityAttributes>
+
+    var body: some View {
+        let timing = BellActivityTiming(state: context.state)
+        let currentDate = Date.now
+
+        VStack(spacing: 4) {
+            Text(context.attributes.siteName)
+                .font(.caption.weight(.semibold))
+                .foregroundStyle(.secondary)
+                .lineLimit(1)
+
+            if let targetDate = timing.target(after: currentDate)?.date {
+                BellSystemCountdown(
+                    startDate: context.state.startDate,
+                    currentDate: currentDate,
+                    targetDate: targetDate
+                )
+                .font(.title2.bold())
+                .lineLimit(1)
             } else {
                 Text(verbatim: "—")
             }
@@ -238,7 +324,7 @@ private struct BellDynamicIslandCountdown: View {
 struct NextBellLiveActivity: Widget {
     var body: some WidgetConfiguration {
         ActivityConfiguration(for: BellActivityAttributes.self) { context in
-            // Écran verrouillé / Always-On : nom du site + minutes restantes.
+            // Écran verrouillé / Always-On : même format que le plein écran.
             BellLockScreenView(context: context)
             .frame(maxWidth: .infinity, alignment: .center)
             .padding()
@@ -249,7 +335,7 @@ struct NextBellLiveActivity: Widget {
         } dynamicIsland: { context in
             DynamicIsland {
                 DynamicIslandExpandedRegion(.center) {
-                    EmptyView()
+                    BellDynamicIslandExpandedView(context: context)
                 }
             } compactLeading: {
                 Image(systemName: "bell.fill")
@@ -261,7 +347,8 @@ struct NextBellLiveActivity: Widget {
                     .font(.caption2)
                     .foregroundStyle(.white)
                     .lineLimit(1)
-                    .minimumScaleFactor(0.7)
+                    .minimumScaleFactor(0.5)
+                    .frame(width: 44, alignment: .trailing)
 
             } minimal: {
                 Image(systemName: "bell.fill")

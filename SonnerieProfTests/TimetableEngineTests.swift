@@ -32,6 +32,47 @@ struct TimetableEngineTests {
     }
 
     @Test
+    func countdownComponentsKeepHoursAndMinutes() {
+        let now = Date(timeIntervalSinceReferenceDate: 1_000_000)
+
+        #expect(BellCountdownClock.components(
+            from: now,
+            to: now.addingTimeInterval(71 * 60)
+        ) == .init(days: 0, hours: 1, minutes: 11))
+        #expect(BellCountdownClock.components(
+            from: now,
+            to: now.addingTimeInterval(24 * 60 * 60 + 11 * 60)
+        ) == .init(days: 1, hours: 0, minutes: 11))
+    }
+
+    @Test
+    func countdownShowsSecondsOnlyBelowThreeMinutes() {
+        let now = Date(timeIntervalSinceReferenceDate: 1_000_000)
+
+        #expect(!BellCountdownClock.showsSeconds(
+            from: now,
+            to: now.addingTimeInterval(3 * 60)
+        ))
+        #expect(BellCountdownClock.showsSeconds(
+            from: now,
+            to: now.addingTimeInterval(3 * 60 - 0.001)
+        ))
+    }
+
+    @Test
+    func dynamicCountdownFormatMatchesEveryPresentation() {
+        let now = Date(timeIntervalSinceReferenceDate: 1_000_000)
+        let target = now.addingTimeInterval(71 * 60)
+
+        #expect(BellCountdownFormatStyle(targetDate: target, presentation: .full).format(now) == "1h11min")
+        #expect(BellCountdownFormatStyle(targetDate: target, presentation: .compact).format(now) == "1h11")
+        #expect(BellCountdownFormatStyle(
+            targetDate: now.addingTimeInterval(2 * 60 + 9),
+            presentation: .full
+        ).format(now) == "2:09")
+    }
+
+    @Test
     func everyWeekSessionAppearsInQ1AndQ2() throws {
         let engine = TimetableEngine(calendar: calendar)
         let siteID = UUID()
