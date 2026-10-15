@@ -12,6 +12,10 @@ private enum ContentLocalizationSources {
     }
 }
 
+/// Mettre à `true` pour réafficher les outils internes dans l'écran Réglages
+/// des builds Debug. Ils restent toujours exclus des builds App Store.
+private let showsDeveloperSettings = false
+
 /// Écran racine : navigation, compte à rebours, réglages et synchronisation ActivityKit.
 struct ContentView: View {
     @Environment(\.scenePhase) private var scenePhase
@@ -916,73 +920,84 @@ struct ContentView: View {
     @ViewBuilder
     private var developerSettingsSections: some View {
 #if DEBUG
-        Section {
-            Picker(
+        if showsDeveloperSettings {
+            Section {
+                Picker(
                 L("Langue de test"),
                 selection: $debugLanguageCode
-            ) {
-                Text(L("language.system")).tag("system")
-                Text(L("language.fr")).tag("fr")
-                Text(L("language.en")).tag("en")
-                Text(L("language.de")).tag("de")
-                Text(L("language.es")).tag("es")
-                Text(L("language.it")).tag("it")
-                Text(L("language.pt_PT")).tag("pt-PT")
-                Text(L("language.pt_BR")).tag("pt-BR")
-                Text(L("language.nl")).tag("nl")
-                Text(L("language.pl")).tag("pl")
-                Text(L("language.ro")).tag("ro")
-                Text(L("language.cs")).tag("cs")
-                Text(L("language.sv")).tag("sv")
-                Text(L("language.da")).tag("da")
-            }
-            .pickerStyle(.navigationLink)
-            .onChange(of: debugLanguageCode) { _, _ in
-                if isLockScreenEnabled {
-                    refreshActiveLockScreenActivity()
+                ) {
+                    Text(L("language.system")).tag("system")
+                    Text(L("language.fr")).tag("fr")
+                    Text(L("language.en")).tag("en")
+                    Text(L("language.de")).tag("de")
+                    Text(L("language.es")).tag("es")
+                    Text(L("language.it")).tag("it")
+                    Text(L("language.pt_PT")).tag("pt-PT")
+                    Text(L("language.pt_BR")).tag("pt-BR")
+                    Text(L("language.nl")).tag("nl")
+                    Text(L("language.pl")).tag("pl")
+                    Text(L("language.ro")).tag("ro")
+                    Text(L("language.cs")).tag("cs")
+                    Text(L("language.sv")).tag("sv")
+                    Text(L("language.da")).tag("da")
                 }
-            }
-
-            Toggle(
-                L("Utiliser une heure simulée"),
-                isOn: Binding(
-                    get: { debugSimulatedTimeEnabled },
-                    set: { setDebugSimulatedTimeEnabled($0) }
-                )
-            )
-
-            if debugSimulatedTimeEnabled {
-                DatePicker(
-                    L("Date et heure simulées"),
-                    selection: debugSimulatedDateBinding,
-                    displayedComponents: [.date, .hourAndMinute]
-                )
-
-                TimelineView(.periodic(from: .now, by: 1)) { context in
-                    HStack {
-                        Text(L("Heure simulée"))
-                        Spacer()
-                        Text(debugDateTimeString(effectiveDate(for: context.date)))
-                            .foregroundStyle(.secondary)
-                            .monospacedDigit()
+                .pickerStyle(.navigationLink)
+                .onChange(of: debugLanguageCode) { _, _ in
+                    if isLockScreenEnabled {
+                        refreshActiveLockScreenActivity()
                     }
                 }
 
-                Button(L("5 min avant la prochaine sonnerie")) {
-                    setDebugTime(minutesBeforeNextBell: 5)
-                }
-                .disabled(debugUpcomingBell == nil)
+                Toggle(
+                    L("Utiliser une heure simulée"),
+                    isOn: Binding(
+                        get: { debugSimulatedTimeEnabled },
+                        set: { setDebugSimulatedTimeEnabled($0) }
+                    )
+                )
 
-                Button(L("1 min avant la prochaine sonnerie")) {
-                    setDebugTime(minutesBeforeNextBell: 1)
-                }
-                .disabled(debugUpcomingBell == nil)
+                if debugSimulatedTimeEnabled {
+                    DatePicker(
+                        L("Date et heure simulées"),
+                        selection: debugSimulatedDateBinding,
+                        displayedComponents: [.date, .hourAndMinute]
+                    )
 
-                Button(L("Revenir à l’heure réelle")) {
-                    setDebugSimulatedTimeEnabled(false)
+                    TimelineView(.periodic(from: .now, by: 1)) { context in
+                        HStack {
+                            Text(L("Heure simulée"))
+                            Spacer()
+                            Text(debugDateTimeString(effectiveDate(for: context.date)))
+                                .foregroundStyle(.secondary)
+                                .monospacedDigit()
+                        }
+                    }
+
+                    Button(L("5 min avant la prochaine sonnerie")) {
+                        setDebugTime(minutesBeforeNextBell: 5)
+                    }
+                    .disabled(debugUpcomingBell == nil)
+
+                    Button(L("1 min avant la prochaine sonnerie")) {
+                        setDebugTime(minutesBeforeNextBell: 1)
+                    }
+                    .disabled(debugUpcomingBell == nil)
+
+                    Button(L("Revenir à l’heure réelle")) {
+                        setDebugSimulatedTimeEnabled(false)
+                    }
                 }
+            } header: {
+                Label(L("Mode développeur"), systemImage: "hammer.fill")
+            } footer: {
+                Text(
+                    L("L’heure simulée avance à vitesse réelle. Elle est utilisée par l’app et la Live Activity. Ce réglage existe uniquement dans les builds Debug et n’apparaît pas dans la version App Store.")
+                )
             }
+        }
+#endif
 
+        Section {
             Button {
                 presentTipPrompt()
             } label: {
@@ -994,14 +1009,7 @@ struct ContentView: View {
                     systemImage: "heart.fill"
                 )
             }
-        } header: {
-            Label(L("Mode développeur"), systemImage: "hammer.fill")
-        } footer: {
-            Text(
-                L("L’heure simulée avance à vitesse réelle. Elle est utilisée par l’app et la Live Activity. Ce réglage existe uniquement dans les builds Debug et n’apparaît pas dans la version App Store.")
-            )
         }
-#endif
     }
 
     // MARK: - Écran À propos

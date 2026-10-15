@@ -169,11 +169,23 @@ private struct BellLockScreenView: View {
 
                 if let targetDate,
                    !timing.shouldHide(targetDate: targetDate, at: currentDate) {
-                    BellSystemCountdown(
-                        startDate: context.state.startDate,
-                        currentDate: currentDate,
-                        targetDate: targetDate
-                    )
+                    Group {
+                        if BellCountdownClock.showsDaysAndHours(
+                            from: currentDate,
+                            to: targetDate
+                        ) {
+                            BellDayHourCountdown(
+                                currentDate: currentDate,
+                                targetDate: targetDate
+                            )
+                        } else {
+                            BellSystemCountdown(
+                                startDate: context.state.startDate,
+                                currentDate: currentDate,
+                                targetDate: targetDate
+                            )
+                        }
+                    }
                     .font(.system(size: 48, weight: .bold, design: .rounded))
                     .monospacedDigit()
                     .minimumScaleFactor(0.55)
@@ -183,6 +195,24 @@ private struct BellLockScreenView: View {
                 }
             }
         }
+    }
+}
+
+private struct BellDayHourCountdown: View {
+    let currentDate: Date
+    let targetDate: Date
+
+    var body: some View {
+        let components = BellCountdownClock.dayHourComponents(
+            from: currentDate,
+            to: targetDate
+        )
+
+        Text(
+            "\(components.days, format: .number) j \(components.hours, format: .number.precision(.integerLength(2))) h",
+            comment: "Compte à rebours supérieur à 24 heures : nombre de jours, puis nombre d'heures sur deux chiffres."
+        )
+        .monospacedDigit()
     }
 }
 
@@ -306,13 +336,27 @@ private struct BellDynamicIslandExpandedView: View {
                 .lineLimit(1)
 
             if let targetDate = timing.target(after: currentDate)?.date {
-                BellSystemCountdown(
-                    startDate: context.state.startDate,
-                    currentDate: currentDate,
-                    targetDate: targetDate
-                )
+                Group {
+                    if BellCountdownClock.showsDaysAndHours(
+                        from: currentDate,
+                        to: targetDate
+                    ) {
+                        BellDayHourCountdown(
+                            currentDate: currentDate,
+                            targetDate: targetDate
+                        )
+                    } else {
+                        BellSystemCountdown(
+                            startDate: context.state.startDate,
+                            currentDate: currentDate,
+                            targetDate: targetDate
+                        )
+                    }
+                }
                 .font(.title2.bold())
+                .monospacedDigit()
                 .lineLimit(1)
+                .minimumScaleFactor(0.8)
             } else {
                 Text(verbatim: "—")
             }

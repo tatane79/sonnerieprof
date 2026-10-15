@@ -60,6 +60,24 @@ struct TimetableEngineTests {
     }
 
     @Test
+    func lockScreenUsesDaysAndHoursOnlyBeyondTwentyFourHours() {
+        let now = Date(timeIntervalSinceReferenceDate: 1_000_000)
+
+        #expect(!BellCountdownClock.showsDaysAndHours(
+            from: now,
+            to: now.addingTimeInterval(24 * 60 * 60)
+        ))
+        #expect(BellCountdownClock.showsDaysAndHours(
+            from: now,
+            to: now.addingTimeInterval(24 * 60 * 60 + 1)
+        ))
+        #expect(BellCountdownClock.dayHourComponents(
+            from: now,
+            to: now.addingTimeInterval(2 * 24 * 60 * 60 + 3 * 60 * 60 + 59 * 60)
+        ) == .init(days: 2, hours: 3, minutes: 0))
+    }
+
+    @Test
     func dynamicCountdownFormatMatchesEveryPresentation() {
         let now = Date(timeIntervalSinceReferenceDate: 1_000_000)
         let target = now.addingTimeInterval(71 * 60)

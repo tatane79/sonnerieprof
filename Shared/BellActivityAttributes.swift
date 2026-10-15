@@ -5,6 +5,7 @@ import Foundation
 /// Une minute commencée reste affichée jusqu'à son expiration complète.
 enum BellCountdownClock {
     static let secondsDisplayThreshold: TimeInterval = 3 * 60
+    static let dayHourDisplayThreshold: TimeInterval = 24 * 60 * 60
 
     struct Components: Equatable {
         let days: Int
@@ -29,8 +30,21 @@ enum BellCountdownClock {
         )
     }
 
+    static func dayHourComponents(from currentDate: Date, to targetDate: Date) -> Components {
+        let totalHours = max(0, Int(targetDate.timeIntervalSince(currentDate) / (60 * 60)))
+        return Components(
+            days: totalHours / 24,
+            hours: totalHours % 24,
+            minutes: 0
+        )
+    }
+
     static func showsSeconds(from currentDate: Date, to targetDate: Date) -> Bool {
         targetDate.timeIntervalSince(currentDate) < secondsDisplayThreshold
+    }
+
+    static func showsDaysAndHours(from currentDate: Date, to targetDate: Date) -> Bool {
+        targetDate.timeIntervalSince(currentDate) > dayHourDisplayThreshold
     }
 
     /// `Date.OffsetFormatStyle` tronque les minutes. Ce décalage lui applique

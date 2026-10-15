@@ -312,6 +312,17 @@
         }
       }
     },
+    "%@ j %@ h" : {
+      "comment" : "Compte à rebours supérieur à 24 heures : nombre de jours, puis nombre d'heures sur deux chiffres.",
+      "localizations" : {
+        "fr" : {
+          "stringUnit" : {
+            "state" : "new",
+            "value" : "%1$@ j %2$@ h"
+          }
+        }
+      }
+    },
     "%@ j %@h%@min" : {
       "localizations" : {
         "fr" : {
