@@ -56,6 +56,7 @@ final class TipJarStore {
     private enum DefaultsKey {
         static let firstLaunchDate = "tip.firstLaunchDate"
         static let lastPromptDate = "tip.lastPromptDate"
+        static let hasTipped = "tip.hasTipped"
     }
 
     private(set) var products: [Product] = []
@@ -106,6 +107,7 @@ final class TipJarStore {
 
     var shouldPresentAutomaticPrompt: Bool {
         guard !products.isEmpty else { return false }
+        guard !defaults.bool(forKey: DefaultsKey.hasTipped) else { return false }
         guard let firstLaunchDate = defaults.object(
             forKey: DefaultsKey.firstLaunchDate
         ) as? Date else {
@@ -148,6 +150,7 @@ final class TipJarStore {
             case .success(let verificationResult):
                 let transaction = try verified(verificationResult)
                 await transaction.finish()
+                defaults.set(true, forKey: DefaultsKey.hasTipped)
                 didJustTip = true
                 message = TipL(
                     "tip.thank_you_message",

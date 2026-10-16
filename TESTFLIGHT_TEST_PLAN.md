@@ -48,30 +48,17 @@ Tester au moins :
 - Changement d’heure été/hiver.
 - Formats 24 h et 12 h.
 
-### Widget écran verrouillé
-- Le compteur continue de diminuer lorsque l’app est fermée/suspendue.
-- À une sonnerie, le widget passe à la prochaine sonnerie grâce à sa timeline préchargée.
-- Si iOS retarde exceptionnellement la transition de timeline, le timer reste bloqué à zéro et ne repart jamais en positif.
-- Tester plusieurs sonneries successives sans ouvrir l’app.
-- Tester l’option « Masquer jusqu’à 1 h avant » : masquage après la dernière sonnerie puis réapparition à H−1 de la première sonnerie suivante.
-- Tester le passage vendredi → lundi sans ouvrir l’app.
-
-### Live Activity / Always-On — mode local (backend non configuré)
+### Live Activity / écran verrouillé / Always-On — mode local
 - Le compteur continue à descendre écran verrouillé.
-- À zéro, le timer reste à zéro : il ne doit jamais compter positivement depuis une sonnerie passée.
-- Lorsque l’app revient au premier plan, la Live Activity se recale immédiatement sur la prochaine sonnerie.
-- La Dynamic Island affiche uniquement la cloche dans toutes ses présentations.
-
-### Live Activity / Always-On — mode commercial APNs
-
-- Vérifier dans Xcode qu’un `ActivityKit push token` est reçu et enregistré par le backend.
-- Verrouiller l’iPhone et ne plus rouvrir Sonnerie Prof.
-- Tester une transition réelle, par exemple `10:00 → 10:55` : le timer atteint zéro puis la Live Activity doit basculer sur 10:55 après la mise à jour APNs.
-- Enchaîner au moins trois sonneries successives téléphone verrouillé.
-- Couper temporairement le réseau : le compteur doit rester bloqué à zéro, jamais repartir en positif ; restaurer le réseau puis vérifier le rattrapage.
-- Tester un renouvellement de push token si observable.
-- Tester la limite système d’environ 8 h d’une Live Activity ; le widget reste la solution de continuité au-delà de cette durée.
-- Tester l’option « Masquer jusqu’à 1 h avant » et la mise à jour distante de réapparition.
+- L’affichage de l’écran verrouillé reste identique au compte à rebours pleine page.
+- Sous trois minutes, les secondes sont visibles et diminuent réellement.
+- Au-delà de 24 h, afficher `J j HH h`, sans minutes ni secondes.
+- La Dynamic Island reste aussi étroite que possible tout en étant lisible.
+- La présentation développée de la Dynamic Island affiche `J j HH h` au-delà de 24 h.
+- Dans toutes les présentations de la Dynamic Island, le temps continue à diminuer sans rester figé.
+- À zéro, le compteur ne repart jamais en positif depuis une sonnerie passée.
+- Lorsque l’app revient au premier plan, la Live Activity se recale sur la prochaine sonnerie.
+- Tester l’option « Masquer jusqu’à 1 h avant ».
 
 ### Vibrations
 - 1 à 10 vibrations au premier plan.
@@ -84,8 +71,25 @@ Tester au moins :
 - Position approximative.
 - Live Activities désactivées dans les réglages iOS.
 - Aucun site / aucun horaire.
-- Backend indisponible : l’app principale et le widget doivent continuer à fonctionner ; la Live Activity ne doit jamais afficher un temps positif après zéro.
+- CloudKit indisponible : l’app principale et la Live Activity locales doivent continuer à fonctionner.
+- Vérifier que les sauvegardes privées et le partage facultatif signalent proprement une erreur réseau.
+
+### Pourboires StoreKit
+- Tester les trois produits consommables avec un compte Sandbox ou via TestFlight.
+- Vérifier l’annulation, l’achat en attente et l’achat réussi.
+- Après une transaction vérifiée, relancer l’app et avancer la date de test : aucune invitation automatique ne doit réapparaître.
+- Le bouton manuel « Soutenir Sonnerie Prof » reste disponible dans l’écran À propos.
+
+### CloudKit
+- Vérifier une sauvegarde et une restauration dans la base privée de production.
+- Vérifier la publication puis l’import d’un horaire partagé dans la base publique de production.
+- Vérifier qu’aucune position ni aucun emploi du temps personnel n’est publié avec un code de partage.
+
+### Contenu de l’archive
+- Vérifier que `SonnerieProfWidgets.appex` est embarquée.
+- Vérifier qu’aucune application Apple Watch n’est embarquée dans cette version.
+- Vérifier la version commerciale `1.0` et le build `7` pour l’app et l’extension.
 
 ## Critère de sortie de bêta
 
-Aucun crash ni blocage, aucune sonnerie incorrecte, aucun affichage de sonnerie passée et aucune durée qui repart en positif après zéro. Pour la version commerciale avec Always-On automatique entre les sonneries, au moins une journée réelle de test doit être validée avec les mises à jour ActivityKit/APNs activées.
+Aucun crash ni blocage, aucune sonnerie incorrecte, aucun affichage de sonnerie passée et aucune durée qui repart en positif après zéro. Avant soumission, valider au moins une journée réelle avec la Live Activity locale sur un iPhone physique, les achats Sandbox et CloudKit Production.
