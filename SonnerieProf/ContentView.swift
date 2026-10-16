@@ -9,6 +9,10 @@ private enum ContentLocalizationSources {
             localized: "lock.long_delay",
             defaultValue: "Affichage activé. La prochaine sonnerie est éloignée ; iOS peut retirer la Live Activity avant celle-ci."
         )
+        _ = String(localized: "Données locales et iCloud facultatif")
+        _ = String(
+            localized: "La Live Activity et la détection de l’établissement le plus proche fonctionnent localement. Si vous choisissez d’utiliser iCloud, la sauvegarde personnelle est conservée dans votre base privée CloudKit avec son contenu chiffré. Le partage par code publie uniquement le nom et les horaires de l’établissement dans la base publique CloudKit ; sa position et votre emploi du temps personnel ne sont jamais publiés."
+        )
     }
 }
 
@@ -1069,12 +1073,12 @@ struct ContentView: View {
                 )
 
                 Label(
-                    L("Données enregistrées localement"),
-                    systemImage: "iphone"
+                    L("Données locales et iCloud facultatif"),
+                    systemImage: "icloud"
                 )
 
                 Text(
-                    L("La localisation est facultative et n’est jamais transmise. Lorsque les mises à jour Always-On à distance sont activées, seules les heures de sonnerie nécessaires et un identifiant technique temporaire sont transmis au service de mise à jour.")
+                    L("La Live Activity et la détection de l’établissement le plus proche fonctionnent localement. Si vous choisissez d’utiliser iCloud, la sauvegarde personnelle est conservée dans votre base privée CloudKit avec son contenu chiffré. Le partage par code publie uniquement le nom et les horaires de l’établissement dans la base publique CloudKit ; sa position et votre emploi du temps personnel ne sont jamais publiés.")
                 )
                 .font(.footnote)
                 .foregroundStyle(.secondary)

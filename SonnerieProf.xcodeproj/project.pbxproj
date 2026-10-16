@@ -45,7 +45,6 @@
 		A806D4F23064E94E00FFA1B3 /* ProUpgradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4F13064E94E00FFA1B3 /* ProUpgradeView.swift */; };
 		A806D4F43064EB8D00FFA1B3 /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = A806D4F33064EB8D00FFA1B3 /* Products.storekit */; };
 		A8439992306FD03D00251EB7 /* SonnerieProfWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A8439991306FD03D00251EB7 /* SonnerieProfWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		A843999E306FD03E00251EB7 /* SonnerieProfWatch.app in Resources */ = {isa = PBXBuildFile; fileRef = A843998C306FD03D00251EB7 /* SonnerieProfWatch.app */; };
 		A84399AE3070587900251EB7 /* CloudTransferModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84399AD3070587900251EB7 /* CloudTransferModels.swift */; };
 		A84399AF3070587900251EB7 /* CloudTransferModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84399AD3070587900251EB7 /* CloudTransferModels.swift */; };
 		A84399B13070587900251EB7 /* CloudDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84399B03070587900251EB7 /* CloudDataService.swift */; };
@@ -80,13 +79,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = A8439990306FD03D00251EB7;
 			remoteInfo = "SonnerieProfWatch Watch App";
-		};
-		A843999C306FD03E00251EB7 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 000000000000000000000039 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = A843998B306FD03D00251EB7;
-			remoteInfo = SonnerieProfWatch;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -337,7 +329,6 @@
 			);
 			dependencies = (
 				00000000000000000000003B /* PBXTargetDependency */,
-				A843999D306FD03E00251EB7 /* PBXTargetDependency */,
 			);
 			name = SonnerieProf;
 			productName = SonnerieProf;
@@ -500,7 +491,6 @@
 				A8A1A7A4305F178200A6EC03 /* Assets.xcassets in Resources */,
 				A00000000000000000000005 /* PrivacyInfo.xcprivacy in Resources */,
 				B10000000000000000000002 /* Localizable.xcstrings in Resources */,
-				A843999E306FD03E00251EB7 /* SonnerieProfWatch.app in Resources */,
 				A806D4F43064EB8D00FFA1B3 /* Products.storekit in Resources */,
 				B20000000000000000000004 /* InfoPlist.strings in Resources */,
 			);
@@ -624,11 +614,6 @@
 			isa = PBXTargetDependency;
 			target = A8439990306FD03D00251EB7 /* SonnerieProfWatch Watch App */;
 			targetProxy = A8439993306FD03D00251EB7 /* PBXContainerItemProxy */;
-		};
-		A843999D306FD03E00251EB7 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = A843998B306FD03D00251EB7 /* SonnerieProfWatch */;
-			targetProxy = A843999C306FD03E00251EB7 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -761,8 +746,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = SonnerieProf/SonnerieProf.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
-				EXCLUDED_SOURCE_FILE_NAMES = SonnerieProfWatch.app;
+				CURRENT_PROJECT_VERSION = 6;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = SonnerieProf/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -790,8 +774,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = SonnerieProf/SonnerieProf.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 5;
-				EXCLUDED_SOURCE_FILE_NAMES = SonnerieProfWatch.app;
+				CURRENT_PROJECT_VERSION = 6;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = SonnerieProf/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;

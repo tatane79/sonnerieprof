@@ -4989,6 +4989,82 @@
         }
       }
     },
+    "Données locales et iCloud facultatif" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Místní data a volitelné použití iCloudu"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Lokale data og valgfri brug af iCloud"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Lokale Daten und optionale iCloud-Nutzung"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Local Data and Optional iCloud"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Datos locales y uso opcional de iCloud"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Dati locali e uso facoltativo di iCloud"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Lokale gegevens en optioneel iCloud-gebruik"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Dane lokalne i opcjonalne użycie iCloud"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Dados Locais e iCloud Opcional"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Dados locais e iCloud opcional"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Date locale și utilizare opțională a iCloud"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Lokala data och valfri iCloud-användning"
+          }
+        }
+      }
+    },
     "Écran verrouillé" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -7460,6 +7536,82 @@
           "stringUnit" : {
             "state" : "machine_translated",
             "value" : "Importen skapar en ny lokal skola. Sedan kan du lägga till dess plats utan att ändra de delade ringtiderna."
+          }
+        }
+      }
+    },
+    "La Live Activity et la détection de l’établissement le plus proche fonctionnent localement. Si vous choisissez d’utiliser iCloud, la sauvegarde personnelle est conservée dans votre base privée CloudKit avec son contenu chiffré. Le partage par code publie uniquement le nom et les horaires de l’établissement dans la base publique CloudKit ; sa position et votre emploi du temps personnel ne sont jamais publiés." : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Live Activity a detekce nejbližší školy fungují lokálně. Pokud se rozhodnete používat iCloud, vaše osobní záloha se ukládá do vaší soukromé databáze CloudKit a její obsah je šifrovaný. Sdílení pomocí kódu zveřejní ve veřejné databázi CloudKit pouze název školy a časy zvonění; její poloha ani váš osobní rozvrh se nikdy nezveřejní."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Live Activity og registreringen af den nærmeste skole fungerer lokalt. Hvis du vælger at bruge iCloud, gemmes din personlige sikkerhedskopi med krypteret indhold i din private CloudKit-database. Deling via en kode offentliggør kun skolens navn og ringetider i den offentlige CloudKit-database; skolens placering og dit personlige skema offentliggøres aldrig."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Die Live Activity und die Erkennung der nächstgelegenen Schule funktionieren lokal. Wenn Sie iCloud verwenden, wird Ihre persönliche Sicherung mit verschlüsseltem Inhalt in Ihrer privaten CloudKit-Datenbank gespeichert. Bei der Freigabe per Code werden nur der Name und die Klingelzeiten der Schule in der öffentlichen CloudKit-Datenbank veröffentlicht; ihr Standort und Ihr persönlicher Stundenplan werden niemals veröffentlicht."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "The Live Activity and nearest-school detection run locally. If you choose to use iCloud, your personal backup is stored in your private CloudKit database with its content encrypted. Sharing with a code publishes only the school name and bell schedule to the public CloudKit database; its location and your personal timetable are never published."
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "La Live Activity y la detección del centro educativo más cercano funcionan localmente. Si decides usar iCloud, la copia de seguridad personal se guarda en tu base de datos privada de CloudKit, con el contenido cifrado. La opción de compartir mediante un código solo publica el nombre del centro educativo y los horarios de timbre en la base de datos pública de CloudKit; su ubicación y tu horario personal nunca se publican."
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "La Live Activity e il rilevamento della scuola più vicina funzionano localmente. Se scegli di usare iCloud, il backup personale viene conservato nel tuo database privato CloudKit con il contenuto crittografato. La condivisione tramite codice pubblica esclusivamente il nome e gli orari delle campanelle della scuola nel database pubblico CloudKit; la posizione della scuola e il tuo orario personale non vengono mai pubblicati."
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "De Live Activity en de detectie van de dichtstbijzijnde school werken lokaal. Als je ervoor kiest iCloud te gebruiken, wordt je persoonlijke reservekopie met versleutelde inhoud opgeslagen in je privédatabase van CloudKit. Bij delen via een code worden alleen de naam en de beltijden van de school in de openbare CloudKit-database gepubliceerd. De locatie van de school en je persoonlijke lesrooster worden nooit gepubliceerd."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Live Activity i wykrywanie najbliższej szkoły działają lokalnie. Jeśli zdecydujesz się korzystać z iCloud, osobista kopia zapasowa będzie przechowywana w Twojej prywatnej bazie danych CloudKit, a jej zawartość będzie szyfrowana. Udostępnianie za pomocą kodu publikuje w publicznej bazie danych CloudKit tylko nazwę szkoły i godziny dzwonków; jej położenie i Twój osobisty plan lekcji nigdy nie są publikowane."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "A Atividade ao Vivo e a detecção da escola mais próxima funcionam localmente. Se você optar por usar o iCloud, o backup pessoal será armazenado no seu banco de dados privado do CloudKit com o conteúdo criptografado. O compartilhamento por código publica somente o nome da escola e os horários de sinal no banco de dados público do CloudKit; a localização da escola e o horário pessoal nunca são publicados."
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "A Live Activity e a deteção da escola mais próxima funcionam localmente. Se optar por utilizar iCloud, a cópia de segurança pessoal é guardada na sua base de dados privada do CloudKit, com o conteúdo cifrado. A partilha por código publica apenas o nome e os horários de toque da escola na base de dados pública do CloudKit; a localização da escola e o horário pessoal nunca são publicados."
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Live Activity și detectarea celei mai apropiate școli funcționează local. Dacă alegeți să utilizați iCloud, copia de rezervă personală este păstrată în baza dvs. de date privată CloudKit, cu conținutul criptat. Partajarea prin cod publică doar numele școlii și orele clopoțelului în baza de date publică CloudKit; poziția școlii și orarul dvs. personal nu sunt publicate niciodată."
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Live Activity och identifieringen av den närmaste skolan sker lokalt. Om du väljer att använda iCloud lagras din personliga säkerhetskopia i din privata CloudKit-databas med krypterat innehåll. Delning via kod publicerar endast skolans namn och ringtider i den offentliga CloudKit-databasen. Skolans plats och ditt personliga schema publiceras aldrig."
           }
         }
       }
