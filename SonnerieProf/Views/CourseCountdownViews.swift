@@ -34,7 +34,7 @@ private struct DistantCourseCountdownText: View {
 /// Carte principale : décompte vers la fin du cours ou le prochain cours.
 /// Sans emploi du temps, elle revient automatiquement à la prochaine sonnerie.
 struct CourseCountdownCard: View {
-    @State private var showsNextBell = false
+    @Binding var showsNextBell: Bool
 
     let sessions: [CourseSession]
     let sites: [BellSite]
@@ -208,6 +208,7 @@ struct CourseFullscreenCountdownView: View {
     @State private var previousIdleTimerDisabled = false
     @State private var isManagingIdleTimer = false
 
+    let showsNextBell: Bool
     let sessions: [CourseSession]
     let sites: [BellSite]
     let referenceWeekStart: Date
@@ -230,7 +231,8 @@ struct CourseFullscreenCountdownView: View {
                     referenceWeekStart: referenceWeekStart,
                     referenceWeek: referenceWeek
                 )
-                let fallbackBell = sessions.isEmpty
+                let usesBellCountdown = sessions.isEmpty || showsNextBell
+                let fallbackBell = usesBellCountdown
                     ? fallbackSite.flatMap {
                         bellEngine.nextBell(
                             after: displayDate,
@@ -240,12 +242,15 @@ struct CourseFullscreenCountdownView: View {
                     }
                     : nil
 
+                let courseTarget = status.current?.endDate ?? status.next?.startDate
+                let target = usesBellCountdown ? fallbackBell : courseTarget
+
                 ZStack {
                     Color.black.ignoresSafeArea()
 
-                    if let target = status.current?.endDate ?? status.next?.startDate ?? fallbackBell {
+                    if let target {
                         let systemTarget = target.addingTimeInterval(-timeOffset)
-                        let occurrence = status.current ?? status.next
+                        let occurrence = usesBellCountdown ? nil : (status.current ?? status.next)
 
                         VStack(spacing: 24) {
                             if let occurrence {
@@ -285,7 +290,7 @@ struct CourseFullscreenCountdownView: View {
                                 status: status,
                                 target: target,
                                 displayDate: displayDate,
-                                isFallbackBell: fallbackBell != nil
+                                isFallbackBell: usesBellCountdown
                             ))
                                 .font(.title2.weight(.semibold))
                                 .foregroundStyle(.white.opacity(0.75))

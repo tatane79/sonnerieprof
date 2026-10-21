@@ -310,6 +310,8 @@ private struct BellSystemCountdown: View {
         } else {
             Text(
                 .currentDate,
+                // Le texte est rendu hors du processus de l'extension :
+                // conserver un format système pour la Live Activity.
                 format: .timer(
                     countingDownIn: intervalStart..<targetDate,
                     showsHours: true,

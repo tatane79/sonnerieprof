@@ -82,7 +82,7 @@ struct TimetableEngineTests {
         let now = Date(timeIntervalSinceReferenceDate: 1_000_000)
         let target = now.addingTimeInterval(71 * 60)
 
-        #expect(BellCountdownFormatStyle(targetDate: target, presentation: .full).format(now) == "1h11min")
+        #expect(BellCountdownFormatStyle(targetDate: target, presentation: .full).format(now) == "1 h 11 min")
         #expect(BellCountdownFormatStyle(targetDate: target, presentation: .compact).format(now) == "1h11")
         #expect(BellCountdownFormatStyle(
             targetDate: now.addingTimeInterval(2 * 60 + 9),

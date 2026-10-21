@@ -80,14 +80,16 @@ struct BellCountdownFormatStyle: DiscreteFormatStyle, Codable, Hashable {
         let paddedMinutes = String(format: "%02d", minutes)
 
         if days > 0 {
-            let suffix = presentation == .full ? "min" : ""
-            return "\(days) j \(hours)h\(paddedMinutes)\(suffix)"
+            return presentation == .full
+                ? "\(days) j \(hours) h \(paddedMinutes) min"
+                : "\(days) j \(hours)h\(paddedMinutes)"
         }
         if hours > 0 {
-            let suffix = presentation == .full ? "min" : ""
-            return "\(hours)h\(paddedMinutes)\(suffix)"
+            return presentation == .full
+                ? "\(hours) h \(paddedMinutes) min"
+                : "\(hours)h\(paddedMinutes)"
         }
-        return "\(minutes)min"
+        return presentation == .full ? "\(minutes) min" : "\(minutes)min"
     }
 
     func discreteInput(after input: Date) -> Date? {

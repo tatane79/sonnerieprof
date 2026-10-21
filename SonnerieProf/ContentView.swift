@@ -37,6 +37,7 @@ struct ContentView: View {
     @State private var lastObservedNextBellForActivity: Date?
     @State private var showOnboarding = false
     @State private var showFullscreenCountdown = false
+    @AppStorage("showsNextBell") private var showsNextBell = false
     @State private var showTipPrompt = false
     @State private var showSuspensionChoices = false
 
@@ -99,6 +100,7 @@ struct ContentView: View {
                     developerClockBanner
 #endif
                     CourseCountdownCard(
+                        showsNextBell: $showsNextBell,
                         sessions: timetableStore.sessions,
                         sites: store.sites,
                         referenceWeekStart: timetableStore.referenceWeekStart,
@@ -198,6 +200,14 @@ struct ContentView: View {
             .onReceive(store.$scheduleSuspendedUntil.dropFirst()) { _ in
                 reconcileSuspensionState(at: effectiveDate(for: .now))
             }
+            .onChange(of: showsNextBell) { _, _ in
+                refreshActiveLockScreenActivity()
+            }
+            .onChange(of: isUpdatingLockScreen) { _, isUpdating in
+                // Applique aussi un changement de mode effectué pendant le démarrage.
+                guard !isUpdating else { return }
+                refreshActiveLockScreenActivity()
+            }
             .onChange(of: timetableStore.sessions) { _, _ in
                 guard isLockScreenEnabled else { return }
                 refreshActiveLockScreenActivity()
@@ -232,6 +242,7 @@ struct ContentView: View {
         }
         .fullScreenCover(isPresented: $showFullscreenCountdown) {
             CourseFullscreenCountdownView(
+                showsNextBell: showsNextBell,
                 sessions: timetableStore.sessions,
                 sites: store.sites,
                 referenceWeekStart: timetableStore.referenceWeekStart,
@@ -1289,6 +1300,10 @@ struct ContentView: View {
 
     // MARK: - Live Activity / écran verrouillé
 
+    private var usesCourseCountdown: Bool {
+        !showsNextBell && !timetableStore.sessions.isEmpty
+    }
+
     private func setLockScreenEnabled(_ enabled: Bool) {
         guard !isUpdatingLockScreen else { return }
         isUpdatingLockScreen = true
@@ -1316,7 +1331,7 @@ struct ContentView: View {
                     try await LiveActivityManager.start(
                         for: site,
                         bellDates: dates,
-                        usesCourseSchedule: !timetableStore.sessions.isEmpty,
+                        usesCourseSchedule: usesCourseCountdown,
                         courseDetails: activityCourseDetails(),
                         simulatedTimeOffset: activeTimeOffset
                     )
@@ -1368,6 +1383,8 @@ struct ContentView: View {
 
     private func refreshActiveLockScreenActivity() {
         guard isLockScreenEnabled,
+              !isUpdatingLockScreen,
+              !store.isScheduleSuspended,
               let site = store.selectedSite else {
             return
         }
@@ -1379,7 +1396,7 @@ struct ContentView: View {
                 try await LiveActivityManager.refresh(
                     for: site,
                     bellDates: dates,
-                    usesCourseSchedule: !timetableStore.sessions.isEmpty,
+                    usesCourseSchedule: usesCourseCountdown,
                     courseDetails: activityCourseDetails(),
                     simulatedTimeOffset: activeTimeOffset
                 )
@@ -1397,7 +1414,7 @@ struct ContentView: View {
     private func activityBellDates(for site: BellSite) -> [Date] {
         let appNow = effectiveDate(for: .now)
         let displayDates: [Date]
-        if timetableStore.sessions.isEmpty {
+        if !usesCourseCountdown {
             displayDates = engine.bellDates(
                 from: appNow,
                 at: site,
@@ -1420,6 +1437,8 @@ struct ContentView: View {
     }
 
     private func activityCourseDetails() -> [CourseActivityDetails] {
+        guard usesCourseCountdown else { return [] }
+
         let appNow = effectiveDate(for: .now)
         var details: [CourseActivityDetails] = []
 
@@ -1467,7 +1486,7 @@ struct ContentView: View {
     }
 
     private func displayCountdownTarget(at date: Date, site: BellSite) -> Date? {
-        if timetableStore.sessions.isEmpty {
+        if !usesCourseCountdown {
             return engine.nextBell(
                 after: date,
                 at: site,
@@ -1548,7 +1567,7 @@ struct ContentView: View {
             await LiveActivityManager.refreshAtBellBoundaryIfNeeded(
                 for: site,
                 bellDates: dates,
-                usesCourseSchedule: !timetableStore.sessions.isEmpty,
+                usesCourseSchedule: usesCourseCountdown,
                 courseDetails: activityCourseDetails(),
                 simulatedTimeOffset: activeTimeOffset
             )
@@ -1573,7 +1592,7 @@ struct ContentView: View {
                 try await LiveActivityManager.start(
                     for: site,
                     bellDates: dates,
-                    usesCourseSchedule: !timetableStore.sessions.isEmpty,
+                    usesCourseSchedule: usesCourseCountdown,
                     courseDetails: activityCourseDetails(),
                     simulatedTimeOffset: activeTimeOffset
                 )
