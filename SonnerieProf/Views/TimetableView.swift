@@ -28,10 +28,19 @@ private enum CourseEditorLocalizationSources {
 
 private enum TimetableLocalizationSources {
     static func registerForExtraction() {
+        _ = String(localized: "Calendrier")
+        _ = String(localized: "Liste")
+        _ = String(localized: "Semaine actuelle")
         _ = String(localized: "Personnaliser les noms des semaines")
         _ = String(localized: "Prochain cours")
+        _ = String(localized: "Aujourd’hui")
         _ = String(localized: "Choisissez le type de la semaine actuelle. L’application alternera ensuite automatiquement entre le premier et le second type de semaine.")
     }
+}
+
+private enum TimetableDisplayMode: String, CaseIterable {
+    case calendar
+    case list
 }
 
 /// Écran de consultation et de paramétrage de l'emploi du temps hebdomadaire.
@@ -42,91 +51,48 @@ struct TimetableView: View {
     @State private var isAddingSession = false
     @State private var pendingCurrentWeek: TeachingWeek?
     @State private var isCustomizingWeekNames = false
+    @State private var displayMode = TimetableDisplayMode.calendar
+    @State private var selectedSession: CourseSession?
 
     var body: some View {
-        List {
-            Section {
-                Picker(L("Semaine actuelle"), selection: currentWeekSelection) {
-                    Text(store.weekName(for: .q1)).tag(TeachingWeek.q1)
-                    Text(store.weekName(for: .q2)).tag(TeachingWeek.q2)
-                }
-                .pickerStyle(.segmented)
-
-                DisclosureGroup(
-                    L("Personnaliser les noms des semaines"),
-                    isExpanded: $isCustomizingWeekNames
-                ) {
-                    TextField(
-                        L("Nom de la première semaine"),
-                        text: weekNameBinding(for: .q1),
-                        prompt: Text("Q1")
-                    )
-                    .textInputAutocapitalization(.characters)
-
-                    TextField(
-                        L("Nom de la deuxième semaine"),
-                        text: weekNameBinding(for: .q2),
-                        prompt: Text("Q2")
-                    )
-                    .textInputAutocapitalization(.characters)
-                }
-            } footer: {
-                Text(
-                    L("Choisissez le type de la semaine actuelle. L’application alternera ensuite automatiquement entre le premier et le second type de semaine.")
-                )
+        VStack(spacing: 0) {
+            Picker(L("Affichage"), selection: $displayMode) {
+                Label(L("Calendrier"), systemImage: "calendar").tag(TimetableDisplayMode.calendar)
+                Label(L("Liste"), systemImage: "list.bullet").tag(TimetableDisplayMode.list)
             }
+            .pickerStyle(.segmented)
+            .padding(.horizontal)
+            .padding(.vertical, 8)
 
-            if store.sortedSessions.isEmpty {
-                Button {
-                    requestNewSession()
-                } label: {
-                    ContentUnavailableView(
-                        L("Aucun cours"),
-                        systemImage: "calendar.badge.plus",
-                        description: Text(
-                            L(
-                                "Ajoutez votre première séance. Elle sera utilisée en %@ et en %@ par défaut.",
-                                store.weekName(for: .q1),
-                                store.weekName(for: .q2)
-                            )
-                        )
-                    )
-                    .contentShape(Rectangle())
-                }
-                .buttonStyle(.plain)
-                .disabled(sites.isEmpty)
-                .accessibilityHint(L("Ouvre l’écran de création d’un cours."))
-            } else {
-                ForEach(2...7, id: \.self) { weekday in
-                    let sessions = store.sortedSessions.filter { $0.weekday == weekday }
-                    if !sessions.isEmpty {
-                        Section(weekdayName(weekday)) {
-                            ForEach(sessions) { session in
-                                NavigationLink {
-                                    CourseSessionEditorView(
-                                        store: store,
-                                        sites: sites,
-                                        session: session
-                                    )
-                                } label: {
-                                    CourseSessionRow(
-                                        session: session,
-                                        siteName: sites.first(where: { $0.id == session.siteID })?.name,
-                                        q1Name: store.weekName(for: .q1),
-                                        q2Name: store.weekName(for: .q2)
-                                    )
-                                }
-                                .swipeActions {
-                                    Button(role: .destructive) {
-                                        store.delete(session)
-                                    } label: {
-                                        Label(L("Supprimer"), systemImage: "trash")
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
+            switch displayMode {
+            case .calendar:
+                TimetableCalendarContent(
+                    sessions: store.sortedSessions,
+                    siteNamesByID: Dictionary(
+                        uniqueKeysWithValues: sites.map { ($0.id, $0.name) }
+                    ),
+                    firstWeekName: store.weekName(for: .q1),
+                    secondWeekName: store.weekName(for: .q2),
+                    currentWeekSelection: currentWeekSelection,
+                    firstWeekNameBinding: weekNameBinding(for: .q1),
+                    secondWeekNameBinding: weekNameBinding(for: .q2),
+                    isCustomizingWeekNames: $isCustomizingWeekNames,
+                    canAddSession: !sites.isEmpty,
+                    onAddSession: requestNewSession,
+                    onSelectSession: { selectedSession = $0 }
+                )
+            case .list:
+                TimetableListContent(
+                    store: store,
+                    sites: sites,
+                    firstWeekName: store.weekName(for: .q1),
+                    secondWeekName: store.weekName(for: .q2),
+                    currentWeekSelection: currentWeekSelection,
+                    firstWeekNameBinding: weekNameBinding(for: .q1),
+                    secondWeekNameBinding: weekNameBinding(for: .q2),
+                    isCustomizingWeekNames: $isCustomizingWeekNames,
+                    onAddSession: requestNewSession
+                )
             }
         }
         .navigationTitle(L("Emploi du temps"))
@@ -148,6 +114,13 @@ struct TimetableView: View {
                     session: nil
                 )
             }
+        }
+        .navigationDestination(item: $selectedSession) { session in
+            CourseSessionEditorView(
+                store: store,
+                sites: sites,
+                session: session
+            )
         }
         .alert(
             L("Confirmer la semaine actuelle"),
@@ -203,6 +176,187 @@ struct TimetableView: View {
         )
     }
 
+}
+
+private struct TimetableCalendarContent: View {
+    let sessions: [CourseSession]
+    let siteNamesByID: [UUID: String]
+    let firstWeekName: String
+    let secondWeekName: String
+    let currentWeekSelection: Binding<TeachingWeek>
+    let firstWeekNameBinding: Binding<String>
+    let secondWeekNameBinding: Binding<String>
+    @Binding var isCustomizingWeekNames: Bool
+    let canAddSession: Bool
+    let onAddSession: () -> Void
+    let onSelectSession: (CourseSession) -> Void
+
+    var body: some View {
+        ScrollView {
+            VStack(alignment: .leading, spacing: 20) {
+                TimetableWeekSettings(
+                    firstWeekName: firstWeekName,
+                    secondWeekName: secondWeekName,
+                    currentWeekSelection: currentWeekSelection,
+                    firstWeekNameBinding: firstWeekNameBinding,
+                    secondWeekNameBinding: secondWeekNameBinding,
+                    isCustomizingWeekNames: $isCustomizingWeekNames
+                )
+                .padding(.horizontal)
+
+                if sessions.isEmpty {
+                    EmptyTimetableButton(
+                        firstWeekName: firstWeekName,
+                        secondWeekName: secondWeekName,
+                        canAddSession: canAddSession,
+                        onAddSession: onAddSession
+                    )
+                } else {
+                    WeeklyTimetableCalendar(
+                        sessions: sessions,
+                        siteNamesByID: siteNamesByID,
+                        firstWeekName: firstWeekName,
+                        secondWeekName: secondWeekName,
+                        currentWeek: currentWeekSelection.wrappedValue,
+                        onSelectSession: onSelectSession
+                    )
+                }
+            }
+            .padding(.vertical)
+        }
+    }
+}
+
+private struct TimetableListContent: View {
+    @Bindable var store: TimetableStore
+    let sites: [BellSite]
+    let firstWeekName: String
+    let secondWeekName: String
+    let currentWeekSelection: Binding<TeachingWeek>
+    let firstWeekNameBinding: Binding<String>
+    let secondWeekNameBinding: Binding<String>
+    @Binding var isCustomizingWeekNames: Bool
+    let onAddSession: () -> Void
+
+    var body: some View {
+        ScrollViewReader { proxy in
+            TimelineView(.everyMinute) { context in
+                let currentDate = DebugClockBridge.effectiveDate(for: context.date)
+                let calendar = Calendar.current
+                let currentWeekday = calendar.component(.weekday, from: currentDate)
+                let currentMinute = calendar.component(.hour, from: currentDate) * 60
+                    + calendar.component(.minute, from: currentDate)
+                let currentSessionID = currentSessionID(
+                    currentWeekday: currentWeekday,
+                    currentMinute: currentMinute,
+                    currentWeek: store.displayedCurrentWeek
+                )
+                let scrollTarget = initialScrollTarget(
+                    currentWeekday: currentWeekday,
+                    currentSessionID: currentSessionID
+                )
+
+                List {
+                    TimetableWeekSettings(
+                        firstWeekName: firstWeekName,
+                        secondWeekName: secondWeekName,
+                        currentWeekSelection: currentWeekSelection,
+                        firstWeekNameBinding: firstWeekNameBinding,
+                        secondWeekNameBinding: secondWeekNameBinding,
+                        isCustomizingWeekNames: $isCustomizingWeekNames
+                    )
+                    .listRowInsets(EdgeInsets())
+                    .listRowBackground(Color.clear)
+
+                    if store.sortedSessions.isEmpty {
+                        EmptyTimetableButton(
+                            firstWeekName: firstWeekName,
+                            secondWeekName: secondWeekName,
+                            canAddSession: !sites.isEmpty,
+                            onAddSession: onAddSession
+                        )
+                        .listRowBackground(Color.clear)
+                    } else {
+                        ForEach(daySections) { day in
+                            Section {
+                                ForEach(day.sessions) { session in
+                                    NavigationLink {
+                                        CourseSessionEditorView(
+                                            store: store,
+                                            sites: sites,
+                                            session: session
+                                        )
+                                    } label: {
+                                        CourseSessionRow(
+                                            session: session,
+                                            siteName: sites.first(where: { $0.id == session.siteID })?.name,
+                                            q1Name: firstWeekName,
+                                            q2Name: secondWeekName,
+                                            isCurrent: session.id == currentSessionID
+                                        )
+                                    }
+                                    .id(TimetableListScrollTarget.session(session.id))
+                                    .swipeActions {
+                                        Button(role: .destructive) {
+                                            store.delete(session)
+                                        } label: {
+                                            Label(L("Supprimer"), systemImage: "trash")
+                                        }
+                                    }
+                                }
+                            } header: {
+                                TimetableListDayHeader(
+                                    name: weekdayName(day.weekday),
+                                    isToday: day.weekday == currentWeekday
+                                )
+                                .id(TimetableListScrollTarget.day(day.weekday))
+                            }
+                        }
+                    }
+                }
+                .task(id: scrollTarget) {
+                    guard let scrollTarget else { return }
+                    await Task.yield()
+                    proxy.scrollTo(scrollTarget, anchor: .center)
+                }
+            }
+        }
+    }
+
+    private var daySections: [TimetableDaySection] {
+        Dictionary(grouping: store.sortedSessions, by: \.weekday)
+            .map { TimetableDaySection(weekday: $0.key, sessions: $0.value) }
+            .sorted { $0.weekday < $1.weekday }
+    }
+
+    private func currentSessionID(
+        currentWeekday: Int,
+        currentMinute: Int,
+        currentWeek: TeachingWeek
+    ) -> UUID? {
+        store.sortedSessions.first {
+            $0.weekday == currentWeekday
+                && $0.startMinutes <= currentMinute
+                && currentMinute < $0.endMinutes
+                && $0.weekPattern.includes(currentWeek)
+        }?.id
+    }
+
+    private func initialScrollTarget(
+        currentWeekday: Int,
+        currentSessionID: UUID?
+    ) -> TimetableListScrollTarget? {
+        if let currentSessionID {
+            return .session(currentSessionID)
+        }
+
+        if daySections.contains(where: { $0.weekday == currentWeekday }) {
+            return .day(currentWeekday)
+        }
+
+        return daySections.first.map { .day($0.weekday) }
+    }
+
     private func weekdayName(_ weekday: Int) -> String {
         var calendar = Calendar.current
         calendar.locale = appDisplayLocale()
@@ -212,14 +366,82 @@ struct TimetableView: View {
     }
 }
 
+private struct TimetableDaySection: Identifiable {
+    let weekday: Int
+    let sessions: [CourseSession]
+
+    var id: Int { weekday }
+}
+
+private enum TimetableListScrollTarget: Hashable {
+    case day(Int)
+    case session(UUID)
+}
+
+private struct TimetableListDayHeader: View {
+    let name: String
+    let isToday: Bool
+
+    var body: some View {
+        HStack(spacing: 8) {
+            Text(name)
+
+            if isToday {
+                Text(L("Aujourd’hui"))
+                    .font(.caption2.weight(.semibold))
+                    .foregroundStyle(.red)
+                    .padding(.horizontal, 7)
+                    .padding(.vertical, 2)
+                    .background(.red.opacity(0.12), in: Capsule())
+            }
+        }
+        .accessibilityElement(children: .combine)
+    }
+}
+
+private struct EmptyTimetableButton: View {
+    let firstWeekName: String
+    let secondWeekName: String
+    let canAddSession: Bool
+    let onAddSession: () -> Void
+
+    var body: some View {
+        Button(action: onAddSession) {
+            ContentUnavailableView(
+                L("Aucun cours"),
+                systemImage: "calendar.badge.plus",
+                description: Text(
+                    L(
+                        "Ajoutez votre première séance. Elle sera utilisée en %@ et en %@ par défaut.",
+                        firstWeekName,
+                        secondWeekName
+                    )
+                )
+            )
+            .contentShape(Rectangle())
+        }
+        .buttonStyle(.plain)
+        .disabled(!canAddSession)
+        .accessibilityHint(L("Ouvre l’écran de création d’un cours."))
+        .frame(maxWidth: .infinity)
+    }
+}
+
 private struct CourseSessionRow: View {
     let session: CourseSession
     let siteName: String?
     let q1Name: String
     let q2Name: String
+    let isCurrent: Bool
 
     var body: some View {
-        HStack(spacing: 12) {
+        HStack(spacing: 10) {
+            RoundedRectangle(cornerRadius: 2)
+                .fill(isCurrent ? Color.red : Color.clear)
+                .frame(width: 3)
+                .frame(maxHeight: .infinity)
+                .accessibilityHidden(true)
+
             VStack(alignment: .leading, spacing: 2) {
                 Text(timeRange)
                     .font(.subheadline.monospacedDigit())
@@ -245,9 +467,10 @@ private struct CourseSessionRow: View {
                 if session.weekPattern != .everyWeek {
                     Text(session.weekPattern == .q1 ? q1Name : q2Name)
                         .font(.caption.weight(.semibold))
+                        .foregroundStyle(weekColor)
                         .padding(.horizontal, 7)
                         .padding(.vertical, 2)
-                        .background(.tint.opacity(0.14), in: Capsule())
+                        .background(weekColor.opacity(0.14), in: Capsule())
                 }
             }
         }
@@ -255,6 +478,10 @@ private struct CourseSessionRow: View {
 
     private var timeRange: String {
         "\(displayTime(session.startMinutes)) – \(displayTime(session.endMinutes))"
+    }
+
+    private var weekColor: Color {
+        session.weekPattern == .q1 ? .blue : .pink
     }
 
     private func displayTime(_ minutes: Int) -> String {
@@ -415,11 +642,16 @@ struct CourseSessionEditorView: View {
                 Toggle(L("Toutes les semaines"), isOn: $appliesEveryWeek)
 
                 if !appliesEveryWeek {
-                    Picker(L("Type de semaine"), selection: $selectedWeek) {
-                        Text(store.weekName(for: .q1)).tag(TeachingWeek.q1)
-                        Text(store.weekName(for: .q2)).tag(TeachingWeek.q2)
+                    VStack(alignment: .leading, spacing: 8) {
+                        Text(L("Type de semaine"))
+                            .font(.subheadline)
+
+                        TeachingWeekSelectionControl(
+                            firstWeekName: store.weekName(for: .q1),
+                            secondWeekName: store.weekName(for: .q2),
+                            selection: $selectedWeek
+                        )
                     }
-                    .pickerStyle(.segmented)
                 }
             } footer: {
                 Text(

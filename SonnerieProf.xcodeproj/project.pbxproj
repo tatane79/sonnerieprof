@@ -44,6 +44,7 @@
 		A806D4F03064E94E00FFA1B3 /* PurchaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4EF3064E94E00FFA1B3 /* PurchaseStore.swift */; };
 		A806D4F23064E94E00FFA1B3 /* ProUpgradeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A806D4F13064E94E00FFA1B3 /* ProUpgradeView.swift */; };
 		A806D4F43064EB8D00FFA1B3 /* Products.storekit in Resources */ = {isa = PBXBuildFile; fileRef = A806D4F33064EB8D00FFA1B3 /* Products.storekit */; };
+		A839F735308D123C008DD4E2 /* WeeklyTimetableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A839F734308D123C008DD4E2 /* WeeklyTimetableView.swift */; };
 		A8439992306FD03D00251EB7 /* SonnerieProfWatch Watch App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = A8439991306FD03D00251EB7 /* SonnerieProfWatch Watch App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		A84399AE3070587900251EB7 /* CloudTransferModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84399AD3070587900251EB7 /* CloudTransferModels.swift */; };
 		A84399AF3070587900251EB7 /* CloudTransferModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A84399AD3070587900251EB7 /* CloudTransferModels.swift */; };
@@ -143,6 +144,7 @@
 		A806D4EF3064E94E00FFA1B3 /* PurchaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseStore.swift; sourceTree = "<group>"; };
 		A806D4F13064E94E00FFA1B3 /* ProUpgradeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProUpgradeView.swift; sourceTree = "<group>"; };
 		A806D4F33064EB8D00FFA1B3 /* Products.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Products.storekit; sourceTree = "<group>"; };
+		A839F734308D123C008DD4E2 /* WeeklyTimetableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeeklyTimetableView.swift; sourceTree = "<group>"; };
 		A843998C306FD03D00251EB7 /* SonnerieProfWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SonnerieProfWatch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8439991306FD03D00251EB7 /* SonnerieProfWatch Watch App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SonnerieProfWatch Watch App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A84399A8306FEA2A00251EB7 /* SonnerieProfWatch-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "SonnerieProfWatch-Info.plist"; sourceTree = "<group>"; };
@@ -255,6 +257,7 @@
 				A806D4EB30639BD800FFA1B3 /* CourseCountdownViews.swift */,
 				A806D4F13064E94E00FFA1B3 /* ProUpgradeView.swift */,
 				A84399B23070587900251EB7 /* CloudTransferView.swift */,
+				A839F734308D123C008DD4E2 /* WeeklyTimetableView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -549,6 +552,7 @@
 				A806D4DD30624A8900FFA1B3 /* TimetableEngine.swift in Sources */,
 				00000000000000000000001A /* SiteEditorView.swift in Sources */,
 				00000000000000000000001B /* AppGroup.swift in Sources */,
+				A839F735308D123C008DD4E2 /* WeeklyTimetableView.swift in Sources */,
 				A806D4F23064E94E00FFA1B3 /* ProUpgradeView.swift in Sources */,
 				A806D4EC30639BD800FFA1B3 /* CourseCountdownViews.swift in Sources */,
 				00000000000000000000001C /* Models.swift in Sources */,
@@ -746,7 +750,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = SonnerieProf/SonnerieProf.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = SonnerieProf/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -755,7 +759,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.sonnerieprof;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -774,7 +778,7 @@
 				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
 				CODE_SIGN_ENTITLEMENTS = SonnerieProf/SonnerieProf.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = SonnerieProf/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -783,7 +787,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 1.1;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.sonnerieprof;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -801,7 +805,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SonnerieProfWidgets/SonnerieProfWidgets.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = SonnerieProfWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -810,7 +814,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.sonnerieprof.widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -826,7 +830,7 @@
 				APPLICATION_EXTENSION_API_ONLY = YES;
 				CODE_SIGN_ENTITLEMENTS = SonnerieProfWidgets/SonnerieProfWidgets.entitlements;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 7;
+				CURRENT_PROJECT_VERSION = 2;
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = SonnerieProfWidgets/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
@@ -835,7 +839,7 @@
 					"@executable_path/Frameworks",
 					"@executable_path/../../Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 2.0;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.sonnerieprof.widgets;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -900,7 +904,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				ENABLE_PREVIEWS = YES;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -918,7 +922,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 0.9;
+				MARKETING_VERSION = 2.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.SonnerieProfWatch.watchkitapp;
@@ -952,7 +956,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				ENABLE_PREVIEWS = YES;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
@@ -966,7 +970,7 @@
 					"@executable_path/Frameworks",
 				);
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 0.9;
+				MARKETING_VERSION = 2.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.SonnerieProfWatch.watchkitapp;
@@ -997,7 +1001,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1009,7 +1013,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = SonnerieProfWatch;
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 0.9;
+				MARKETING_VERSION = 2.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.SonnerieProfWatch;
@@ -1035,7 +1039,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 2;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
@@ -1043,7 +1047,7 @@
 				INFOPLIST_KEY_CFBundleDisplayName = SonnerieProfWatch;
 				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
-				MARKETING_VERSION = 0.9;
+				MARKETING_VERSION = 2.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = fr.jonathanlafarge.SonnerieProfWatch;

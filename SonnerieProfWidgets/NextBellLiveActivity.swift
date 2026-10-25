@@ -136,8 +136,9 @@ private struct BellLockScreenView: View {
 
     var body: some View {
         let timing = BellActivityTiming(state: context.state)
-        // On réévalue le même état d'emploi du temps que l'app. iOS peut
-        // réduire la cadence en Always-On, mais la date fournie reste courante.
+        // La timeline déclenche les rafraîchissements, mais sa date peut correspondre
+        // à une entrée qu'iOS prépare en avance. La date réelle doit rester la référence
+        // pour ne pas sélectionner prématurément la sonnerie suivante.
         TimelineView(BellTimelineSchedule(state: context.state)) { timeline in
 #if DEBUG
             let _ = logBellTimelineUpdate(
@@ -146,7 +147,7 @@ private struct BellLockScreenView: View {
                 presentation: "Lock Screen"
             )
 #endif
-            let currentDate = max(timeline.date, Date.now)
+            let currentDate = Date.now
             let target = timing.target(after: currentDate)
             let targetDate = target?.date
             let isDistantCourse = targetDate.map {

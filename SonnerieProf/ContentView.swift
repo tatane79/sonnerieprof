@@ -632,7 +632,11 @@ struct ContentView: View {
                     Label(L("iCloud et partage"), systemImage: "icloud")
                 }
 
-                Picker(
+                VStack(alignment: .leading, spacing: 8) {
+                    Text(L("Format de l’heure"))
+                        .font(.subheadline)
+
+                    Picker(
                         L("Format de l’heure"),
                         selection: $timeFormatPreference
                     ) {
@@ -642,8 +646,11 @@ struct ContentView: View {
                         Text(L("12 h (AM/PM)"))
                             .tag(TimeFormatBridge.twelveHour)
                     }
-                    .pickerStyle(.navigationLink)
-                    .onChange(of: timeFormatPreference) { _, _ in
+                    .pickerStyle(.segmented)
+                    .labelsHidden()
+                }
+                .padding(.vertical, 4)
+                .onChange(of: timeFormatPreference) { _, _ in
 
 
                         if isLockScreenEnabled {

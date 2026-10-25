@@ -1,6 +1,12 @@
 import StoreKit
 import SwiftUI
 
+private enum TipPromptLocalizationSources {
+    static func registerForExtraction() {
+        _ = String(localized: "Plus tard")
+    }
+}
+
 /// Feuille de soutien volontaire. Aucun achat ne débloque de fonctionnalité.
 struct TipPromptView: View {
     let store: TipJarStore

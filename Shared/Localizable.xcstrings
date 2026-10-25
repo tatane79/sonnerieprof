@@ -315,20 +315,164 @@
     "%@ j %@ h" : {
       "comment" : "Compte à rebours supérieur à 24 heures : nombre de jours, puis nombre d'heures sur deux chiffres.",
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ hod."
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d. %2$@ t."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ T. %2$@ Std."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ hr"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ h"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "%1$@ j %2$@ h"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ g %2$@ h"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ u"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ godz."
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ h"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ h"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ z %2$@ h"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ tim"
           }
         }
       }
     },
     "%@ j %@h%@min" : {
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ hod. %3$@ min"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d. %2$@ t. %3$@ min."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ T. %2$@ Std. %3$@ Min."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ hr %3$@ min"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ h %3$@ min"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "%1$@ j %2$@h%3$@min"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ g %2$@ h %3$@ min"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ u %3$@ min."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ godz. %3$@ min"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ h %3$@ min"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ h %3$@ min"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ z %2$@ h %3$@ min"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ d %2$@ tim %3$@ min"
           }
         }
       }
@@ -494,10 +638,82 @@
     },
     "%@h%@min" : {
       "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ hod. %2$@ min"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ t. %2$@ min."
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ Std. %2$@ Min."
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ hr %2$@ min"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ h %2$@ min"
+          }
+        },
         "fr" : {
           "stringUnit" : {
             "state" : "new",
             "value" : "%1$@h%2$@min"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ h %2$@ min"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ u %2$@ min."
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ godz. %2$@ min"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ h %2$@ min"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ h %2$@ min"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ h %2$@ min"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "%1$@ tim %2$@ min"
           }
         }
       }
@@ -2773,6 +2989,9 @@
         }
       }
     },
+    "Aujourd’hui" : {
+
+    },
     "Auteur" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -3015,6 +3234,82 @@
         }
       }
     },
+    "Calendrier" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Kalendář"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Kalender"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Kalender"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Calendar"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Calendario"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Calendario"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Kalender"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Kalendarz"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Calendário"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Calendário"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Calendar"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Kalender"
+          }
+        }
+      }
+    },
     "Cette séance chevauche un ou plusieurs cours existants." : {
       "localizations" : {
         "cs" : {
@@ -3092,7 +3387,80 @@
       }
     },
     "Change la destination du compte à rebours" : {
-
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Změní cíl odpočítávání"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Skifter mål for nedtællingen"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Ziel des Countdowns ändern"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Changes the countdown target"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Cambia el destino de la cuenta atrás"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Modifica la destinazione del conto alla rovescia"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Wijzigt het doel van het aftellen"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Zmienia cel odliczania"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Altera o destino da contagem regressiva"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Altera o destino da contagem decrescente"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Schimbă destinația numărătorii inverse"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Ändrar målet för nedräkningen"
+          }
+        }
+      }
     },
     "Charger les horaires d’un collègue" : {
       "localizations" : {
@@ -10299,6 +10667,82 @@
         }
       }
     },
+    "Liste" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Seznam"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Liste"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Liste"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "List"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Lista"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Elenco"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Lijst"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Lista"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Lista"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Lista"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Listă"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Lista"
+          }
+        }
+      }
+    },
     "live_activity.disabled" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -11140,8 +11584,8 @@
         },
         "da" : {
           "stringUnit" : {
-            "state" : "needs_review",
-            "value" : "Visning aktiveret. Der er lang tid til næste ringning; iOS kan fjerne Live Activity inden da."
+            "state" : "machine_translated",
+            "value" : "Visning aktiveret. Der er længe til næste ringning; iOS kan fjerne Live Activity inden da."
           }
         },
         "de" : {
@@ -13314,6 +13758,82 @@
         }
       }
     },
+    "Plus tard" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Teď ne"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Ikke nu"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Später"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Not Now"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Ahora no"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Non ora"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Niet nu"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Nie teraz"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Agora Não"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Agora não"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Nu acum"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Inte nu"
+          }
+        }
+      }
+    },
     "Position approximative" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -13723,7 +14243,80 @@
       }
     },
     "Prochaine sonnerie" : {
-
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Další zvonění"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Næste ringning"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Nächste Klingel"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Next bell"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Próximo timbre"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Prossima campanella"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Volgende bel"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Następny dzwonek"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Próximo sinal"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Próximo toque"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Următorul clopoțel"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Nästa ringning"
+          }
+        }
+      }
     },
     "Prochaine sonnerie :" : {
       "extractionState" : "manual",
@@ -15152,6 +15745,82 @@
           "stringUnit" : {
             "state" : "translated",
             "value" : "%d s"
+          }
+        }
+      }
+    },
+    "Semaine actuelle" : {
+      "localizations" : {
+        "cs" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Aktuální týden"
+          }
+        },
+        "da" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Aktuel uge"
+          }
+        },
+        "de" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Aktuelle Woche"
+          }
+        },
+        "en" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Current Week"
+          }
+        },
+        "es" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Semana actual"
+          }
+        },
+        "it" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Settimana attuale"
+          }
+        },
+        "nl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Huidige week"
+          }
+        },
+        "pl" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Bieżący tydzień"
+          }
+        },
+        "pt-BR" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Semana Atual"
+          }
+        },
+        "pt-PT" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Semana atual"
+          }
+        },
+        "ro" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Săptămâna curentă"
+          }
+        },
+        "sv" : {
+          "stringUnit" : {
+            "state" : "machine_translated",
+            "value" : "Aktuell vecka"
           }
         }
       }
